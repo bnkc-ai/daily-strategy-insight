@@ -1,0 +1,141 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">PF·공급자금융 정상화 기대와 기업여신 충당금 급증이 동시 전개되며, 캐피탈사 기업금융 포트폴리오 점검 시급</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융위원장, <b>가계대출 규제 유지</b> 속 <b>PF 등 공급자 금융 활성화</b> 의지 표명</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">민간 사업자, 브릿지론·본PF 경색으로 주택 공급 차질 호소</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">IBK기업은행, 기업여신 충당금 <b>전년 동기 대비 22.5% 증가</b>·NPL커버리지 <b>100.9%</b>로 하락</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">홈플러스, <b>2,000억원 DIP 대출</b> 확보 후 회생계획안 <b>9월 4일</b> 시한 재가동</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">정부의 공급자 금융 활성화 방침에 따라 <b>비아파트·PF 관련 캐피탈 여신</b> 수요 확대 가능. 프로젝트 리츠 등 신규 개발금융 구조 참여 기회 모색 여지 존재</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">기업여신 중심 <b>대손충당금 부담 급증</b> 추세가 캐피탈사에도 전이 가능. 대형 유통·건설 업종 회생·부실 사례 확산 시 관련 익스포저 건전성 악화 우려</div>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF 정책 변화 3개월 내 구체화 예상</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">기업여신 건전성 리스크는 하반기 지속</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">• PF·브릿지론 경색 지속으로 기존 부동산PF 익스포저 <b>연체율·충당금</b> 추이 즉시 점검 필요<br>• 홈플러스 등 대형 회생 기업 관련 직·간접 채권 보유 여부 확인 및 손실 시나리오 산정 필요<br>• IBK 사례처럼 기업여신 충당금 <b>전분기 대비 30.7% 증가</b> 흐름이 캐피탈사 중기대출 포트폴리오에도 유사 패턴 발생 가능성 점검 요</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">• 정부 공급자 금융 활성화 정책 구체화 시, <b>비아파트 PF·프로젝트 리츠</b> 참여 전략 사전 수립 검토<br>• 기업여신 건전성 악화 업종(건설·유통) 중심 <b>여신 한도·담보 재평가</b> 체계 강화 검토<br>• 중소기업 운전자금 수요 증가 추세 속, 캐피탈사 중기여신 확대 시 <b>심사 기준 정교화</b> 병행 필요</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 자사 PF·기업여신 포트폴리오 내 건설·유통 업종 비중 및 <b>NPL커버리지 변동 추이</b> 시뮬레이션 실시<br>② 공급자 금융 정책 변화에 대비, 비아파트·프로젝트 리츠 관련 <b>신규 상품 참여 요건·수익성 시나리오</b> 사전 분석</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=669089" target="_blank">→ 기업은행, 중기점유율 24.6% 역대 최고…충당금에 순익 4.4%↓</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/realestate/general/6240600" target="_blank">→ 'PF부터 프로젝트 리츠까지'…주택 공급 확대 위한 제언 쏟아져</a></div>
+  <div class="source-card"><a href="https://www.nocutnews.co.kr/news/6554076?utm_source=naver&utm_medium=article&utm_campaign=20260727073548" target="_blank">→ 이억원 "가계대출 관리 유지…청년·신혼부부 핀셋 지원"</a></div>
+  <div class="source-card"><a href="https://biz.heraldcorp.com/article/10821996?ref=naver" target="_blank">→ '대출규제 유지' 못 박은 금융위원장…"청년·신혼부부는 핀셋 지원"</a></div>
+  <div class="source-card"><a href="https://biz.heraldcorp.com/article/10821879?ref=naver" target="_blank">→ 국토장관 "정비사업으로 집 없어지면, 부동산 가격 더 올라"</a></div>
+  <div class="source-card"><a href="https://www.dailian.co.kr/news/view/1671454/?sc=Naver" target="_blank">→ [부동산 대토론] "대출규제 엄격히 유지…지방·실수요자는 핀셋 보완"</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/finance/financial-policy/6240638" target="_blank">→ 이억원 위원장 "가계·부동산 대출 일관되고 엄격하게 가야"</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=669052" target="_blank">→ [홈플러스 몰락 그 후]⑤ '트레이더 조' 벤치마킹, 회생의 한 수 될까</a></div>
+  <div class="source-card"><a href="https://www.newscj.com/news/articleView.html?idxno=3420202" target="_blank">→ 홈플러스 '트레이더 조' 방식으로 회생 승부… 67개 점포 정상화될까</a></div>
+
+</div>
