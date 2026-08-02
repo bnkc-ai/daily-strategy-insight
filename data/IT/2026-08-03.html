@@ -1,0 +1,154 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">개인정보 유출 제재 강화·클라우드 기반 AI 인프라 확산이 금융IT 투자 우선순위를 재편하는 흐름</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">개인정보 집단분쟁조정 <b>6년간 성립 0건</b>, 제도 실효성 논란 확대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">롯데카드 해킹 사고에 <b>업무정지 1.5개월</b> 확정, 금융권 보안비용 부담 증가</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">개인정보위 제재 행정소송 <b>17건</b> 진행, 데이터 사업모델 법적 기준 쟁점화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">KB국민은행, AWS·GCP 연결 <b>멀티클라우드 AI 데이터망</b> 구축 착수</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">SI업계 클라우드·AX 매출 성장세 지속, <b>AI 데이터센터</b> 투자 확대</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">멀티클라우드 기반 AI 인프라 도입 사례 확산으로, 캐피탈사도 <b>클라우드 전환</b> 시 참고 가능한 선행 모델 축적 중. 보안 투자 강화 흐름이 체계적 정보보호 역량을 갖춘 금융사에 신뢰도 우위 제공 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">해킹에 의한 정보유출에도 <b>업무정지 제재</b> 선례 확립, 캐피탈사 포함 전 금융권 보안 의무 기준 상향 불가피. 개인정보위의 <b>주민등록번호 처리 실태 사전점검</b> 전 금융권 확대 중으로 추가 제재 리스크 존재.</div>
+  </div>
+  <div class="section-title" style="margin-top:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 제재 리스크</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">클라우드·AI 인프라 전환</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">KB국민은행이 AWS·GCP·내부 생성형 AI 시스템을 연결하는 <b>멀티클라우드 데이터망</b>을 구축, AI 에이전트를 은행 업무 전반으로 확산하는 전략 추진 중. 삼성SDS는 <b>GPUaaS·NPUaaS</b> 상품을 출시하며 AI 인프라 공급자로 전환 가속, LG CNS는 AI 클라우드 매출이 전체의 약 <b>60%</b>를 차지하며 금융·공공 부문 AI 플랫폼 확대 중.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">개인정보위 <b>주민등록번호 처리 실태 점검</b>이 전 금융권 대상으로 진행 중이므로, BNK캐피탈 내 주민등록번호 암호화·접근통제 현황 즉시 점검 필요. 롯데카드 사례에서 <b>패치 미실시·백신 미설치</b> 등 기본 보안 의무 위반이 제재 핵심 사유였던 만큼, 자사 정보처리시스템 보안 패치 적용 현황 재확인 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content"><b>전자금융거래법 개정안</b>(징벌적 과징금·CISO 권한 강화) 국회 통과 시 보안 투자 의무 수준 상향 예상, 중장기 IT 예산 반영 검토 필요. 은행권 멀티클라우드·AI 에이전트 도입 가속에 따라, 캐피탈사 차원의 <b>클라우드 전환 로드맵</b> 및 AI 활용 전략 수립 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 롯데카드 제재 사유(패치·암호화·백신 등)를 체크리스트화하여 BNK캐피탈 정보처리시스템 대비 <b>갭 분석</b> 실시 검토<br>② 정보유출 사고 발생 시 <b>자진신고·신속 수습 매뉴얼</b> 정비 여부 점검 — 롯데카드 사례에서 자진신고가 핵심 감경 사유로 작용한 점 참고</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.donga.com/news/Society/article/all/20260802/134409686/2" target="_blank">→ [단독]개인정보 유출 집단분쟁조정 성립 6년간 '0건'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hani.co.kr/arti/politics/politics_general/1271088.html" target="_blank">→ [단독] 5개월 걸린 외교부 1만건 정보유출 해킹 피해 신고…다른 기관은 '3일'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.nocutnews.co.kr/news/6557045?utm_source=naver&utm_medium=article&utm_campaign=20260803063606" target="_blank">→ 개인정보위 제재 기업들, 1심 전패에도 줄소송…왜?</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news2day.co.kr/article/20260731500274" target="_blank">→ 롯데카드 '업무정지'에 카드업계 보안비용 부담 증가</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.etnews.com/20260731000138" target="_blank">→ KB국민은행, 아마존·구글 클라우드 잇는 AI 데이터망 구축한다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20260802510998?OutUrl=naver" target="_blank">→ SI업계 '클라우드·AX 특수'… AI 인프라·로봇 승부수</a>
+  </div>
+
+</div>
