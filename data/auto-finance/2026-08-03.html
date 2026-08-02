@@ -1,0 +1,138 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">대부중개수수료 상한 위반 시 손금불산입 판례 확정, KB캐피탈은 리스·렌탈 중심 리테일 전략 강화</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">대부중개수수료 상한 초과 지급 시 <b>손금불산입</b> 대법원 판례 확정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">KB캐피탈, <b>리스·렌탈</b> 자산 확대로 상반기 순익 <b>11.28%</b> 증가</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">현대차, 8월 전기차 중심 할인 확대 및 <b>할부 기준금리 인하</b> 금융 혜택 제공</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">전기차 할인 확대에 따른 EV금융·할부 취급 기회 증가. 리스·렌탈 시장 성장세 지속으로 비이자이익 확대 가능</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">중고차 오토론 제휴점 수수료 운영 시 <b>대부중개수수료 상한제</b> 위반 리스크 존재. 위반 시 손금불산입·시정명령·형사처벌 가능</div>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">수수료 컴플라이언스 점검</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">리스·렌탈 포트폴리오 전략</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">KB캐피탈, 2026년 상반기 순익 <b>1,381억원</b>(전년동기 대비 <b>11.28%</b> 증가) 달성, 리스·렌탈 자산 전년동기 대비 <b>5,762억원</b> 증가하며 리테일 중심 전략 강화. 다만 순익·ROA·ROE 등 수익성 지표에서 JB우리캐피탈(상반기 순익 <b>1,768억원</b>, ROA <b>2.92%</b>)에 열위</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">중고차 오토론·할부금융 제휴점 수수료 체계의 <b>대부중개수수료 상한</b> 준수 여부 즉시 점검 필요. 현대차 전기차 할인 시기에 맞춘 EV 할부·리스 프로모션 연계 검토 요</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">리스·렌탈 자산 비중 확대 시 비이자이익 개선 효과 검토. 제휴점 판촉비·재고금융수수료 등 명목 불문 수수료 총액이 상한 이내인지 세무·컴플라이언스 관점 재점검 필요</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 제휴점별 수수료 총지급액 대비 대출금액 비율을 자동 산출하여 <b>상한 초과 사전 경보 시스템</b> 구축 검토. ② 전기차 할인 시즌별 EV 할부·리스 취급 실적과 잔가 변동 데이터를 연계 분석하여 최적 금융조건 설계 검토</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.sejungilbo.com/news/articleView.html?idxno=59363" target="_blank">→ [판세] 금융기관이 대부중개수수료 상한제를 위반하여 지급한 수수료의 손금산입 여부</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=2026072317181538758a55064dd1_18" target="_blank">→ 빈중일 KB캐피탈 대표, 리스·렌탈로 순익 확보…하반기 건전성 관리·리테일 영업 무게</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.edaily.co.kr/news/newspath.asp?newsid=02584646645543384" target="_blank">→ "8월에 아이오닉 9 사면 최대 550만원 할인" 현대차 썸머 페스타</a>
+  </div>
+
+</div>
