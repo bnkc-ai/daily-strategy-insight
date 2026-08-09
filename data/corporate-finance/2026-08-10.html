@@ -1,0 +1,144 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기업 파산 급증·지방 중소기업 연체율 상승 속, PF 공적보증 확대와 자금조달 경색이 캐피탈사 기업여신 전략에 복합 영향</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">2026년 상반기 법인 파산 신청 <b>1,299건</b>, 반기 기준 역대 최대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">부산 대기업 대출 연체율 <b>1.92%</b>, 대구·광주 등 지방 중기 연체율 급등</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">정부, PF 공적보증 한도 <b>6조→8조원 이상</b> 확대 및 자기자본비율 규제 유예 검토</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">회사채·메자닌·유증 등 기업 자금조달 전방위 경색 심화</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">놀부 등 프랜차이즈 기업 회생 신청, 중소기업 도산 리스크 확산</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">PF 공적보증 확대 시 캐피탈사 PF 참여 리스크 경감 및 신규 딜 기회 확대. 기업 자금조달 경색으로 캐피탈사 <b>중소기업 여신</b> 수요 증가 가능</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">지방 중소기업 <b>연체율 급등</b>으로 기업여신 건전성 악화 우려. 파산·회생 급증에 따른 <b>대손충당금</b> 적립 부담 확대</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">연체율·부실 관리</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">PF 규제 변경·자금조달 환경 변화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">KB캐피탈이 KB국민은행·KB저축은행과 함께 약 <b>2조원</b> 규모 중금리 대출 공급 계획을 추진 중으로, 중·저신용자 여신 시장에서 그룹 연계 영업 확대 움직임 확인.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">부산·대구 등 영남권 기업여신 포트폴리오 <b>연체율</b> 긴급 점검 필요. 건설·부동산 관련 기업 익스포저 재분류 및 조기경보 강화 검토 요</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">PF <b>자기자본비율 규제</b>(2027년 시행 예정) 유예 여부에 따른 PF 참여 전략 재설계 필요. 회사채·ABS 발행 위축 장기화 시 캐피탈사 자체 조달 비용 상승 가능성 대비 요</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 영남권 기업여신 업종별·신용등급별 연체 추이 분석 및 선제적 충당금 시나리오 수립 검토<br>② PF 공적보증 확대안 확정 시 BNK캐피탈 PF 포트폴리오 내 보증 활용 가능 사업장 선별 검토</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20077338?ref=naver" target="_blank">→ 부산·대구 등 지방 중소기업 연체율 급등</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12122242" target="_blank">→ [기자24시] 도산 기업들에 재도전 기회를</a></div>
+  <div class="source-card"><a href="https://www.econovill.com/news/articleView.html?idxno=747509" target="_blank">→ 이재명 "과감한 공급" 주문에…금융당국, PF 보증 확대·대출 규제 완화 검토</a></div>
+  <div class="source-card"><a href="https://www.hani.co.kr/arti/economy/finance/1272105.html" target="_blank">→ '과감한 주택공급 촉진' 부동산금융…PF 공적 보증 확대 등 거론</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260809010400003?input=1195m" target="_blank">→ 정비사업 추가 이주비 대출에 공적보증 검토…병목 뚫는다</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/stock/2026/08/10/2026080718115543398" target="_blank">→ 돈은 넘치는데 조달 문턱은 깐깐…마지막 보루 유증마저 '고구마'</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/industry/2026/08/10/2026080918470519648" target="_blank">→ 동네마다 보이던 '놀부'에 무슨 일이…39년 만에 결국 회생</a></div>
+
+</div>
