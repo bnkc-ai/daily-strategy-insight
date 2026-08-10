@@ -1,0 +1,145 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">BNK캐피탈, 수의사회 대상 의료기기·자동차 리스 금융지원 본격화 속 카카오뱅크 오토금융 진출로 경쟁 구도 변화 예고</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">BNK캐피탈, 부산시수의사회와 <b>의료기기·자동차 리스</b> 금융지원 협약 체결</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">카카오뱅크, 마스턴캐피탈 인수 후 <b>1,500억원 증자</b>로 오토금융 시장 진출 선언</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">현대캐피탈, 제네시스 대상 리스·렌트 <b>최대 17.8% 할인</b> 프로모션 시행</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">혼다코리아, 판매 사업 종료 앞두고 <b>60개월 무이자 할부</b> 특별 프로모션 실시</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">신한카드, 친환경 오토금융 중심 <b>녹색여신 관리지침</b> 제정 및 EV금융 확대</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">수의사회 협약으로 <b>의료기기 리스·자동차 리스</b> 전문직 채널 확보. 비캡티브 오토금융 수요 확대에 따른 중고차·수입차 금융 영역 선점 가능</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">카카오뱅크의 <b>비대면 심사 기반</b> 오토금융 진출로 중고차 금융 경쟁 심화. 캡티브사의 잔가보장·저금리 프로모션 공세로 신차 금융 마진 압박 지속</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">수의사회 협약 기반 리스 영업 즉시 가동</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">카카오뱅크 <b>2027년 상반기</b> 오토금융 론칭에 따른 경쟁 구도 재편</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대캐피탈, 제네시스 G80·GV80 대상 차량가 <b>1.8% 할인</b>과 잔존가치 상향, 월 이용료 <b>3% 추가 할인</b>을 결합한 '제네시스 파이낸스 썸머 페스타' 시행 중. 카카오뱅크, 마스턴캐피탈에 <b>1,500억원 증자</b> 후 중고차 플랫폼 제휴를 통한 오토금융 자산 확보 → 신차 할부·리스·렌털로 확장 계획 발표</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">수의사회 협약에 따른 <b>의료기기·자동차 리스</b> 전담 창구 조기 가동 및 실적 모니터링 필요. 혼다코리아 판매 종료에 따른 기존 혼다 할부·리스 고객 이탈 가능성 점검 요</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">카카오뱅크 오토금융 론칭(<b>2027년 상반기</b>) 전 중고차 딜러 네트워크 및 비대면 심사 경쟁력 강화 전략 수립 필요. 신한카드 등 카드사의 <b>EV금융·녹색여신</b> 확대에 대응한 전기차 금융상품 라인업 검토 요</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 전문직 단체(수의사회 등) 협약 모델을 타 전문직(의사·약사·변호사)으로 확대 적용 시 리스 취급 증대 효과 시뮬레이션 검토<br>② 카카오뱅크 진출 대비, 자사 중고차 금융 심사 속도·승인율·금리 경쟁력을 캡티브사·카드사·신규 진입자 대비 벤치마킹 분석</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="http://www.press9.kr/news/articleView.html?idxno=80858" target="_blank">→ BNK금융지주, 부산 수의사에 대출·의료장비 리스 금융지원</a></div>
+  <div class="source-card"><a href="https://www.g-enews.com/view.php?ud=202608101527043227cd0bfacc1c_1" target="_blank">→ BNK금융, 동물의료산업에 금융 지원 확대…수의사 대출·리스 우대</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/local/busan-gyeongnam/6254650" target="_blank">→ BNK부산은행·캐피탈, 지역 수의사에 맞춤 금융 서비스 제공</a></div>
+  <div class="source-card"><a href="https://weekly.hankooki.com/news/articleView.html?idxno=7178319" target="_blank">→ BNK금융·부산수의사회, 동물 의료산업 금융지원 맞손</a></div>
+  <div class="source-card"><a href="http://www.dailypop.kr/news/articleView.html?idxno=101405" target="_blank">→ [뉴스줌인] 카카오뱅크, 마스턴캐피탈 앞세워 자동차금융 진출...치열한 경쟁 속 승산은</a></div>
+  <div class="source-card"><a href="http://www.press9.kr/news/articleView.html?idxno=80828" target="_blank">→ [신한카드 ESG-E] 친환경 금융 3배 확대…탄소중립 '본업'으로</a></div>
+  <div class="source-card"><a href="http://www.enewstoday.co.kr/news/articleView.html?idxno=2457654" target="_blank">→ 혼다코리아, 신차 구입시 60개월 무이자에 6% 캐시백···100대 한정</a></div>
+  <div class="source-card"><a href="http://www.metroseoul.co.kr/article/20260810500519" target="_blank">→ '굿바이 세일' 혼다코리아, 100대 한정 특별 프로모션…무이자 할부 등 최대 600만원 혜택 제공</a></div>
+
+</div>
