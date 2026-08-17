@@ -1,0 +1,159 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+.summary-body b{color:#A32D2D;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+.tl-content b{color:#A32D2D;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">미국 장기금리 급등·한은 기준금리 인상 기조 속 가계부채 <b>2,000조 원</b> 돌파 전망, 캐피탈사 조달비용 상승과 건전성 관리 부담 동시 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">미국 30년물 국채 금리 <b>5.31%</b>, 19년 만에 최고치 기록</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">2026년 2분기 가계신용 잔액 사상 첫 <b>2,000조 원</b> 돌파 전망</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">한은 <b>8월 27일</b> 금통위서 추가 기준금리 인상 가능성 대두</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">은행 주담대 가산금리 <b>3.27%</b>, 7년 만에 최고 수준</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">우리금융캐피탈, 기업금융 자산 전년 동기 대비 <b>6,310억 원</b> 증가·상반기 순익 <b>14.1%</b> 성장</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">부동산 경기 침체로 지방 도시개발사업 중단 사례 발생</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">가계대출 총량관리 목표 <b>3%</b>로 완화, 캐피탈사 소비자금융 취급 여력 확대 가능. 우리금융캐피탈 사례처럼 기업금융·비이자이익 중심 포트폴리오 전환 시 수익성 방어 가능</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">미국 장기금리 급등이 국내 시장금리 상승 압력으로 전이, 캐피탈사 회사채·ABS 조달비용 추가 상승 우려. 기준금리 인상 시 차주 상환부담 증가로 연체율 상승 리스크 확대</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달금리 즉시 반영</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">기준금리 <b>3.5%</b> 도달 시 건전성 영향 본격화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">우리금융캐피탈, 2026년 상반기 기업금융 자산 <b>2조 9,160억 원</b>으로 확대하고 생산적 금융 <b>1조 7,000억 원</b> 공급·국민성장펀드 <b>1,000억 원</b> 투자 등 기업금융 중심 질적 성장 추진. 자동차금융에서는 D2C 플랫폼 '우리원카' 안착으로 중고차 금융 실적 전년 동기 대비 <b>16%</b> 증가, 상용차 금융 <b>38.6%</b> 증가 달성</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>8월 27일</b> 금통위 결과에 따른 조달금리 즉시 영향 점검 필요. 회사채·단기사채 발행 스케줄 재조정 및 고정금리 조달 비중 확대 검토 요. 가계부채 <b>2,000조 원</b> 돌파에 따른 금융당국 추가 규제 가능성 모니터링 필요</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">기준금리 <b>3.5%</b> 도달 시나리오 하 취약차주 연체율 상승 시뮬레이션 및 대손충당금 적립 계획 재점검 필요. 부동산 경기 침체 장기화에 따른 PF·부동산 관련 여신 익스포저 관리 강화 검토 요. 우리금융캐피탈의 기업금융·D2C 플랫폼 전략 등 경쟁사 포트폴리오 전환 흐름 대비 자사 사업 믹스 재검토 필요</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기준금리 <b>0.25%p</b> 단위 인상 시나리오별 자사 조달비용·NIM·연체율 변동 스트레스 테스트 실시 검토<br>② 우리금융캐피탈 D2C 플랫폼·생산적 금융 전략 대비 자사 비대면 채널 경쟁력 및 기업금융 포트폴리오 갭 분석 검토</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.nocutnews.co.kr/news/6563756?utm_source=naver&utm_medium=article&utm_campaign=20260817034507" target="_blank">→ 가계부채 첫 2천조원 돌파…내주 기준금리 인상 가능할까</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20260818004000072?input=1195m" target="_blank">→ 美국채 매도세에 30년물 금리 5.31%…2007년 이후 최고치</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20260818_0003751722" target="_blank">→ 美 30년물 금리 5.31%…19년 만에 최고치</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20260817513762?OutUrl=naver" target="_blank">→ 은행 6월 가산금리 3.27%… 7년 만에 최고 수준</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=2026081719410586808a55064dd1_18" target="_blank">→ 기동호 우리금융캐피탈 대표, 기업금융 중심 자산 성장…생산적금융 여신 1조7000억원 공급</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kbmaeil.com/article/20260817500407" target="_blank">→ 포항 곡강지구 도시개발사업 전격 중단… 부동산 침체 여파</a>
+  </div>
+
+</div>
