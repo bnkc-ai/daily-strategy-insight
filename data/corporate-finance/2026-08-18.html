@@ -1,0 +1,163 @@
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+  .wrap{max-width:100%;margin:0;padding:0;}
+  .section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+  /* 핵심 한줄 요약 */
+  .summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+  .summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+  .summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+  /* 무슨 일이 일어나고 있나 */
+  .event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+  .event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+  .event-text b{color:#A32D2D;}
+
+  /* 핵심 인사이트 */
+  .insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+  .insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+  .insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+  .insight-opportunity .insight-title{color:#0F6E56;}
+  .insight-risk .insight-title{color:#A32D2D;}
+  .insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+  .insight-risk .insight-content b{color:#A32D2D;}
+
+  /* 타임라인 */
+  .timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+  .timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+  .tl-item{position:relative;margin-bottom:12px;}
+  .tl-item:last-child{margin-bottom:0;}
+  .tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+  .tl-dot.short{background:#A32D2D;}
+  .tl-dot.mid{background:#BA7517;}
+  .tl-dot.long{background:#185FA5;}
+  .tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+  .tl-label.short{color:#A32D2D;}
+  .tl-label.mid{color:#BA7517;}
+  .tl-label.long{color:#185FA5;}
+  .tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+  .tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+  .tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+  .tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+  /* 경쟁사 동향 */
+  .competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+  .competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+  .competitor-content b{color:#A32D2D;}
+
+  /* 영향도 분석 */
+  .impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+  .impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+  .impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+  .impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+  .impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+  .impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+  .impact-content b{color:#A32D2D;}
+
+  @media(min-width:600px){
+    .impact-row{flex-direction:row;}
+    .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+  }
+
+  /* 출처 기사 */
+  .source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+  .source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+  .source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <!-- 핵심 한줄 요약 -->
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">부동산PF 연체율 <b>10년 내 최고치</b> 기록, 중소기업 부실 가속화 속 거시경제 전망은 상향 조정되며 양극화 심화</div>
+  </div>
+
+  <!-- 무슨 일이 일어나고 있나 -->
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">부동산PF 대출 연체율 <b>4.65%</b>, 여전사 <b>4.91%</b>로 건전성 악화 지속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">중소기업 대출 연체율 <b>2.87%</b>, 대기업 대비 <b>약 10배</b> 격차 확대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">비은행권 중소기업 연체율 <b>7.19%</b>, 전체 연체액의 <b>81%</b> 집중</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">무디스, 2026년 한국 성장률 전망 <b>3.5%</b>로 대폭 상향</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">2026년 상반기 건설사 폐업 <b>2,092곳</b>, 전년 동기 대비 <b>19.8%</b> 증가</div>
+  </div>
+
+  <!-- 핵심 인사이트 -->
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">반도체 호황 기반 거시경제 개선으로 대기업 여신 건전성 안정 기대. 수출 대기업 관련 기업금융 수요 확대 가능성 존재</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">PF 연체율·고정이하여신비율 동반 상승으로 여전사 부실 직격. 중소기업 연체 급증과 내수 침체 장기화로 <b>K자형 양극화</b> 리스크 확대</div>
+  </div>
+
+  <!-- 영향 시점 타임라인 -->
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF·중소기업 건전성 악화는 즉시 영향</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">거시경제 개선 효과는 중기 이후 반영</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <!-- 경쟁사 동향 -->
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <!-- 영향도 분석 -->
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">여전사 PF 연체율 <b>4.91%</b> 도달에 따른 자사 PF 익스포저 긴급 점검 필요. 중소기업 여신 포트폴리오 내 내수 의존 업종 연체 추이 모니터링 강화 필요. 2026년 상반기 건설사 폐업 급증에 따른 건설업 관련 여신 리스크 재평가 검토 요</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">PF 고정이하여신비율 <b>10%</b> 돌파 추세 지속 시 추가 <b>대손충당금</b> 적립 부담 확대 전망. 기준금리 인상 기조 하 중소기업 상환 능력 추가 악화 가능성 대비한 여신 심사 기준 재정비 검토 요. 수출 호조 업종(반도체·AI) 관련 기업금융 기회 선별적 확대 전략 수립 필요</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 자사 PF·브릿지론 포트폴리오의 사업장별 공정률·분양률 기반 부실 시나리오 분석 실시 ② 중소기업 여신 중 내수 의존도 높은 업종(건설·유통·서비스) 조기경보 지표 점검 및 선제적 리스크 등급 재분류 검토</div>
+  </div>
+
+  <!-- 출처 기사 -->
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20260817_0003751474" target="_blank">→ 금융권, 부동산PF 대출 연체율 4.65%…10년만 최고치</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12129514" target="_blank">→ [단독] "빚 갚을 돈도 없습니다"…중소기업 대출 연체율, 대기업의 10배</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20260817048700002?input=1195m" target="_blank">→ 무디스 韓성장률 3.5%로 '깜짝' 상향…"대체 메모리기업 제한적"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kado.net/news/articleView.html?idxno=2067091" target="_blank">→ 전략산업 6년만에 경영난…공공예산 민간기업 투자 과제</a>
+  </div>
+
+</div>
