@@ -1,0 +1,146 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 클라우드·AI 에이전트 도입 가속과 양자보안·망분리 규제 변화가 IT 인프라 전략 재점검을 요구</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">신한투자증권, 구글클라우드 기반 <b>AI 에이전트 플랫폼</b> 구축·운영 개시</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">네이버페이, 국내 최초 <b>양자내성암호(PQC)</b> 금융 서비스 전면 적용</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">공공 클라우드 <b>N2SF 민감등급 물리적 분리</b> 요건 논란·금융권 망분리 완화 병행</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">프랑스 공공기관 대규모 개인정보 유출, 국내 대학 <b>5년간 278만 명</b> 유출 집계</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금융 AI 리스크·컴플라이언스 콘퍼런스 개최, <b>에이전틱 AI</b> 통제 체계 논의 본격화</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융 클라우드·AI 에이전트 규제 절차 선례 축적으로 캐피탈사 도입 장벽 완화 흐름. 망분리 <b>한시 완화</b> 조치 활용 시 AI 기반 업무 자동화 가속 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">개인정보 유출 사고 빈발로 금융 고객정보 보호 규제 강화 압력 확대. 양자컴퓨터 대비 <b>선수집·후해독형 공격</b> 위협이 장기 보관 금융정보에 직결.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">클라우드·AI 에이전트 도입</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">클라우드·AI 에이전트 도입 지속 및 양자내성암호 전환 시작</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">양자내성암호 전환 완료</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">신한투자증권이 구글클라우드 기반 AI 에이전트 플랫폼을 구축, 장외파생상품 계약서 처리 시간을 건당 <b>2시간→5분</b>으로 단축하고 업무 자동화율 <b>70% 이상</b> 목표 제시. 네이버페이는 얼굴인식 결제 등 전 서비스 데이터 전송 구간에 <b>양자내성암호</b>를 국내 최초 전면 적용, 금융권 보안 기준 선도.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융당국 <b>망분리 한시 완화</b>(총자산 10조 이상·전담 CISO 보유 금융사 대상) 조치 적용 가능 여부 점검 필요. 개인정보 유출 사고 증가에 따른 내부 보안 체계·DLP 솔루션 현행화 점검 시급.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">AI 에이전트 도입 시 <b>증적 관리·거버넌스 체계</b> 사전 설계 필수. 양자내성암호 전환 로드맵 수립 및 기존 암호체계 호환성 사전 점검 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 여신심사·계약서 검토 등 반복 업무 대상 AI 에이전트 PoC 우선순위 도출 및 <b>CSP 안전성 평가·혁신금융서비스 승인</b> 절차 사전 검토. ② 고객 금융정보·생체정보 장기 보관 구간 대상 양자내성암호 적용 필요성 내부 진단 착수.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://zdnet.co.kr/view/?no=20260818151045" target="_blank">→ 구글클라우드, 신한투자증권 차세대 AI 에이전트 플랫폼 구축…금융 AX 박차</a></div>
+  <div class="source-card"><a href="https://www.dt.co.kr/article/12078807?ref=naver" target="_blank">→ 구글클라우드, 신한투자증권 AI에이전트 플랫폼 구축 지원</a></div>
+  <div class="source-card"><a href="https://www.dailian.co.kr/news/view/1679518/?sc=Naver" target="_blank">→ 구글 클라우드 AI로 신한투자증권, 계약서 처리 2시간→5분</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026081879241" target="_blank">→ [단독] 네이버페이, 국내 첫 '양자보안 방벽' 쌓았다</a></div>
+  <div class="source-card"><a href="https://www.econovill.com/news/articleView.html?idxno=748254" target="_blank">→ [공공 클라우드 블로킹 전쟁②] "물리적 분리는 보안 목적 아닌 구현 방법" N2SF 취지와 충돌하나</a></div>
+  <div class="source-card"><a href="https://www.ddaily.co.kr/page/view/2026081811033386215" target="_blank">→ 영화 마이너리티 리포트가 현실이 된다면…금융 AI의 판단, 어디까지 믿을까</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260819001500081?input=1195m" target="_blank">→ 프랑스 공공기관 잇단 해킹에 개인정보 '줄줄'</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/politics/assembly/6262437" target="_blank">→ "학생 정보가 털린다"…대학 개인정보 유출, 5년간 278만명</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/topics/law_firm/2026/08/18/CF6TY3UDVBC4JPFIEDKUFVU3VQ/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ 듀오 개인정보 유출 첫 조정 불발… 1072명 손배소 향방은</a></div>
+
+</div>
