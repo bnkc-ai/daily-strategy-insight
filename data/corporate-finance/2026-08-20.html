@@ -1,0 +1,155 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기업 부실채권 급증·회생 M&A 확대·가계부채 2000조 돌파가 맞물리며 기업금융 건전성 리스크가 전방위로 확대 중</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">4대 은행 <b>고정이하여신</b> 2026년 상반기 말 기준 <b>18.3%</b> 급증, 기업대출 부실 가속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">회생기업 <b>인가 전 M&A</b> 공고 2026년 연간 기준 역대 최고 수준 전망</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">2026년 2분기 말 <b>가계신용 2019조 8000억원</b> 돌파, 국채금리 급등으로 조달비용 상승 압박</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">BNK경남은행, 자동차 부품 중소 협력사 대상 <b>3000억원 규모</b> 상생금융 지원 협약 체결</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">법인회생 신청 전년 대비 증가세 지속, 부실기업 M&A 시장 구조적 확대 흐름</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">회생기업 M&A 시장 확대로 <b>NPL 매입·구조조정 금융</b> 참여 기회 존재. BNK 계열 협약 기반 중소기업 상생금융 확대로 <b>우량 중소기업 여신</b> 선점 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">기업대출 확대 기조 속 <b>부실채권 증가 속도</b>가 대출 증가 속도를 상회하는 구조적 리스크 확대. <b>국채금리 급등</b>→조달비용 상승→여신 건전성 동시 악화 가능성.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">부실채권·조달비용</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">회생 M&A 구조 변화·중소기업 건전성</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">BNK경남은행이 신용보증기금·현대차그룹과 공동으로 자동차 부품 2·3차 협력사 대상 <b>3000억원 규모 공동 프로젝트 보증</b>을 출범시켜, BNK 계열 내 중소기업 금융 지원 역량을 대외적으로 강화하는 행보를 보임.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">기업 여신 포트폴리오 내 <b>고정이하여신 비율</b> 즉시 점검 필요. 국채금리 급등에 따른 <b>조달비용 상승</b>이 기업금융 마진에 미치는 영향 모니터링 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">회생기업 M&A 시장 구조화 흐름에 대응한 <b>부실채권(NPL) 처리 전략</b> 수립 검토. 중소기업 상생금융 협약 모델을 BNK캐피탈 자체 <b>공급망 금융 상품</b>으로 연계 확대 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업 여신 데이터 기반 <b>조기경보 모델</b> 고도화: 대출 증가 속도 대비 연체·부실 전환율 이상 징후 자동 탐지 체계 구축 검토. ② 회생기업 M&A 공고 데이터 정기 수집·분석을 통한 <b>채권 회수 가능성 자동 스크리닝</b> 도구 도입 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.edaily.co.kr/news/newspath.asp?newsid=04929846645548960" target="_blank">→ 4대 은행 부실대출 18% 커졌다…기업대출 건전성 '빨간불'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://biz.heraldcorp.com/article/10845484?ref=naver" target="_blank">→ 회생기업 마지막 희망 M&A…10년새 2배 급증 [회생의 조건 ④]</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kyeonggi.com/article/20260819580388" target="_blank">→ 원마운트, 두 번째 회생 도전 끝 법원 인가…인수·합병 통한 정상화 추진</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12131431" target="_blank">→ 반도체에 가려진 가계부채 경고등 … 국채금리發 연쇄충격 '공포'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20260819_0003754780" target="_blank">→ 경남은행 등 은행권 120억, 현대차그룹 80억 출연</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20260819516615?OutUrl=naver" target="_blank">→ BNK경남은행, 자동차 부품기업에 '3000억 상생금융' 지원</a>
+  </div>
+
+</div>
