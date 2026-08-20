@@ -1,0 +1,140 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.competitor-content+.competitor-content{margin-top:8px;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기업대출 연체율 전년比 상승 지속·PF 제재 리스크 현실화 속, 수해 피해 중소기업 금융지원 정책과 IMA 기업금융 자금 확대가 동시 진행 중</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">2026년 6월 말 은행권 <b>기업대출 연체율 0.68%</b>, 전년 동월比 <b>0.08%p</b> 상승 지속</p></div>
+  <div class="event-card"><p class="event-text">중소기업대출 연체율 <b>0.82%</b>, 전년 동월 0.74% 대비 여전히 높은 수준 유지</p></div>
+  <div class="event-card"><p class="event-text">수해 피해 소상공인·중소기업 대상 <b>대출 만기연장·상환유예</b> 등 정책 금융지원 가동</p></div>
+  <div class="event-card"><p class="event-text">메리츠캐피탈, PF대출 하도급사 <b>연대보증 요구</b>로 금감원 제재심 회부·결론 미도출</p></div>
+  <div class="event-card"><p class="event-text">홈플러스 기업회생 절차 중 <b>폐점 19개 점포 매각→담보권 해제→2030년 담보대출</b> 로드맵 공개</p></div>
+  <div class="event-card"><p class="event-text">대형 증권사 IMA 시장 <b>3조 6,000억원</b> 돌파, 기업금융 자산 운용 경쟁 본격화</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">새마을금고, 2026년 상반기 <b>NPL 3조 4,783억원</b> 매각·21개 금고 합병으로 건전성 관리 가속</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">수해 피해 중소기업 대상 <b>만기연장·긴급경영안정자금</b> 정책 가동으로 단기 여신 수요 유입 가능성 존재. IMA 기반 기업금융 자금 확대로 우량 기업대출·인수금융 자산 경쟁 심화 전, 선별적 딜 소싱 기회 확보 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">기업대출 <b>연체율 전년比 상승 기조</b> 지속으로 캐피탈 기업여신 건전성 악화 리스크 확대 흐름. 메리츠캐피탈 PF 연대보증 제재 사례는 <b>PF 취급 관행 전반</b>에 대한 금감원 감독 강화 신호로 해석 요.</div>
+  </div>
+
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">연체율 상승·수해 지원·PF 제재</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">IMA 경쟁 심화·기업부실 구조화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">메리츠캐피탈, PF대출 취급 시 하도급 전문건설사에 <b>연대보증</b> 요구한 혐의로 금감원 제재심 회부—기관 제재 없이 <b>과징금 부과</b> 방안 논의 중이나 결론 미도출, 향후 제재 수위 확정 시 업계 PF 취급 기준 전반에 파급 예상.</p>
+    <p class="competitor-content" style="margin-top:8px;">새마을금고, 2026년 상반기 <b>NPL 3조 4,783억원</b> 매각·21개 금고 합병 단행—부동산 PF 대손충당금 적립률 <b>130%</b> 상향 부담 속 2028년 흑자전환 목표로 구조조정 가속 중.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">① 수해 피해 중소기업 여신 포트폴리오 내 <b>경남·남부권 익스포저</b> 즉시 점검 및 만기연장·유예 대상 선별 필요. ② 메리츠캐피탈 PF 제재 선례 감안, 당사 PF 취급 계약 내 <b>연대보증 조항 적정성</b> 전수 점검 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">① 기업대출 <b>연체율 상승 기조</b> 지속 시 충당금 적립 부담 증가 대비, 기업여신 심사 기준 강화 및 부실 조기경보 체계 고도화 검토 요. ② IMA 자금의 기업금융 자산 유입 확대로 <b>우량 중소기업 대출 경쟁 심화</b> 예상—차별화된 심사·구조화 역량 확보 전략 수립 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업여신 포트폴리오 내 <b>업종·지역별 연체율 이상 징후 자동 탐지 모델</b> 구축—중소법인·개인사업자 연체 선행지표 기반 조기경보 실효성 제고 검토. ② PF 계약 문서 내 <b>연대보증·책임준공 조항 자동 추출·분류 시스템</b> 도입으로 감독 리스크 사전 식별 체계 마련 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.etoday.co.kr/news/view/2616558" target="_blank">→ 6월 은행 연체율 0.56%로 내려왔지만⋯기업대출 부실 부담 여전</a></div>
+  <div class="source-card"><a href="https://www.khan.co.kr/article/202608202058001" target="_blank">→ [단독]1200억 PF대출 내보내며 하도급사에 연대보증 씌운 메리츠…금감원, 과징금 제재 결론 못내려</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/distribution/channel/2026/08/20/3NLYRX7XBFBRTADFEEYOKC5FJA/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ 폐점 19곳 팔아 메리츠 갚고, 2030년 대출…홈플러스 회생안 보니</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260820108700002?input=1195m" target="_blank">→ 금융위, 수해 가계·중소기업 금융지원…긴급자금·만기연장</a></div>
+  <div class="source-card"><a href="https://www.nocutnews.co.kr/news/6565711?utm_source=naver&utm_medium=article&utm_campaign=20260820061245" target="_blank">→ 금융위, 수해 피해 가계·기업에 대출 만기연장 등 금융 지원</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20260820_0003756002" target="_blank">→ 금융권, 수해 가계·中企에 대출 만기연장 등 금융지원</a></div>
+  <div class="source-card"><a href="https://economist.co.kr/article/view/ecn202608200029" target="_blank">→ IMA, 내놓기 무섭게 완판…한투·NH·미래에셋 '조달 경쟁' 후끈</a></div>
+  <div class="source-card"><a href="https://www.rcast.co.kr/news/articleView.html?idxno=31483" target="_blank">→ 신한은행, 중저신용 고객 위한 '슈퍼SOL중금리대출' 출시 外 (새마을금고 NPL 관련 내용)</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=671418" target="_blank">→ [부동산신탁 진단] 한국토지신탁, 본업 부진 덮은 'M&A'</a></div>
+
+</div>
