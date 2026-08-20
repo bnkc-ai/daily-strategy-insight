@@ -1,0 +1,142 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-content b{color:#A32D2D;}
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">캐피탈 렌탈 한도 규제 완화 논의 본격화 — 장기렌터카 확대 기회와 중소 렌터카 갈등 리스크 동시 부상</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융위, <b>2026년 8월 28일</b> 양대 렌터카 협회·여신금융협회 간담회 개최 예정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">캐피탈 렌탈 자산 한도(리스 잔액 초과 불가) 완화 여부 핵심 쟁점으로 부상</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">전국렌터카연합회는 상생금융 조건부 수용, 한국렌터카사업조합연합회는 반대 지속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 렌탈 한도 완화 시 시장 영향도 분석 병행 검토 중</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">경쟁사 현대커머셜, 디지털 플랫폼 '더 운반' 연계 <b>신차 할부·상용차 담보대출</b> 프로그램 출시</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">중고차 수출 시장, <b>2026년</b> 약 60만대 수준 전망 — 내수·수출 경계 허물어지며 금융 생태계 확장 가능성</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content"><b>렌탈 자산 한도 완화</b> 현실화 시 장기렌터카 취급 확대 여력 확보. 소비자 선호가 리스→렌탈로 이동하는 구조적 흐름 속 선제적 포트폴리오 재편 기회.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">규제 완화 지연 또는 시장 영향도 분석 결과 불리 시 <b>렌탈 취급 확대 차질</b> 리스크. 중소 렌터카 반발 지속 시 상생금융 비용 부담 증가 가능성.</div>
+  </div>
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">간담회 결과·규제 방향</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">한도 완화 시행 후 포트폴리오 재편</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대커머셜, CJ대한통운 디지털 플랫폼 '더 운반'과 제휴해 <b>신차 할부·상용차 담보대출·사업자 신용대출</b> 3종 패키지 출시 — 플랫폼 연계형 상용차 금융 고객 접점 선점 전략 구체화.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>8월 28일 간담회</b> 결과 모니터링 및 BNK캐피탈 렌탈 자산 현황·리스 대비 여유 한도 즉시 점검 요. 상생금융 방안 참여 여부 및 비용 부담 수준 사전 검토 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content"><b>렌탈 한도 완화</b> 확정 시 장기렌터카 취급 확대 전략 및 대형 렌터카사 제휴 파이프라인 구체화 검토. 중고차 수출 시장 성장에 연동한 중고차 금융 상품 다변화 중기 과제로 설정 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 현재 리스·렌탈 자산 비율 데이터 기반으로 한도 완화 시 취급 가능 증분 규모 시뮬레이션 산출 검토. ② 디지털 플랫폼 연계 상용차 금융(현대커머셜 사례) 벤치마킹 — BNK캐피탈 적용 가능 플랫폼 파트너십 후보군 스크리닝 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며,<br>현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/finance/2026/08/21/2026082015035263055" target="_blank">→ 단독 캐피탈 규제 완화, 중소 렌터카에 위기?… 시장영향 분석한다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.tf.co.kr/read/economy/2356026.htm" target="_blank">→ 현대커머셜, CJ대한통운 '더 운반' 차주 금융지원</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.thefirstmedia.net/news/articleView.html?idxno=206394" target="_blank">→ 현대커머셜-CJ대한통운, 화물차주 금융지원 맞손... '더 운반' 연계</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.gokorea.kr/news/articleView.html?idxno=873553" target="_blank">→ 수출 중고차 100만대 시대 열리나…현대화된 플랫폼 구축이 성장 관건</a>
+  </div>
+
+</div>
