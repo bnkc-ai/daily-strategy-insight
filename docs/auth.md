@@ -12,7 +12,7 @@
 
 ## 사용자 흐름
 
-1. 카카오톡 알림톡 링크 클릭 (`.../insight.html?file=data/IT/2026-06-02.html`)
+1. 카카오톡 알림톡 링크 클릭 (`.../insight.html?file=data/A-IT/2026-06-02.html`)
 2. 인증되지 않은 디바이스 → `login.html` 로 자동 이동
 3. PIN `0714` 입력 → 검증 성공 시 원래 URL 로 복귀
 4. 다음부터는 그 디바이스에서 인증 페이지를 건너뜀
@@ -31,7 +31,7 @@ Power Automate 측은 **그대로 두면 됩니다.** 매일 평문 HTML 을 `da
 pip install cryptography
 python tools/encrypt.py --check          # 현재 상태 확인
 python tools/encrypt.py --all            # data/ 전체 암호화
-python tools/encrypt.py data/IT/2026-06-02.html  # 특정 파일만
+python tools/encrypt.py data/A-IT/2026-06-02.html  # 특정 파일만
 ```
 
 비밀번호를 바꾸려면 환경변수로:

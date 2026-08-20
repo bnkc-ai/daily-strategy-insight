@@ -345,7 +345,7 @@ body {
 .snapshot-card[data-cat="corporate-finance"]::before{ background: var(--c-cor); }
 .snapshot-card[data-cat="auto-finance"]::before     { background: var(--c-aut); }
 .snapshot-card[data-cat="AX"]::before               { background: var(--c-ax); }
-.snapshot-card[data-cat="IT"]::before               { background: var(--c-it); }
+.snapshot-card[data-cat="A-IT"]::before               { background: var(--c-it); }
 .snapshot-card-header { margin-bottom: 9px; }
 .snapshot-title {
   font-size: 14px; font-weight: 600; color: var(--text-1);
@@ -453,7 +453,7 @@ body {
 .archive-item[data-cat="corporate-finance"] .archive-item-accent{ background: var(--c-cor); }
 .archive-item[data-cat="auto-finance"] .archive-item-accent     { background: var(--c-aut); }
 .archive-item[data-cat="AX"] .archive-item-accent               { background: var(--c-ax); }
-.archive-item[data-cat="IT"] .archive-item-accent               { background: var(--c-it); }
+.archive-item[data-cat="A-IT"] .archive-item-accent               { background: var(--c-it); }
 .archive-badge-wrap {
   display: flex; align-items: center; justify-content: center;
   padding: 0 12px; min-width: 74px; flex-shrink: 0;
@@ -487,7 +487,7 @@ body {
 .badge-corporate-finance{ background: var(--c-cor-bg); color: var(--c-cor); }
 .badge-auto-finance     { background: var(--c-aut-bg); color: var(--c-aut); }
 .badge-AX               { background: var(--c-ax-bg);  color: var(--c-ax);  }
-.badge-IT               { background: var(--c-it-bg);  color: var(--c-it);  }
+.badge-A-IT               { background: var(--c-it-bg);  color: var(--c-it);  }
 
 /* ── Empty State ── */
 .empty-state {
@@ -613,7 +613,7 @@ body {
 .meta-card[data-cat="corporate-finance"]::before{ background: var(--c-cor); }
 .meta-card[data-cat="auto-finance"]::before     { background: var(--c-aut); }
 .meta-card[data-cat="AX"]::before               { background: var(--c-ax); }
-.meta-card[data-cat="IT"]::before               { background: var(--c-it); }
+.meta-card[data-cat="A-IT"]::before               { background: var(--c-it); }
 .meta-card-head {
   display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; row-gap: 6px;
