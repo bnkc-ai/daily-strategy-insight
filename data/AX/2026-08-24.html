@@ -1,0 +1,146 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">AI 시대 금융 플랫폼 재편과 디지털 위기대응 역량 강화가 동시에 요구되는 전환기 국면</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">카카오, AI 집중을 위해 금융·콘텐츠·모빌리티 분리하는 '카카오 4.0' 인적분할 단행</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">미래에셋, 가상자산거래소 디지털엑스에 <b>1년간 수수료 0원</b> 정책 및 <b>2,000~3,000억 원</b> 추가 증자 추진</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">NH농협은행, 을지연습 통해 <b>핵심업무 3시간 이내 복구</b> 등 BCP 기반 디지털 연속성 점검</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">혁신 중소기업 금융 공백 심화 — 민간 신용공급 위축 시 정책서민금융이 보완적 안전망으로 작동하는 구조 확인</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">카카오·미래에셋 등 빅플레이어의 AI·디지털 플랫폼 재편은 BNK캐피탈의 틈새 고객군(중저신용·혁신중소기업) 공략 여지 확대. 민간 금융의 신용공급 위축 국면에서 <b>정책서민금융 연계 상품</b> 및 기술평가 기반 여신 차별화 기회 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">대형 금융그룹의 <b>디지털 금융 인프라 집중 투자</b>로 플랫폼 경쟁력 격차 확대 리스크. 사이버 위협 지능화에 따른 <b>BCP 미비 시 금융서비스 연속성 훼손</b> 리스크 상존.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">BCP·디지털 보안</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 플랫폼 경쟁 대응, 혁신기업 여신 전략</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사(캐피탈사) 동향은 별도로 확인되지 않았습니다. 다만 미래에셋그룹이 디지털엑스를 <b>스테이블코인·토큰증권(STO)·RWA</b> 아우르는 디지털 금융 인프라로 육성하는 전략을 공식화한 점은 금융업계 전반의 디지털 플랫폼 경쟁 심화 신호로 모니터링 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">① <b>BCP 점검 즉시 착수</b> — 농협은행 사례 참고, 핵심 여신·조달 업무의 사이버 위협 대응 및 복구 절차 현행화 필요. ② 디지털엑스 수수료 0원 정책 등 플랫폼 경쟁 격화에 따른 <b>고객 이탈 모니터링</b> 체계 점검 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">① 카카오·미래에셋의 AI 플랫폼 집중 투자 흐름 대비, BNK캐피탈의 <b>디지털 여신 심사·고객접점 고도화</b> 로드맵 수립 검토. ② 민간 신용공급 위축 구간에서 <b>정책서민금융 연계 대환·보완 상품</b> 설계 전략 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 내부 여신 데이터 기반 <b>중저신용 차주 신용위험 조기경보 모델</b> 고도화 — 경기침체 국면 민간 공급 위축 패턴 학습 적용 검토. ② 카카오·미래에셋 플랫폼 재편 이후 <b>제휴 채널 변화 시나리오 분석</b> — 고객 유입 경로별 영향도 시뮬레이션 실행 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.edaily.co.kr/News/Read?newsId=01669526645550272&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article" target="_blank">→ '100명의 CEO'서 '두 개의 엔진'으로…AI가 바꾼 카카오 4.0 시대</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news1.kr/finance/general-finance/6265659" target="_blank">→ [기고] 금융기본권이 필요한 이유</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hankyung.com/article/202608237288i" target="_blank">→ [단독] "1년간 수수료 0원"…미래에셋, 디지털X에 승부수</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.sportsseoul.com/news/read/1630224?ref=naver" target="_blank">→ NH농협은행, '2026 을지연습' 성료…비상시 금융 서비스 연속성 점검</a>
+  </div>
+
+</div>
