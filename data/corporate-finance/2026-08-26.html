@@ -1,0 +1,144 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">부동산PF '옥석 가리기' 심화·NPL 시장 왜곡·기업 대출 의존 심화로 기업금융 전반의 선별적 리스크 관리가 최우선 과제로 부상.</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">부동산PF, 부실 정리 후 수도권·우량 사업장 중심 <b>선별적 자금 공급</b> 구조로 재편</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">4대 금융지주 부동산 신탁사 <b>고정이하자산 비율 평균 80.38%</b>로 건전성 위기 지속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">국내 기업 금융부채 중 <b>대출 비중 84.7%</b>로 은행·캐피탈 대출 의존 심화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">유암코 NPL 시장점유율 <b>43%→16%</b> 급락, 낙찰가율 하락으로 NPL 시장 왜곡</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">홈플러스 회생 절차 진행 중, 협력 중소기업 연쇄 부실 우려 및 정부 긴급 금융지원 가동</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">은행권 PF·CRE 대출 축소로 <b>대체자본 수요 연간 32조~45조원</b> 규모 발생, BNK캐피탈의 선별적 기업금융 참여 기회 확대. 중소기업의 대출 의존 심화로 캐피탈사 기업대출 수요 지속 유입 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">부동산 신탁사 <b>고정이하자산 80%대</b> 지속, 책임준공 관련 소송 확대로 PF 연계 익스포저 부실화 리스크 존재. 유암코 NPL 매입 위축으로 <b>낙찰가율 하락</b>, 보유 부실채권 매각 시 손실 확대 가능성.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF 건전성·NPL 시장 왜곡</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">대체자본 시장 참여 전략·중소기업 대출 구조 변화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">IBK기업은행은 <b>2026년 연말까지 1,200억 원</b> 규모 장기 연체채권 소각을 단행, 취약차주 5,000여 명의 부실채권을 정리하며 포용금융 강화 및 자산건전성 개선에 나섬. 유암코는 NPL 신규 매입을 사실상 중단하며 시장점유율이 <b>2026년 상반기 기준 16.4%(4위)</b>로 급락, NPL 시장 수급 불균형 및 낙찰가율 하락을 야기하고 있어 캐피탈사의 NPL 매각·보유 전략에 직접 영향.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">① 기존 PF·기업대출 포트폴리오 내 <b>지방·중소 건설사 익스포저</b> 전수 점검 및 충당금 적정성 재검토 필요. ② 유암코 NPL 매입 위축으로 <b>낙찰가율 하락</b> 지속 중, 보유 부실채권 매각 타이밍·가격 전략 재검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">① 은행 공백 이후 <b>CRE 리파이낸싱·선별적 PF 대체자본</b> 역할 검토 필요(담보가치·현금흐름 기준 강화 전제). ② 중소기업 대출 의존 구조 심화에 따라 <b>캐피탈사 기업대출 상품 경쟁력</b> 및 심사 기준 고도화 전략 수립 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업대출 포트폴리오 내 <b>지방 PF·중소 건설사 익스포저</b>를 AI 기반으로 사업성·담보가치 자동 스코어링, 조기경보 고도화 검토. ② NPL 낙찰가율 데이터 모니터링 자동화로 <b>부실채권 매각 최적 시점</b> 탐지 모델 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://theviewers.co.kr/View.aspx?No=4197475" target="_blank">→ [건설의 생존③] 부실 PF는 털었지만…'옥석 가리기' 시작</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260825140300002?input=1195m" target="_blank">→ 부실 비율이 80%…4대 금융 부동산 신탁사들에 무슨 일</a></div>
+  <div class="source-card"><a href="https://www.edaily.co.kr/News/Read?newsId=01374326645551256&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article" target="_blank">→ "돈은 많아도 아무 데나 가지 않는다"…부동산금융 '선별' 시대</a></div>
+  <div class="source-card"><a href="https://economist.co.kr/article/view/ecn202608250066" target="_blank">→ 회사채보다 은행 문 두드리는 기업들…자금조달 85%가 '대출'</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026082522071" target="_blank">→ 부실채권 시장점유율 43%→16%…유암코에 무슨 일이?</a></div>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20083119?ref=naver" target="_blank">→ 기업은행, 1200억규모 장기 연체채권 연내 소각</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20260825_0003762302" target="_blank">→ 정부 "홈플러스가 어떻게되든 지원을 다하겠다"(종합)</a></div>
+
+</div>
