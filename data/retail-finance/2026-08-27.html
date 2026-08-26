@@ -1,0 +1,152 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">가계대출 금리 3개월 연속 상승 속 은행권 자율 규제 완화 재개 — 캐피탈 소매금융의 금리 경쟁력·고신용 역차별 리스크 동시 부상</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">가계대출 금리 <b>3개월 연속 상승</b>, 주담대 <b>2년 8개월 만에 최고</b>(4.48%)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">고정금리 비중 <b>12년 5개월 만에 최저</b>(31.9%) — 변동금리 선호 심화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">고신용자 신용대출 금리 <b>1년 새 0.65%p 상승</b>, 저신용자는 오히려 하락 — 금리 역전 현상</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">NH농협은행, <b>8월 31일부터</b> 대환 주담대·40년 만기·MCG 제한 일괄 해제</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">비금융 데이터 기반 대안신용평가 지정대리인 지정 — <b>중·저신용자</b> 대출 접근성 확대</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">은행권 자율 규제 완화로 대환대출 수요 재유입 — BNK캐피탈 <b>개인신용대출·대환 상품</b> 경쟁력 재점검 기회. 비금융 데이터 기반 대안신용평가 확산 → <b>중·저신용자</b> 여신 포트폴리오 확대 여지 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">시장금리 상승 지속 시 캐피탈 조달비용 동반 상승 → <b>예대금리차 축소</b> 압박 가중. 고신용자 금리 역전 현상 심화 → 우량 차주의 캐피탈 이탈 및 <b>역선택 리스크</b> 확대 우려.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">즉시~3개월</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">3~12개월</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">NH농협은행은 <b>2026년 8월 31일부터</b> 타행 대환 주담대 재개·비수도권 만기 40년 복원·MCG 제한 해제를 일괄 시행 — 은행권 대출 빗장 해제가 캐피탈 개인여신 수요에 직접 영향 가능성 존재.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">은행 대환대출 재개(<b>8월 31일</b>) 이후 캐피탈 개인신용대출 수요 이탈 여부 모니터링 즉시 착수 필요. 변동금리 선호 심화 구간 — BNK캐피탈 <b>변동형 여신 상품</b> 금리 경쟁력 점검 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">고신용자 역차별 구조 고착화 시 <b>중·저신용자 중금리 여신</b> 비중 확대 전략 검토 요. 비금융 데이터 기반 대안신용평가 제도화 흐름 → 자체 <b>대안신용평가 모델</b> 도입 타당성 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 고신용·중신용 구간별 <b>금리 역전 임계점</b> 자동 탐지 모델 구축 — 우량 차주 이탈 조기 경보 활용 검토. ② 비금융 데이터(거래·행동 패턴) 연계 <b>중·저신용자 대안평가 파일럿</b> 설계 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008722799&plink=ORI&cooper=NAVER" target="_blank">→ 가계대출 금리 석 달째 상승…주담대 2년 8개월 만에 최고</a>
+  </div>
+  <div class="source-card">
+    <a href="https://view.asiae.co.kr/article/2026082618505499191" target="_blank">→ NH농협은행, 주담대 규제 추가 완화…대환 주담대·40년 만기 재개</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.nocutnews.co.kr/news/6568748?utm_source=naver&utm_medium=article&utm_campaign=20260826061301" target="_blank">→ NH농협은행, 주담대 빗장 더 푼다…대환대출 재개</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hankyung.com/article/2026082649181" target="_blank">→ [단독] 신용 높을수록 이자 더 낸다…거꾸로 대출 금리에 '울상'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.nocutnews.co.kr/news/6568758?utm_source=naver&utm_medium=article&utm_campaign=20260826063201" target="_blank">→ 네이버의 방문자수·컨텐츠 활용해 신용대출 심사한다</a>
+  </div>
+
+</div>
