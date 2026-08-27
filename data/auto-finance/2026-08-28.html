@@ -1,0 +1,139 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.competitor-content p+p{margin-top:8px;}
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">캐피탈사 장기렌터카 취급한도 규제 완화 논의 본격화 — BNK캐피탈의 렌탈 자산 확대 전략 재점검 필요 시점</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융위, 캐피탈사 렌탈 취급한도 완화 방안 업계 간담회 개최</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">현행 '리스자산 1대1 규제' → 리스+할부 합산 또는 총자산 <b>30%</b> 한도 확대안 거론</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">전업 렌터카업계, 금융사 <b>시장 점유율 44%</b> 주장하며 추가 완화에 강하게 반발</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">공정위, 롯데·SK렌터카 결합 금지 사유로 캐피탈사 경쟁 제약 구조 명시</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">수입차 시장, BMW·테슬라 중심 리스·운용리스 프로모션 경쟁 지속</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">렌탈 취급한도 완화 시 BNK캐피탈의 <b>장기렌터카 자산 확대</b> 여력 확보 가능. 리스 수요 둔화 구간에서 렌탈 중심 포트폴리오 재편 기회로 활용 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">현대·KB·하나캐피탈 등 대형사 대비 렌탈 자산 규모 격차 존재 — 규제 완화 수혜가 <b>대형 경쟁사 집중</b>될 부담 요인. 전업 렌터카업계와의 갈등 장기화 시 상생 조건 부담 가중 우려.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">간담회 결과 → 규정 개정까지 <b>3개월</b> 내 순차 전개 예상</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">규정 개정 → 영업 반영까지 <b>9개월</b> 내 순차 전개 예상</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">
+      <p>현대캐피탈은 과거 렌탈자산이 리스자산에 근접하자 <b>2020년 약 5,400억원</b>의 렌탈자산을 매각한 바 있으며, 이후 렌탈자산을 <b>5조 4,606억원</b>(2024년 9월 말 기준)까지 재확대 — 한도 완화 시 추가 공세 가능성 주시 필요.</p>
+      <p>KB캐피탈 렌탈자산 <b>1조 9,719억원</b>, 하나캐피탈 <b>3조 3,724억원</b>(동기 기준) 보유 — 규제 완화 시 중형 캐피탈사 간 렌탈 자산 확대 경쟁 가속 전망.</p>
+    </div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융위 간담회 결과 및 완화 방식(리스+할부 합산 vs. <b>총자산 30%</b>) 확정 전 BNK캐피탈 현행 렌탈·리스 자산 비율 점검 선행 필요. 완화안 확정 시 추가 렌탈 자산 여력 즉시 산출 및 조달 계획 연계 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">규제 완화 확정 시 <b>장기렌터카 취급 확대</b>를 위한 법인 영업망·차량 공급 채널 정비 전략 수립 검토. 전업 렌터카업계 상생 조건(금리 인하·대차 참여 등)이 구속력 있는 조건으로 부과될 경우 수익성 영향 시뮬레이션 병행 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 현행 BNK캐피탈 리스·렌탈·할부 자산 데이터 기반으로 완화 시나리오별(합산안·총자산 30%안) 추가 취급 가능 한도 자동 산출 모델 구축 검토. ② 경쟁사 렌탈 자산 증가 속도 및 법인 고객 이탈 패턴 모니터링 대시보드 구성 — 규제 변화 대응 타이밍 포착에 활용.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며,<br>현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.pinpointnews.co.kr/news/articleView.html?idxno=481178" target="_blank">→ 캐피탈 렌탈 규제완화 임박…장기렌터카 시장 판도 흔드나</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202608271811199042" target="_blank">→ 수입차 1위 BMW, 최대 800만원 금융 혜택</a>
+  </div>
+
+</div>
