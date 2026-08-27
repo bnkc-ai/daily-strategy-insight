@@ -1,0 +1,160 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기준금리 <b>2회 연속 인상(3.00%)</b>으로 대출금리 상승·가계부채 부담 확대 속, 여전사 중금리대출 총량 전액 제외 인센티브가 BNK캐피탈 소매금융 전략의 핵심 변수로 부상</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">한국은행, 기준금리 <b>2.75% → 3.00%</b>로 2회 연속 인상 단행 (2026년 8월 27일)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">주담대 금리 상단 <b>7.17%</b> 돌파, 연내 <b>8%</b> 진입 가능성 제기</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">가계신용 잔액 <b>2,019조 8,000억 원</b>으로 사상 첫 2,000조 원 돌파 (2026년 6월 말 기준)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 여전사 중금리대출 총량 제외 비율 <b>40% → 100%</b>로 확대 (2026년 8월 이달부터 적용)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">은행권 중저신용자 대출 총량 제외 비율 <b>30% → 70%</b>로 확대, 서민금융 공급 유인 강화</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">보험사 기업대출 연체율 <b>1.21%</b>(전분기 대비 +0.41%p), 부실채권비율 <b>1.62%</b>로 최근 10년 최고 수준 (2026년 6월 말 기준)</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">여전사 중금리대출 총량 <b>전액 제외</b> 인센티브로 BNK캐피탈의 중저신용자 여신 확대 여력 확보. 은행권이 가계대출 총량 관리로 공급을 제한하는 구간에서, 캐피탈사로의 중저신용 수요 이동 가능성 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>기준금리 3.00%</b> 및 추가 인상 가능성으로 조달비용 상승 압력 확대. 변동금리 비중 높은 차주 중심으로 연체율 상승 우려 및 중저신용 포트폴리오 건전성 관리 부담 요인.</div>
+  </div>
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달비용·연체율 즉시 영향</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">중금리대출 포트폴리오 확대 전략 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사(캐피탈사) 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">
+      · 여전사 중금리대출 <b>총량 전액 제외</b> 인센티브 활용 가능 잔여 한도 즉시 점검 필요<br>
+      · <b>기준금리 3.00%</b> 인상 반영한 조달 포트폴리오(단기사채·ABS 등) 비용 재산정 및 여신금리 조정 검토 요<br>
+      · 변동금리 연계 개인신용대출 차주 연체 징후 모니터링 강화
+    </div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">
+      · 추가 금리 인상 시나리오(최대 <b>3.50%</b>) 대비 중저신용 포트폴리오 건전성 스트레스 테스트 검토 요<br>
+      · 은행권 가계대출 공급 제한 장기화 시, 캐피탈 중금리 개인신용대출 상품 경쟁력 강화 전략 재점검<br>
+      · 대부업권 조달비용 상승에 따른 저신용 수요 이탈 가능성 → 캐피탈 흡수 여부 전략적 검토
+    </div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">
+      · 중저신용 차주 행동 데이터(연체 선행지표·상환 패턴) 기반 <b>조기경보 모델</b> 고도화 검토 — 금리 인상기 연체 전이 속도 예측 정확도 제고 목적<br>
+      · 여전사 중금리대출 총량 제외 인센티브 적용 구간 내 <b>최적 한도·금리 조합 시뮬레이션</b> 자동화 — 수익성과 건전성 균형점 도출
+    </div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://daily.hankooki.com/news/articleView.html?idxno=1399949" target="_blank">→ 한국은행, 두 달 연속 기준금리 인상…'물가·집값·가계부채' 선제 대응</a></div>
+  <div class="source-card"><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8648369&ref=A" target="_blank">→ 기준금리 2회 연속 인상…고물가·가계부채에 고삐</a></div>
+  <div class="source-card"><a href="https://www.donga.com/news/Opinion/article/all/20260827/134560028/2" target="_blank">→ [사설]기준금리 이례적 2연속 인상… 2000조 가계부채 비상</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12137752" target="_blank">→ 주담대, 슬슬 다시 푼다지만…금리 오름세에 이자 부담은 어쩌나</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12137972" target="_blank">→ [단독] 서민돈줄 막히지 않게…중저신용자 대출, 총량규제 예외 확대</a></div>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202608271720064594" target="_blank">→ 은행 중금리대출은 30%만 총량 반영..."서민금융 확대"</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026082777141" target="_blank">→ [취재수첩] 대출금리 경쟁 사라진 은행권</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/finance/2026/08/28/2026082715543352452" target="_blank">→ 8% 향하는 주담대, 6% 앞둔 신용대…"대출금리 더 오른다"</a></div>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20084148?ref=naver" target="_blank">→ "3억 대출땐 한달 이자만 200만원"…주담대 금리 연내 8% 돌파 가능성</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260827188400002?input=1195m" target="_blank">→ 상반기 보험사 대출채권 1.9조 증가…기업대출 연체·부실 악화</a></div>
+
+</div>
