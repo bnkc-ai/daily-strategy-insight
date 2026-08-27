@@ -1,0 +1,148 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 AI 전환이 PoC를 넘어 실전 에이전트 운영 단계로 진입하며, <b>망분리 규제 완화</b>와 <b>AML AI 고도화 의무화</b>가 BNK캐피탈의 즉각적 대응을 요구하는 환경으로 전환 중.</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융권 AI 도입이 PoC·파일럿 단계를 넘어 대고객 에이전트 실전 운영 단계로 전환 가속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">망분리 규제 완화 흐름 속 AWS 서울 리전 최신 LLM 지원 확대로 금융사 AI 인프라 구축 여건 개선</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국(FIU), 2026년 하반기부터 비은행 금융사 대상 <b>AML 전담조직 구축 및 AI 탐지기법 도입</b> 강력 유도</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">KB국민은행·KB증권, 망분리 환경 내 에이전틱 AI 실전 적용 사례 공개 — 업권 내 AI 격차 가시화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">현대캐피탈, CEO 주도 전사 AI 전환 마스터플랜 운영 중 — 캐피탈사 간 AX 역량 차별화 시작</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금융데이터 품질·거버넌스가 AI 에이전트 성패의 핵심 전제조건으로 부각</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">망분리 규제 완화 및 AWS 서울 리전 최신 모델 지원 확대로 <b>폐쇄망 내 AI 도입 기술 장벽 완화</b> — BNK캐피탈의 여신심사·AML·고객응대 자동화 추진 여건 마련. AML AI 고도화 의무화 흐름은 컴플라이언스 리스크 선제 대응 시 규제 대응력 차별화 기회로 활용 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">현대캐피탈 등 대형 캐피탈사가 CEO 주도 전사 AX 마스터플랜을 이미 실행 중인 반면, BNK캐피탈의 <b>AI 전환 속도 지연 시 여신심사·고객서비스 경쟁력 격차 확대</b> 우려. 비은행 금융사 AML 전담조직 미비 시 감독당국 제재 가능성 및 평판 부담 요인 존재.</div>
+  </div>
+
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">AML 고도화 TF 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">전사 AX 로드맵 수립 및 데이터 거버넌스 구축</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대캐피탈은 2026년 초부터 사장 포함 전 비즈니스 리더가 참여하는 <b>월간 AI 전용 미팅</b>을 운영하며 다년간 AX 마스터플랜을 톱다운 방식으로 실행 중이며, 해커톤 결과물 대부분을 사업계획에 반영하는 등 전사 AI 내재화 단계로 진입한 것으로 확인됨.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">① <b>AML 전담조직 현황 점검</b> 및 보고책임자 직급·겸직 여부 즉시 확인 필요 — FIU 2026년 하반기 AML 고도화 TF 가이드라인 적용 전 선제 대응 요. ② 망분리 규제 완화 범위 내 AI 도입 가능 업무 영역(여신심사 보조·고객응대 챗봇 등) 파악 및 내부 검토 착수 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">① 전사 <b>AI 레디 데이터</b> 기반 구축 검토 — 부서 간 데이터 정의 통일·메타데이터 정비가 에이전트 도입의 전제조건으로 부각된 만큼 데이터 거버넌스 로드맵 수립 검토 요. ② CEO 주도 AX 추진 체계 마련 검토 — 경영진 톱다운 없이 IT 부서 단독 추진 시 전사 확산 한계 존재, 추진 거버넌스 재점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① <b>AML 의심거래 탐지 룰 고도화</b>: 현행 탐지 로직의 AI 적용 가능 영역 식별 후 단계별 고도화 계획 수립 — FIU 공동 STR 룰 개발 참여 여부 검토. ② <b>여신심사 AI 보조 파일럿</b>: KB증권 MCP 허브 사례를 참고해 망분리 환경 내 LLM 기반 심사 보조 도구 도입 가능성 및 혁신금융서비스 지정 요건 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="http://www.inews24.com/view/1999113" target="_blank">→ AWS "앤트로픽 모델 추론, 최신 버전까지 확대"...금융권 AX 공략 강화</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260827134800017?input=1195m" target="_blank">→ 한국 금융 AI, PoC 넘어 실전으로…AWS·앤트로픽 "AX 전환"</a></div>
+  <div class="source-card"><a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=696153" target="_blank">→ "금융권, 테스트 넘어 실전 AX 확산...DX보다 경영진 관심 훨씬 높아"</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20260827_0003764876" target="_blank">→ 금융권 자금세탁방지에 AI 확대…하반기 'AML 고도화 TF' 신설</a></div>
+  <div class="source-card"><a href="https://www.ddaily.co.kr/page/view/2026082715261077154" target="_blank">→ "망분리, AI 확장의 벽 아니다"…KB증권·국민은행이 보여준 실전 해법은?</a></div>
+  <div class="source-card"><a href="https://www.itdaily.kr/news/articleView.html?idxno=241257" target="_blank">→ "망분리 장벽 넘은 생성형 AI"…KB금융의 실전 모델</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=672024" target="_blank">→ KB국민은행, 스노우플레이크 만나 데이터 구조부터 다시 짰다</a></div>
+  <div class="source-card"><a href="https://www.dt.co.kr/article/12080662?ref=naver" target="_blank">→ 금융권 외주 IT 관리 촘촘해지는데… 가상자산은 '자율규제' 제자리</a></div>
+
+</div>
