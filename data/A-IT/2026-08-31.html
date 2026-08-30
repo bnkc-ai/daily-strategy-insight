@@ -1,0 +1,132 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">AI 에이전트·보안·개인정보 규제 논의가 동시 가속화되며, 금융권 IT 리스크 관리와 AX 거버넌스 체계 정비 필요성이 부각되는 국면</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">API 취약점 통한 개인정보 유출 사고 반복 확인</p></div>
+  <div class="event-card"><p class="event-text">AI 에이전트의 이해상충·충실의무 법제화 논의 본격화</p></div>
+  <div class="event-card"><p class="event-text">공공·금융 AX 확산에 보안기준 부재 우려 제기</p></div>
+  <div class="event-card"><p class="event-text">정부 AI 수석 지명으로 금융 AX·개인정보 규제 정책화 예고</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">AI 인프라 순환금융 구조의 시스템 리스크 경고음 등장</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">AI 에이전트 기반 여신심사·고객상담 자동화 도입 시, <b>충실의무 설계 선제 반영</b>으로 규제 대응 우위 확보 가능. 금융 AX 규제 정비 과정에서 컴플라이언스 선도 기관으로 포지셔닝 기회 존재</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>API 연동 구간 개인정보 유출</b> 부담 요인 확대 흐름. AI 에이전트 도입 시 이해상충·데이터 남용 관련 법적 책임 귀속 리스크 존재. AI 인프라 순환금융 구조 불안정 시 IT 조달·클라우드 비용 변동 가능성</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">API 보안·개인정보 점검</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 에이전트 거버넌스·금융 AX 규제 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">신한은행은 대학생 홍보대사 활동을 <b>금융 AX 고객 체감도 점검</b> 채널로 활용하며 청년층 디지털 접점 확대 전략을 병행 추진 중. 금융권 전반의 AX 거버넌스 논의가 정책 수준으로 격상되는 흐름 속 경쟁사 대응 동향 지속 모니터링 필요.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>API 연동 구간 보안 취약점</b> 전수 점검 필요. 고객 개인정보 처리 시스템의 비정상 접근 탐지 체계 작동 여부 확인 요. 이해민 AI수석 지명으로 <b>금융 AX·개인정보 규제</b> 정책화 가속 예상, 대응 준비 착수 검토</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">AI 에이전트 도입 시 <b>이용자 충실의무·이해상충 공시</b> 기준 내재화 필요. 공공·금융 AX 보안기준 법제화 동향 주시, 내부 AI 운영 보안체계(권한관리·행위통제) 정비 검토 요. AI 인프라 조달 관련 <b>GPU·클라우드 잔존가치 리스크</b> 모니터링 강화</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 사내 API 연동 구간 대상 개인정보 접근 로그 이상탐지 자동화 모델 적용 가능성 검토. ② AI 에이전트 여신 추천·심사 도입 시 추천 근거 기록·보존 및 이해상충 감사 프로세스 설계 선행 검토</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12139978" target="_blank">→ 29CM도 뚫렸다...쇼핑 고객 정보 15만9천건 외부 유출</a></div>
+  <div class="source-card"><a href="https://zdnet.co.kr/view/?no=20260830204115" target="_blank">→ "공공AX 확산, 공통 보안기준 없으면 위험"</a></div>
+  <div class="source-card"><a href="https://www.edaily.co.kr/News/Read?newsId=01941766645552568&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article" target="_blank">→ 이해민 AI수석 "AI 큰 그림 넘어 금융·개인정보 규칙 만들겠다"</a></div>
+  <div class="source-card"><a href="https://www.etnews.com/20260828000181" target="_blank">→ [ET시론]나를 대신하는 AI는 누구 편인가: AI 에이전트 충실의무</a></div>
+  <div class="source-card"><a href="https://it.chosun.com/news/articleView.html?idxno=2023092169036" target="_blank">→ [데스크칼럼] 엔비디아 순환금융 실험의 결말</a></div>
+
+</div>
