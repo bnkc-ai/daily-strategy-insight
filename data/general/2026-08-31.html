@@ -1,0 +1,146 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">한은 기준금리 연속 인상으로 조달 비용 부담이 확대되는 가운데, 경기 불확실성과 소비자보호 규제 강화가 캐피탈 영업 환경 전반에 복합적 압력으로 작용 중</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">한은, <b>2연속 기준금리 인상</b>으로 연 3.00% 도달 — 추가 인상 가능성 시사</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">코픽스 <b>4개월 연속 상승</b>, 주담대 금리 상단 연 8% 근접 흐름</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">중동 전쟁발 유가 <b>전쟁 전 대비 약 20% 고공 유지</b> — 물류·식량 비용 전이로 실물 경기 압박</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금융당국, 고난도 금융상품 심의 시 <b>제조사 참여 의무화</b> 등 소비자보호 규제 강화 추진</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금리 상승기 변동금리 상품 운용 시 <b>이자 마진 개선</b> 가능성 존재. 은행권 대출 문턱 상승에 따른 캐피탈 대안 수요 유입 기대.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>회사채·ABS 등 조달 비용 상승</b>으로 순이자마진 압박 확대 우려. 취약 차주 연체율 상승 및 자산건전성 악화 가능성 병존.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달 비용 상승 및 취약 차주 연체율 변화 등 단기 영향 집중 모니터링 필요</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">추가 금리 인상 및 유가·물가 부담 지속에 따른 여신 전략 재점검 및 자산건전성 관리 필요</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>조달 포트폴리오 듀레이션</b> 점검 및 단기 차환 리스크 모니터링 강화 필요. 취약 차주 연체 선행지표 주시 — 연체율 임계 구간 사전 설정 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">추가 금리 인상 시나리오 반영한 <b>조달 비용 시뮬레이션</b> 및 여신 금리 전략 재점검 필요. 유가·물가 부담 장기화에 따른 소비자 상환 여력 저하 대비, 여신 심사 기준 재검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 금리 인상 국면 취약 차주 조기 경보 모델 고도화 — 연체 전이 패턴 기반 <b>선제 관리 대상군 자동 분류</b> 검토. ② 조달 비용 변동 시나리오별 NIM 영향 자동 산출 체계 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.nocutnews.co.kr/news/6570290?utm_source=naver&utm_medium=article&utm_campaign=20260831070102" target="_blank">→ 기준금리 인상에 주담대 8%까지?…이자부담 무거워진다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/PYH20260830044400013?input=1196m" target="_blank">→ 기준금리 연속 인상에 주택 거래 위축 전망</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.tokenpost.kr/news/economy/400746" target="_blank">→ 이란전 6개월, 침체 피했지만 유가 20% 높다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12139722" target="_blank">→ "이제 만드는 쪽도 책임져야"…은행 고위험상품 심의, 제조사 참여 의무화</a>
+  </div>
+
+</div>
