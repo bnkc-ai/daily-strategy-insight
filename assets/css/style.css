@@ -28,7 +28,6 @@
   --c-ret:  #6D28D9; --c-ret-bg:  #EDE9FD;
   --c-cor:  #047857; --c-cor-bg:  #ECFDF5;
   --c-aut:  #B45309; --c-aut-bg:  #FEF3C7;
-  --c-ax:   #0369A1; --c-ax-bg:   #E0F2FE;
   --c-it:   #B91C1C; --c-it-bg:   #FEE2E2;
 
   --r-sm:  10px;
@@ -344,7 +343,6 @@ body {
 .snapshot-card[data-cat="retail-finance"]::before   { background: var(--c-ret); }
 .snapshot-card[data-cat="corporate-finance"]::before{ background: var(--c-cor); }
 .snapshot-card[data-cat="auto-finance"]::before     { background: var(--c-aut); }
-.snapshot-card[data-cat="AX"]::before               { background: var(--c-ax); }
 .snapshot-card[data-cat="A-IT"]::before               { background: var(--c-it); }
 .snapshot-card-header { margin-bottom: 9px; }
 .snapshot-title {
@@ -452,7 +450,6 @@ body {
 .archive-item[data-cat="retail-finance"] .archive-item-accent   { background: var(--c-ret); }
 .archive-item[data-cat="corporate-finance"] .archive-item-accent{ background: var(--c-cor); }
 .archive-item[data-cat="auto-finance"] .archive-item-accent     { background: var(--c-aut); }
-.archive-item[data-cat="AX"] .archive-item-accent               { background: var(--c-ax); }
 .archive-item[data-cat="A-IT"] .archive-item-accent               { background: var(--c-it); }
 .archive-badge-wrap {
   display: flex; align-items: center; justify-content: center;
@@ -486,7 +483,6 @@ body {
 .badge-retail-finance   { background: var(--c-ret-bg); color: var(--c-ret); }
 .badge-corporate-finance{ background: var(--c-cor-bg); color: var(--c-cor); }
 .badge-auto-finance     { background: var(--c-aut-bg); color: var(--c-aut); }
-.badge-AX               { background: var(--c-ax-bg);  color: var(--c-ax);  }
 .badge-A-IT               { background: var(--c-it-bg);  color: var(--c-it);  }
 
 /* ── Empty State ── */
@@ -612,7 +608,6 @@ body {
 .meta-card[data-cat="retail-finance"]::before   { background: var(--c-ret); }
 .meta-card[data-cat="corporate-finance"]::before{ background: var(--c-cor); }
 .meta-card[data-cat="auto-finance"]::before     { background: var(--c-aut); }
-.meta-card[data-cat="AX"]::before               { background: var(--c-ax); }
 .meta-card[data-cat="A-IT"]::before               { background: var(--c-it); }
 .meta-card-head {
   display: flex; align-items: center; justify-content: space-between;
