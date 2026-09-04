@@ -1,6 +1,12 @@
 /* 뉴스 전략 인사이트 플랫폼 — app.js */
 let allInsights = [];
 
+const CATEGORY_ORDER = ['general', 'auto-finance', 'retail-finance', 'corporate-finance', 'A-IT'];
+function categoryRank(cat) {
+  const i = CATEGORY_ORDER.indexOf(cat);
+  return i === -1 ? 999 : i;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setCurrentDate();
   if (document.getElementById('snapshot-grid')) {
@@ -29,7 +35,7 @@ async function loadInsights() {
 
     data.sort((a, b) => {
       if (a.date !== b.date) return b.date.localeCompare(a.date);
-      return (b.time || '').localeCompare(a.time || '');
+      return categoryRank(a.category) - categoryRank(b.category);
     });
 
     allInsights = data;
