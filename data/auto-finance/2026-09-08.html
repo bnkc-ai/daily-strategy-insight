@@ -1,0 +1,158 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">자동차금융 시장 <b>40조 원</b> 돌파와 플랫폼 중개 확산 속, 조달 구조 다변화 및 유통 채널 전략 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">자동차 할부·리스 신규 취급액, 사상 첫 <b>40조 원</b> 돌파 (전년 대비 할부 <b>8.1%</b>↑, 리스 <b>11.7%</b>↑)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">여전법 시행령 개정으로 여전사의 타사 리스·할부 중개 법적 근거 마련, 그러나 여전사 실질 참여는 제한적</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">자동차금융 비교·중개 시장을 플랫폼(차즘 등)이 선점, 수요 흡수 가속화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">롯데오토리스, <b>300억 원</b> 회사채 수요예측에서 모집액 대비 <b>5.5배</b> 초과 수요 확보 (CP→회사채 차환으로 만기 장기화)</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">JB우리캐피탈, 인도네시아 현지 여신사 인수 최종 승인 후 <b>EV금융</b> 본격 진출 예고</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">자동차금융 시장 자체가 <b>40조 원</b> 규모로 확대되며 할부·리스 취급 여력 증가 흐름. 여전법 시행령 개정으로 중개·주선 겸영 근거가 마련된 만큼, 직접 취급 경쟁력 강화와 병행한 채널 다각화 검토 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">플랫폼 중심의 비교·중개 시장 선점이 가속화되며 금리 경쟁력이 상대적으로 낮은 캐피탈사의 고객 접점 약화 부담 요인. 도요타의 리스·구독 중심 밸류체인 수익 전환 전략은 완성차사의 자체 금융 내재화 가능성을 시사, 신차금융 고객 유입 구조 변화 모니터링 필요.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">플랫폼 채널 경쟁 심화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">완성차사 금융 내재화, EV금융 경쟁 확대</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">롯데오토리스, <b>300억 원</b> 공모 회사채 수요예측에서 <b>1,650억 원</b> 응찰 확보 — 모회사 롯데렌탈 지급보증 구조로 <b>A+</b> 등급 유지, CP를 회사채로 차환해 조달 만기 장기화 전략 실행.</div>
+  </div>
+  <div class="competitor-card" style="margin-bottom:16px;">
+    <div class="competitor-content">JB우리캐피탈, 인도네시아 현지 여신사(<b>KB부코핀파이낸스</b>) 인수 최종 승인 완료 — 자동차금융·신용평가 역량을 결합한 현지 <b>EV금융</b>(전기 자전거 대상) 진출 본격화 예고.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">차즘 등 자동차금융 비교·중개 플랫폼의 고객 접점 선점 가속화에 따른 자사 직접 채널 경쟁력 점검 필요. 여전법 시행령 개정(타사 리스·할부 중개 허용) 이후 시장 반응 및 플랫폼과의 제휴 가능성 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">도요타의 리스·구독 기반 밸류체인 수익 전환 전략이 국내 신차금융 고객 유입 구조에 미치는 영향 모니터링 강화. JB우리캐피탈의 해외 EV금융 진출 사례를 참고해 자사 EV금융 상품 및 잔가 관리 전략 재점검 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 자동차금융 비교·중개 플랫폼 유입 고객 데이터를 활용한 금리·상품 경쟁력 자동 모니터링 체계 구축 검토. ② 할부·리스 취급 데이터 기반으로 차종별·고객군별 잔존가치 예측 모델 고도화 방향 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/finance/2026/09/08/2026090720001926868" target="_blank">→ '車금융 40조' 중개시장 활짝, 물꼬 튼 여전사는 주춤?</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.edaily.co.kr/News/Read?newsId=03854006645577824&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article" target="_blank">→ [마켓인]롯데오토리스, 회사채 수요예측에 목표액 5배 주문</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.sedaily.com/article/20088120?ref=naver" target="_blank">→ 롯데오토리스, 300억 회사채 수요예측 '흥행'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.einfomax.co.kr/news/articleView.html?idxno=4433786" target="_blank">→ 롯데오토리스, 300억 회사채 수요예측에 1천650억 참여…두자릿수 오버</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news1.kr/local/jeonbuk/6282628" target="_blank">→ JB금융, 인니 금융감독청서 KB부코핀파이낸스 인수 최종 승인</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12146092" target="_blank">→ 1년에 자동차 1000만대 파는 도요타…신차 판매 올인 안하겠단 이유는</a>
+  </div>
+
+</div>
