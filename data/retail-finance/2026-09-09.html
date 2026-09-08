@@ -1,0 +1,144 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기준금리 인상·대출규제 강화로 가계 이자 부담 및 주담대 연체 확대 흐름 → 소매금융 여신 건전성·상품 경쟁력 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">기준금리 <b>0.5%p 인상</b> 시 가계 연간 이자 부담 <b>6조 5천억원</b> 증가 추산 (2026년 1분기 말 가계대출 잔액 기준)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">대출규제 강화·금리 상승으로 <b>9월 전국 분양전망지수 86.3</b>으로 전월 대비 6.9p 하락, 미분양 증가 전망 확대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">전북은행 주담대 연체율, <b>2026년 상반기 내 0.19% → 0.95%</b>로 5배 급등 (집단대출 부실 신호 가능성)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">인터넷은행 3사, 가계대출 규제 우회로 개인사업자대출 시장 집중 공략 — <b>최근 1년 취급액 약 2조 8천억원 증가</b> (5대 시중은행의 2배)</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">카카오뱅크, 마스턴캐피탈 인수 추진 및 자동차금융 비교 서비스 출시로 비은행 여신·종합 금융 플랫폼 확장 가속</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">대출규제 강화로 시중은행 가계대출 여력 축소 → 캐피탈사 <b>개인신용대출·소비자금융</b> 수요 유입 가능성 존재. 대환대출 수요(신생아 특례 등 정책자금 연계) 증가로 틈새 상품 설계 검토 여지 확대.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">기준금리 연속 인상으로 <b>중·저신용 차주 이자 부담</b> 집중 확대, 연체율 상승 부담 요인 증가. 인터넷은행·카카오뱅크 등 플랫폼 기반 경쟁자의 개인사업자·자동차금융 영역 진입으로 소매금융 고객접점 경쟁 심화.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">연체율·건전성 영향 — 기준금리 인상에 따른 중·저신용 차주 이자 부담 증가 및 주담대 연체율 상승 가시화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">플랫폼 경쟁 심화·상품 재편 — 카카오뱅크 등 인터넷은행의 비은행 여신 확장 본격화에 따른 소매금융 경쟁 구도 변화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">카카오뱅크가 마스턴캐피탈 지분 100% 인수(금융위 승인 대기 중)와 함께 자동차금융 비교 서비스를 출시, 할부금융·리스·기업금융 등 비은행 여신 전 영역으로 확장 전략을 공식화함 — 소매금융 고객접점 및 중개 플랫폼 경쟁 강도 상승 주시 필요. 인터넷은행 3사(카카오뱅크·케이뱅크·토스뱅크)는 가계대출 규제 우회 목적으로 개인사업자 신용·담보대출을 집중 확대 중이며, 소상공인 특화 신용평가(SCB) 시범 운영 참여를 통해 심사 고도화 추진 중.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>중·저신용 차주</b> 연체율 동향 모니터링 강화 및 기존 소매여신 포트폴리오 건전성 점검 필요. 집단대출·잔금대출 관련 사업장별 담보가치·분양률 점검 관리 포인트 확인 요. 대출규제 강화에 따른 <b>대환대출·정책자금 연계 수요</b> 유입 여부 단기 모니터링 검토.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">카카오뱅크의 비은행 여신 플랫폼 확장(마스턴캐피탈 인수 완료 시) 이후 <b>자동차금융·개인신용대출 고객접점</b> 경쟁 심화 대비 상품·채널 전략 재점검 필요. 인터넷은행의 개인사업자대출 확대 흐름이 캐피탈 소매금융 수요에 미치는 영향 분기별 추적 검토.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기준금리 인상 시나리오별(0.5%p / 1.0%p) 소매여신 차주 <b>이자 부담 증가 및 연체 전이율</b> 시뮬레이션 모델 구축 검토. ② 플랫폼 기반 경쟁사(카카오뱅크 등)의 자동차금융·개인신용대출 금리·조건 데이터를 정기 수집·비교하는 <b>경쟁상품 모니터링 자동화</b> 체계 도입 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260908155700002?input=1195m" target="_blank">→ '긴축의 무게' 금리 0.5%p 오르면 가계 이자 연 6.5조원↑</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20260908_0003780748" target="_blank">→ 9월 분양전망지수 86.3으로 하락…대출 규제·금리 여파</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/real_estate/real_estate_general/2026/09/08/NLBIMUQX4RGWJHUFV46OMINNBE/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ 대출 규제·금리 상승에 9월 아파트 분양 시장 먹구름</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20260908_0003781105" target="_blank">→ "전세 가뭄에 등 떠밀려 '생존 매수'"…대출 묶인 무주택자 '틈새 전략'은?</a></div>
+  <div class="source-card"><a href="https://www.ajunews.com/view/20260908141543650" target="_blank">→ 전북銀 주담대 연체율 반년 새 5배…집단대출 확대 '복병' 되나</a></div>
+  <div class="source-card"><a href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202609080372&t=NNv" target="_blank">→ "사장님 대출은 여기로"…인뱅 3사, 5대 은행 넘었다</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/finance/general-finance/6283811" target="_blank">→ 카카오뱅크, 주담대·신용대출 이어 車금융 비교…비이자수익 '드라이브'</a></div>
+
+</div>
