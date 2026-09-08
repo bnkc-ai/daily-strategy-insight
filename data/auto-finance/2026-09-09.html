@@ -1,0 +1,150 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.competitor-content p+p{margin-top:8px;}
+
+.impact-row{display:flex;flex-direction:column;border-radius:10px;overflow:hidden;margin-bottom:8px;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">카카오뱅크의 자동차 금융 비교 플랫폼 출시 및 캐피탈사 인수 추진으로 오토론·할부·렌트 전 영역에서 플랫폼 경쟁 구도 본격화 → 자동차금융 고객접점 전략 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">카카오뱅크, <b>70여개 제휴 금융사</b>의 오토론·중고차 할부·신용대출을 앱 내 일괄 비교하는 '자동차 금융 비교 서비스' 출시</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">장기렌트는 <b>현대캐피탈</b> 단독 제휴로 연결, 신차 할부·캐시백 비교까지 자동차 구매 전 과정을 플랫폼 내 통합</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">카카오뱅크, <b>마스턴캐피탈 지분 100% 인수</b>(금융위 승인 대기) → 자동차금융·리스·렌탈 직접 공급 기반 구축 예고</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">카카오T 등 그룹 계열 서비스와 금융 결합 확장 가능성 시장에서 주목</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">카카오뱅크 비교 플랫폼에 <b>제휴 금융사</b>로 참여 시 2,000만 MAU 고객 접점 활용 가능. 플랫폼 중개 채널을 통한 오토론·할부 신규 유입 확대 검토 여지 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">카카오뱅크의 <b>캐피탈사 직접 인수</b> 완료 시 비교 플랫폼이 자사 상품 우선 노출 구조로 전환될 가능성 존재. 장기렌트 제휴가 현대캐피탈 단독으로 구성된 점은 타 캐피탈사의 플랫폼 내 렌터카 접점 축소 부담 요인.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">비교 플랫폼 제휴 참여 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">마스턴캐피탈 인수 승인 후 경쟁 구도 변화 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">
+      <p>카카오뱅크가 <b>마스턴캐피탈 지분 100%를 241억원에 인수</b>하기로 결정(금융위 승인 대기 중)하며 자동차 할부금융 시장 직접 진출을 선언, 오토론·리스·렌탈 전 영역에서 플랫폼 기반 경쟁 본격화 예고.</p>
+      <p><b>현대캐피탈</b>은 카카오뱅크 자동차 금융 비교 서비스 내 장기렌트 단독 제휴사로 참여, 플랫폼 고객 접점을 선점하는 전략적 포지셔닝 확보.</p>
+    </div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">카카오뱅크 '자동차 금융 비교' 내 <b>제휴 금융사 참여 가능성</b> 검토 필요. 현재 70여개 제휴사 구성에서 BNK캐피탈 포함 여부 및 조건 확인 요. 플랫폼 채널 의존 심화 시 금리 경쟁력·조건 노출 방식 관리 포인트 점검 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">마스턴캐피탈 인수 완료 후 카카오뱅크의 <b>자동차금융 직접 공급 체계</b> 구축 시 플랫폼 내 경쟁 구도 변화 모니터링 강화 필요. 카카오T 연계 자동차 금융 생태계 확장 시나리오 대비, 독자 디지털 고객접점 채널 전략 재점검 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 카카오뱅크 비교 플랫폼 유입 고객의 금리·조건 민감도 분석을 통해 <b>오토론·할부 상품 경쟁력</b> 자가 진단 모델 구축 검토. ② 플랫폼 중개 채널별 취급액·전환율 데이터 분석으로 채널 다각화 우선순위 도출 검토 요.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.bloter.net/news/articleView.html?idxno=673070" target="_blank">→ 카카오뱅크, 車금융·주식까지 품었다…플랫폼 확장 지도 보니</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news1.kr/finance/general-finance/6283811" target="_blank">→ 카카오뱅크, 주담대·신용대출 이어 車금융 비교…비이자수익 '드라이브'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202609081426046596" target="_blank">→ 카카오뱅크, 자동차 금융 비교 서비스 출시 "플랫폼 경쟁력 강화"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.digitaltoday.co.kr/news/articleView.html?idxno=698969" target="_blank">→ 카카오뱅크, 자동차 금융 비교 서비스 출시…70여개 금융사 대출·할부 비교</a>
+  </div>
+
+</div>
