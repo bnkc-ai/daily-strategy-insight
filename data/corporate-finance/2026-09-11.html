@@ -1,0 +1,143 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">부동산 PF 정책 지원 확대·기업 신용 양극화 심화 속, 기업금융 여건 변화에 따른 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 수도권 <b>325개 PF 사업장</b> 밀착 관리 및 공적보증 목표 <b>6조→9조원</b>으로 확대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">BBB급 회사채 발행액, 2026년 상반기 기준 전년 동기 대비 <b>61% 급감</b>…저신용 기업 자금조달 위축 심화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">AI 인프라 CAPEX의 외부자금 의존도 급증, 금융시장 경색 시 기업 신용 위험 연쇄 확대 가능성 부각</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">부동산 PF 익스포저, 2023년 말 <b>231조원</b>에서 2026년 3월 말 <b>169조원</b>으로 축소되었으나 2금융권 연체율 부담 잔존</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">코스닥 상장폐지 기준 강화 추진으로 중소·벤처기업 자금조달 창구 위축 우려 제기</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">정부의 PF 공적보증 확대 및 브릿지론 금리 지원(연 <b>6~7%</b> 앵커리츠) 정책으로, 정상 PF 사업장 대상 기업금융 참여 여건 개선 흐름. 민간 금융권의 PF 한도 확대 기조에 맞춰 캐피탈사 기업금융 포지셔닝 점검 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>BBB급 회사채 발행 61% 급감</b> 등 저신용 기업 자금조달 위축이 기업 부실 확대로 이어질 수 있는 흐름. AI 인프라 외부자금 의존도 확대에 따른 글로벌 신용 위험 전이 가능성도 모니터링 대상.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF 보증 집행 속도·저신용 기업 연체 동향</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">기업 신용 양극화 심화 및 코스닥 제도 개편 영향</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">KB국민은행, 2026년 중 약 <b>4조원</b> 규모 PF 대출 취급 및 내부한도 대폭 확대 계획을 공식화하며 정상 PF 사업장 지원 강화 기조 선명히 함. 은행권 중심의 PF 자금 공급 확대가 캐피탈사의 기업금융 포지션에 미치는 영향 점검 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">수도권 <b>325개 PF 사업장</b> 밀착 관리 기조 하에 정상 사업장 선별 참여 가능성 점검 필요. 동시에 <b>BBB급 이하</b> 기업여신 포트폴리오 내 연체·부실 징후 모니터링 강화 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">기업 신용 <b>K자형 양극화</b> 심화에 따라 업종별 여신 심사 기준 차별화 전략 검토 요. 코스닥 상장폐지 기준 강화 추진 시 중소기업 여신 포트폴리오 건전성 영향 선제 점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업여신 포트폴리오 내 신용등급별(BBB급 이하) 업종 분포 및 만기 집중 구간 분석 → 하반기 만기 도래 리스크 사전 파악. ② PF 사업장 공적보증 수혜 여부·분양률 데이터 연계 모니터링 체계 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202609101139503506" target="_blank">→ '주택 신속 공급' 이억원 금융위원장 "부동산 프로젝트 파이낸싱 밀착 지원"</a></div>
+  <div class="source-card"><a href="https://www.ddaily.co.kr/page/view/2026091018031601978" target="_blank">→ "김포 2700세대 PF 자금 푼다"…주금공 6000억 보증, 금융권도 지원 확대</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026091073841" target="_blank">→ [데스크 칼럼] '닥공'의 열쇠, 부동산 금융이다</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260910146900008?input=1195m" target="_blank">→ "AI 메모리 호황에도 '자금조달 병목'이 새로운 리스크"</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12149504" target="_blank">→ "AI 투자, 올해가 정점"…한은, 빅테크 빚투에 '경고'</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/202609106799i" target="_blank">→ "정상 기업도 퇴출될라"…이소영, 코스닥 상폐 강화에 '제동'</a></div>
+
+</div>
