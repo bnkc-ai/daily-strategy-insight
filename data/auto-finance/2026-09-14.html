@@ -1,0 +1,137 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">자동차 리스·할부금융 관련 사기 수법 확산 및 카드사의 자동차할부금융 확대 전략 → 오토금융 상품 운영 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">정책자금 사칭 방식의 차량 리스·할부 사기 피해, <b>59건·약 28억 6천만 원</b> 규모로 확인</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">신차 계약형·리스 계약형·중고차 대출형·재렌탈형 등 <b>4가지 수법</b>으로 피해 유형 다양화</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">KB국민카드, 부실 정리 후 <b>자동차 할부금융 확대</b>를 성장축으로 명시하며 오토금융 시장 진입 가속</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">리스·할부 사기 사건으로 업계 전반의 <b>여신심사 강화</b> 분위기 형성 → 정상 심사 기반의 오토금융 상품 신뢰도 제고 여건 조성. 카드사의 오토금융 진입 확대에 대응한 캐피탈사 고유 상품 경쟁력 재점검 기회.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">피해자 명의 법인·차량 금융계약 악용 수법이 전국 단위로 확산되는 흐름으로, <b>리스·할부 계약 심사 프로세스</b> 내 허점 노출 가능성 존재. KB국민카드 등 카드사의 자동차할부금융 확대로 <b>오토금융 시장 경쟁 심화</b> 부담 요인 확대.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">사기 수법 대응 점검</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">카드사 오토금융 경쟁 심화 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">KB국민카드가 건전성 개선 이후 <b>자동차 할부금융 확대</b>를 명시적 성장 전략으로 채택, KB Pay 플랫폼 내 자동차 서비스 연계 범위도 확장 예정으로 오토금융 시장 내 카드사 영향력 확대 흐름 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">리스·할부 계약 체결 단계의 <b>법인 실체 확인·명의 도용 방지</b> 절차 점검 필요. 신차·중고차·리스 계약 유형별 이상 거래 탐지 기준 재검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">카드사의 오토금융 확대에 대응한 <b>캐피탈사 특화 오토론·리스 상품</b> 차별화 전략 검토 요. 플랫폼 연계형 오토금융 고객 접점 확보 방안 전략 재점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 리스·할부 계약 데이터 기반 <b>이상 패턴 탐지 모델</b> 적용 가능성 검토 (법인 설립 이력·계약 직후 자금 이동 패턴 등). ② 카드사 오토금융 상품 조건 모니터링 자동화를 통한 <b>경쟁 금리·조건 비교 체계</b> 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=202609111436062649efc5ce4ae_18" target="_blank">→ 김재관 KB국민카드 대표, 건전성 개선·사업영역 다변화…플랫폼·AI 경쟁력 확대 [새 사령탑 이재근號 KB금융]</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kihoilbo.co.kr/news/articleView.html?idxno=3034568" target="_blank">→ [이슈 포커스] 고가 車 리스 사기 의혹 확대</a>
+  </div>
+
+</div>
