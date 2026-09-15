@@ -1,0 +1,147 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">미 FOMC 금리 인상 임박·한은 연속 인상 기조 속 캐피탈 조달비용 상승 압력 확대 → 포트폴리오·신용도 차별화 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">미 10년물 국채 금리, 장중 <b>5.04%</b>로 2007년 이후 최고치 경신·FOMC 금리 인상 확률 <b>94.5%</b></div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">한국은행 금통위, <b>0.25%p 연속 인상</b> 결정 — 취약차주 부담·경기 체감 우려 병존</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">캐피탈사 여전채 평균 발행 만기 <b>2.2년</b>으로 단축 — 금리 상승분이 차환 시 조달비용에 빠르게 전이되는 구조</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">부동산 매매 거래량 <b>4개월 연속 감소</b>(2026년 7월 전월 대비 –9.8%) — 상가·사무실 –24.6%로 낙폭 최대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">NICE신평, 캐피탈사 PF·투자금융 비중 따라 신용등급 차별화 심화 전망 공식 발표</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">보이스피싱 무과실 배상 책임제 국회 계류 — 금융사 비용 부담 확대 가능성 논의 중</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">PF 잔액 감축 캐피탈사의 손실완충력이 <b>250.1%</b>로 상승한 사례 확인 — 선제적 포트폴리오 정리가 신용도 방어로 직결되는 구조 확인.<br>금리 상승기 전통 할부·리스 등 안정적 여신성 자산 비중 유지 시 상대적 경쟁 우위 확보 가능성 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">미 국채 금리 <b>5%대</b> 고착·한은 연속 인상으로 여전채 차환 시 조달비용 상승 압력 확대 흐름.<br>부동산 거래 위축 장기화로 담보자산 처분 여건 악화 — PF 만기 <b>1년 이내</b> 요주의이하 비율 <b>17.8%</b> 수준 업계 전반 잔존.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달비용·PF 차환</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">신용등급 차별화·포트폴리오 재편</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">보이스피싱 무과실 배상 제도화 시 비용 구조 변화</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">NICE신용평가 보고서 기준, 에이캐피탈·MG캐피탈·메리츠캐피탈·DB캐피탈·무림캐피탈은 PF 요주의이하비율이 <b>30% 초과</b>로 A급 이하 캐피탈사 내 신용도 하방 압력 집중 대상으로 지목됨.<br>NH농협캐피탈은 지역 농가 대상 현장 이사회를 통해 포용금융 포트폴리오 확장 행보를 가시화 — 지역 밀착형 여신 운용 전략 구체화 움직임 확인.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">여전채 차환 일정 및 발행 만기 구조 점검 — <b>단기채 집중 구간</b> 조달비용 전이 속도 모니터링 강화 필요.<br>PF 만기 도래 사업장 중 지방·비주거·중후순위 익스포저 현황 재점검 — 차환 지연 시 추가 손실 가능성 관리 포인트.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">투자금융·PF 비중 대비 전통 할부·리스 여신성 자산 비중 재균형 전략 검토 — 신용등급 방어 측면 참고 필요.<br>보이스피싱 무과실 배상 책임제 입법 동향 지속 주시 — 제도화 시 비용 부담 범위 및 면책 요건 대응 체계 사전 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 여전채 만기별 차환 시뮬레이션 모델 활용 — 금리 시나리오(현 수준 유지·추가 인상)별 조달비용 변화 자동 산출 및 임계 구간 조기 경보 체계 검토.<br>② PF 포트폴리오 내 요주의이하 자산 데이터 기반 분류 고도화 — 지역·순위·만기 변수 결합 리스크 스코어링으로 선제적 부실 정리 우선순위 도출 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.ebn.co.kr/news/articleView.html?idxno=1724294" target="_blank">→ 금리 오르자 드러난 캐피탈 민낯…PF·투자금융 비중 따라 신용등급 갈린다</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260916006251072?input=1195m" target="_blank">→ 美국채 금리·유가 상승 지속…뉴욕증시 이틀째 하락(종합)</a></div>
+  <div class="source-card"><a href="https://www.segye.com/newsView/20260915516328?OutUrl=naver" target="_blank">→ 美 10년물 국채 금리 '마의 5%' 넘었다</a></div>
+  <div class="source-card"><a href="http://www.inews24.com/view/2005959" target="_blank">→ 기준금리 두 번 올린 한은⋯금통위원들 "취약층 부담 우려"</a></div>
+  <div class="source-card"><a href="http://www.queen.co.kr/news/articleView.html?idxno=463401" target="_blank">→ 7월 전국 부동산 매매량 전월比 10% 감소 … 경기 부진에 상가·사무실 침체 뚜렷</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/finance/2026/09/16/2026091516533820771" target="_blank">→ 공조는 같이, 배상은 왜 금융사만?...보이스피싱 '무과실 책임제' 논란</a></div>
+  <div class="source-card"><a href="http://www.ttlnews.com/news/articleView.html?idxno=3143761" target="_blank">→ NH농협캐피탈 제천 현장 이사회 개최, 지역 농가 맞춤형 상생 금융망 가동</a></div>
+
+</div>
