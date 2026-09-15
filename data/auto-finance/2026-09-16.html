@@ -1,0 +1,139 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">미국 금리 인상 가능성과 전기차 가격 하락 흐름이 맞물리며, 자동차금융 수요 및 EV 할부·리스 상품 경쟁 환경 변화 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">미국 <b>FOMC</b> 금리 결정 앞두고 자동차 할부·리스 수요 위축 우려 부각</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">미국 전기차 평균 거래가격, 전년 동월 대비 <b>2.7% 하락</b>하며 신차 가격과 격차 축소</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">현대캐피탈, 전기차 전용 저금리(<b>연 2.8~3.6%</b>) 및 잔가보장 유예형 할부 프로모션 시행</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">미국 전기차 가격 하락으로 EV 구매 접근성 개선 흐름 → 국내 EV 할부·리스 수요 확대 가능성 참고 필요. 전기차 가격 프리미엄이 <b>9.4%</b>로 축소되며 내연기관차와 실질 비교 구매 증가 전망.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">미국 <b>금리 인상</b> 현실화 시 소비자 월 납입 부담 증가 → 신차·전기차 구매 지연 및 할부·리스 취급 둔화 부담 요인. 전기차는 차량가 높아 금리 민감도 상대적으로 높은 점 관리 포인트.</div>
+  </div>
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">FOMC 결과 즉시 — 금리 결정에 따른 자동차 할부·리스 수요 변화 즉각 반영</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">EV 가격 경쟁 심화 및 상품 재설계 — 잔존가치 기준 재검토 및 EV 금융상품 구조 다양화 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대캐피탈이 2026년 가을 시즌 자동차금융 프로모션을 시행, 전기차 구매 고객 대상 <b>연 2.8%</b>(36개월 기준) 저금리 할부 및 잔가보장 유예형 할부를 제공하고, 재구매 고객에게 <b>0.5%p</b> 추가 금리 인하 혜택을 적용하는 등 EV 금융 고객 유인 전략을 강화 중.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">FOMC 결과에 따른 조달금리 변동 및 자동차 할부·리스 수요 변화 모니터링 강화 필요. 현대캐피탈 EV 저금리 프로모션 대비, 당사 EV 금융상품 금리 경쟁력 수준 점검 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">전기차 가격 하락 추세 지속 시 <b>잔존가치(잔가) 설정 기준</b> 재검토 필요. EV 할부·리스 상품 구조(잔가보장형·유예형 등) 다양화 및 재구매 고객 연계 프로그램 도입 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 전기차 차종별 시장 거래가격 데이터를 활용한 <b>잔존가치 자동 산출 모델</b> 검토 — 가격 하락 속도에 따른 잔가 리스크 조기 감지 목적. ② 금리 시나리오별 EV 할부 월납입 시뮬레이터 구축 — 고객 접점에서 금리 변동 영향 선제 안내 및 상품 전환 유도 활용 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="http://www.dailypop.kr/news/articleView.html?idxno=102593" target="_blank">→ 금융권의 가을맞이 전략…초저금리 할부·골프 혜택에 소상공인 '노쇼 보장'까지</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.g-enews.com/view.php?ud=2026091520104614079a1f309431_1" target="_blank">→ 美 전기차 가격격차 좁혀져…평균 신차와 640만원 차</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.ajunews.com/view/20260915141100787" target="_blank">→ [美 금리 쇼크] 車 수요위축 우려, 항공·해운 금융비용 '헉'...반도체도 투자비 증가</a>
+  </div>
+
+</div>
