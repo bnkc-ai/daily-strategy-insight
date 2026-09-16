@@ -1,0 +1,134 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금리 상승기 캐피탈 PF 만기 집중·건설사 회생 개시로 기업금융 자산건전성 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">캐피탈사 PF 대출 중 <b>만기 1년 미만 물량 7.6조원(전체의 41%)</b> 집중 도래</p></div>
+  <div class="event-card"><p class="event-text">캐피탈사 PF 고정이하자산비율 <b>7.2%</b>로 주요 영업자산 중 최고 수준 기록</p></div>
+  <div class="event-card"><p class="event-text">신규 여전채 발행금리가 기존 만기 상환금리 상회 → 차환 시 조달 비용 상승 구조 심화</p></div>
+  <div class="event-card"><p class="event-text">대구 지역 중견 건설사 태왕이앤씨, PF 보증채무 현실화로 회생절차 개시</p></div>
+  <div class="event-card"><p class="event-text">정부 PF 신디케이트론 한도 <b>5조원</b>으로 확대에도 한 달간 신규 집행 <b>0건</b></p></div>
+  <div class="event-card"><p class="event-text">미국 고금리 장기화 우려 속 기업 신용 시장 전이 여부 모니터링 필요성 부각</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">GS그룹, 동해 데이터센터 <b>1단계 15조원 규모</b> PF 등 외부 자금 조달 계획 공시</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">GS 데이터센터 등 대형 인프라 프로젝트의 <b>PF 외부 자금 조달 수요</b> 확대로 신규 기업금융 참여 검토 여지 존재. PF 부실 사업장 정리 과정에서 NPL 인수·재구조화 관련 틈새 기회 탐색 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">캐피탈업권 전반에서 <b>만기 1년 미만 PF 차환 부담</b>과 조달 비용 상승이 동시 압박 요인으로 작용. 건설사 회생 개시·PF 신디케이트론 집행 부진은 부동산 PF 사업장 정상화 지연 신호로, 관련 여신 건전성 악화 부담 요인 상존.</div>
+  </div>
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF 만기 도래·차환 리스크</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">건설업 부실 확산·조달 환경 변화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">나이스신용평가 세미나(2026년 9월 16일) 분석에 따르면, 캐피탈업권 전반에서 PF 익스포저를 축소한 업체는 요주의이하비율 및 손실완충력이 개선된 반면, PF를 유지·확대한 업체는 건전성 회복 속도가 더딘 것으로 확인되어 업체 간 건전성 차별화 흐름이 가시화되는 상황.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>만기 1년 미만 PF 여신</b>의 차환 가능성·사업장별 정상화 여부 점검 강화 필요. 여전채 신규 발행 금리 상승에 따른 조달 비용 증가분이 기존 포트폴리오 수익성에 미치는 영향 모니터링 강화 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">건설업 부실 확산 및 PF 신디케이트론 집행 부진 지속 시 <b>부동산 PF 관련 충당금 적립 수준</b> 재점검 전략 검토 필요. 대형 인프라(데이터센터 등) PF 시장 참여 가능성 및 리스크 분담 구조 사전 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 보유 PF 여신 사업장별 차환 가능성·공사 진행률·권리관계 데이터를 결합한 <b>조기경보 스코어링 모델</b> 적용 검토. ② 미국 고금리 장기화 시나리오 하 국내 기업 신용 스프레드 변화와 캐피탈 조달 비용 연동 시뮬레이션 정기 운영 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12154537" target="_blank">→ 7.6조 캐피털 PF대출, 금리상승에 발동동</a></div>
+  <div class="source-card"><a href="https://www.nocutnews.co.kr/news/6579282?utm_source=naver&utm_medium=article&utm_campaign=20260916044520" target="_blank">→ 法, 태왕이앤씨 회생절차 개시결정…회생 가능성 본격 검증</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260916142800053?input=1195m" target="_blank">→ '대구 3위' 건설사 태왕이앤씨 회생절차 개시(종합)</a></div>
+  <div class="source-card"><a href="http://www.inews24.com/view/2006397" target="_blank">→ PF 정상화 '실탄' 5배 늘렸지만⋯한 달간 신규 지원 '0건'</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12154232" target="_blank">→ 공포의 美 고금리...AI 투자·신용 시장 불안감</a></div>
+  <div class="source-card"><a href="https://www.dnews.co.kr/uhtml/view.jsp?idxno=202609161420581850327" target="_blank">→ ㈜GS, AI데이터센터 진출 가시화…동해에 2000억 베팅ㆍ1단계만 15조 프로젝트</a></div>
+
+</div>
