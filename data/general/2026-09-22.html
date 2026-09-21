@@ -1,0 +1,145 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기준금리 연속 인상으로 조달비용 상승 압력 확대 → 캐피탈 여신·조달 구조 점검 포인트 부각, 지방 경기침체 심화로 자산건전성 모니터링 강화 필요</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">한국은행, <b>두 달 연속 기준금리 인상</b>…연내 추가 인상 가능성 언급</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">대부업계 조달금리 <b>연 8% 수준</b>으로 상승, 법정최고금리 20% 한계로 마진 압박 심화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">지방 건설경기 침체 가속 — 지방 주택 착공 <b>전년 동월 대비 28.1% 감소</b>, 미분양 6만8천 가구 상회</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">수도권 집중 부동산 공급 정책 속 지방 PF·건설 자금수요 위축 흐름 지속</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금감원, 보험사 단기 판매경쟁 제동…소비자금융 전반 건전성 규제 기조 강화</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">기준금리 인상 국면에서 대부업·저축은행 등 후순위 조달처의 자금 공급 여력 축소 → 상대적으로 신용도 높은 캐피탈사의 <b>중금리 여신 공급 역할 확대</b> 가능성. 취약차주 대체 수요 일부 흡수 기회 검토 요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>조달비용 상승</b>이 캐피탈사 회사채·ABS 발행 스프레드에 전이될 경우 여신금리 경쟁력 저하 부담 요인. 지방 건설경기 침체 장기화로 관련 여신 포트폴리오 내 <b>자산건전성 관리 포인트</b> 확대 우려.</div>
+  </div>
+  <div class="section-title" style="margin-top:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달비용 모니터링</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">지방 경기침체 연계 여신 건전성 점검</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>기준금리 연속 인상</b> 국면에서 회사채·단기사채 등 조달 포트폴리오별 금리 민감도 점검 필요. 대부업 신용공급 위축에 따른 중저신용 차주 유입 가능성 — 심사 기준 및 한도 정책 재점검 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">지방 건설경기 침체 장기화 흐름 속 <b>지방 소재 여신 포트폴리오</b> 내 연체·부실 선행 지표 모니터링 강화 검토. 정부의 지방 PF 금융지원 확대 정책 변화 시 캐피탈사 참여 여건 사전 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 조달 만기·금리 구조 데이터를 활용한 <b>금리 시나리오별 조달비용 시뮬레이션</b> 모델 검토. ② 지방 건설·부동산 관련 여신 지역별 분포 분석 — 침체 심화 지역 집중도 파악 및 조기경보 지표 설정 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://news.mtn.co.kr/news-detail/2026092115510040653" target="_blank">→ 조달금리 뛰는데 대출금리 20% 고정…대부업 "마진 한계"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.m-i.kr/news/articleView.html?idxno=1416560" target="_blank">→ [기획] 처참한 지방 건설경기 침체, 건설 일자리 삼켰다</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260921.99099007186" target="_blank">→ '수도권' 뿐인 부동산 정책… 지방경기 침체 나 몰라라</a>
+  </div>
+
+</div>
