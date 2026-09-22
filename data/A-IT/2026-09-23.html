@@ -1,0 +1,145 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 AX 전환 가속·보안 AI 개발 본격화·혁신금융 제도 정비 → 금융IT 환경 변화 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">국산 <b>사이버보안 특화 AI</b> 개발 착수, 금융 현장 실증 예정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융권 <b>AX 자문위·MOU</b> 체계 구축 경쟁 확산</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text"><b>온투업 혁신금융</b> 제도 개편, 연계투자 한도 상향 및 감독 강화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text"><b>망분리</b> 환경 내 온프레미스 AI 도입 패턴 공공기관 표준화</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">피지컬 AI 지역거점 금융 협력체계, 지방은행 참여로 확대</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 전반의 <b>AX 전환 협업 체계</b> 구축 흐름 속, 내부 AI 도입 로드맵 선제 수립 기회 존재.<br>온투업 <b>연계투자 한도 상향(40%→50%)</b>으로 중금리 대출 시장 내 캐피탈사 역할 재정립 검토 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>AI 기반 사이버 공격 속도</b> 가속화(취약점 공개 당일 악용 비율 29%)로 금융 IT 보안 대응 부담 확대 흐름.<br><b>망분리 환경</b> 내 온프레미스 AI 구축 시 초기 비용·확장성 한계, 중소 금융사 지속 운영 가능성 점검 필요.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 대응·온투업 제도 변화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AX 전략 수립·망분리 AI 인프라 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">농협은 <b>2026년 제1차 범농협 AX자문위원회</b>를 개최, 내·외부 전문위원 15명 참여 하에 AI 사업 추진현황 점검 및 범농협 전반 AX 전환 전략을 체계화하는 협업 거버넌스 구조를 공식화함.<br>BNK경남은행은 산업은행·기업은행·신용보증기금 등과 <b>피지컬 AI 지역거점 발전 MOU</b>를 체결, 지역 제조 AI 기업 대상 금융 연계 지원 체계에 참여함(BNK그룹 계열사 동향으로 참고 가능).</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">국산 <b>보안 특화 AI</b> 금융 현장 실증 계획 발표에 따라, 자사 IT 보안 취약점 점검 체계 현행화 검토 요.<br>온투업 <b>우수 온투업자 제도</b>(2027년 1분기 목표) 도입에 따른 중금리 대출 시장 경쟁 구도 변화 모니터링 강화.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content"><b>망분리 환경</b> 내 AI 도입 방식(온프레미스 vs. 클라우드 하이브리드) 비용·보안 적합성 비교 검토 필요.<br>금융권 AX 거버넌스 구축 흐름 대비, 자사 <b>AI 전환 로드맵</b> 및 내·외부 전문가 협업 체계 수립 전략 재점검.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 네이버클라우드 컨소시엄의 <b>보안 AI 오픈소스 공개</b> 시점에 맞춰, 자사 사이버 위협 대응 체계에 적용 가능성 사전 검토.<br>② 온투업 연계투자 제도 변화 데이터를 활용, 중금리 대출 시장 내 <b>캐피탈사 포지셔닝</b> 재설정 시나리오 분석.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.joongangenews.com/news/articleView.html?idxno=550126" target="_blank">→ 농협, AX자문위 개최 – AI 사업방향 논의</a></div>
+  <div class="source-card"><a href="https://www.khan.co.kr/article/202609221617001" target="_blank">→ 금융당국, '중저신용자 대출 우수 온투업자 제도' 도입</a></div>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202609221901197085" target="_blank">→ 온투업 연계투자 한도 50%로 상향… 상호금융 참여길 열리나</a></div>
+  <div class="source-card"><a href="https://zdnet.co.kr/view/?no=20260922161236" target="_blank">→ 네이버클라우드 "공격·방어형 AI 키운다…보안 데이터 830TB 확보"</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20260922_0003800763" target="_blank">→ 해킹 대응 2000배 빨라진다…네이버 컨소 '오퍼스급' 보안 AI 만든다</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/202609220821i" target="_blank">→ "AI로 AI 공격 막아야"…KISA, '한국형 보안 AI' 만든다</a></div>
+  <div class="source-card"><a href="http://www.inews24.com/view/2008525" target="_blank">→ '사이버 보안특화 AI' 개발 네이버클라우드 "LG가 공격하고 네이버가 방어, 상호 학습"</a></div>
+  <div class="source-card"><a href="https://www.econovill.com/news/articleView.html?idxno=751602" target="_blank">→ 델, 한국벤처투자에 GPU 서버 공급…망분리 온프레미스 AI 구축</a></div>
+  <div class="source-card"><a href="http://www.inews24.com/view/2008464" target="_blank">→ 정책금융에 지방은행까지 가세…피지컬 AI '지역 돈줄' 만든다</a></div>
+
+</div>
