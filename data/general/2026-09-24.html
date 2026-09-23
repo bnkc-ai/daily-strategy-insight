@@ -1,0 +1,155 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">미 국채금리 급등·국내 기준금리 인상 기조 속 캐피탈 조달 비용 상승 압력 확대 → 조달 구조 다변화 전략 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">미 <b>10년물 국채금리 5.13%</b>, 2007년 이후 최고치 경신</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">국내 <b>기준금리 3.00%</b>까지 2개월 연속 인상, 추가 인상 가능성 상존</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">은행권 예금금리 경쟁 심화 → <b>코픽스 상승</b> 및 조달 비용 연쇄 상승 흐름</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">경쟁 캐피탈사(한국캐피탈), <b>ABS·영구채·해외 신디케이트론</b> 등 조달 다변화 본격화</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금리 상승 시 주택가격 <b>6개월 내 최대 1.2% 하락</b> 전망, 취약차주 연체 부담 요인 확대</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">글로벌 금리 상승기에 <b>ABS·신디케이트론</b> 등 대체 조달 수단 활용 시 회사채 대비 비용 절감 여지 존재. 조달 구조 다변화로 <b>ALM 매칭비율</b> 개선 및 유동성 안정화 기회 확보 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">미 국채금리 급등이 국내 시장금리·코픽스 상승으로 연결되며 <b>캐피탈 조달 비용 전반</b> 상승 압력 확대. 기준금리 인상 지속 시 집값 하락·취약차주 연체율 상승 등 <b>자산건전성 관리 포인트</b> 증가 우려.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달 비용 상승</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">취약차주 연체·자산건전성 영향</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">한국캐피탈이 금리 상승기 공모사채 시장 경색에 대응해 <b>ABS 3,500억원·영구채 500억원·해외 신디케이트론 1,000억원 이상</b> 등 조달 채널을 동시 다변화하며 ALM 매칭비율 100% 이상 목표를 추진 중. 동일 <b>A0 등급</b> 캐피탈사 대비 민평금리 최저 수준을 활용한 장기채(2년 이상) 중심 발행 전략으로 선제적 유동성 확보에 나서고 있어 조달 경쟁력 측면 참고 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">미 국채금리 급등 및 국내 기준금리 추가 인상 가능성에 따른 <b>회사채 조달 비용 상승</b> 모니터링 강화 필요. ABS 등 담보부 조달 수단의 비용 경쟁력 비교 검토 및 단기 유동성 포지션 점검 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">기준금리 인상 지속 시 <b>취약차주 연체율 상승</b> 가능성 대비, 여신 포트폴리오 내 고위험 차주 비중 및 담보가치 변동 추이 정기 점검 체계 검토. 조달 구조의 <b>장기채·ABS 비중 확대</b> 전략 수립 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 금리 시나리오별(+0.25%p, +0.50%p) <b>조달 비용 시뮬레이션</b> 모델 구축 및 최적 조달 믹스 도출 검토. ② 취약차주 세그먼트 대상 <b>연체 선행지표 모니터링 대시보드</b> 구성, 조기경보 기준 재점검.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20260924002551072?input=1195m" target="_blank">→ 美국채금리 급등…10년물 19년만에 최고·5년물도 5% 돌파(종합)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hankyung.com/article/202609244555i" target="_blank">→ 美 10년 만기 국채 금리, 2007년 이후 최고치 경신…인플레이션 우려</a>
+  </div>
+  <div class="source-card">
+    <a href="https://economist.co.kr/article/view/ecn202609230045" target="_blank">→ 금리 충격 아직 안 왔다…0.25%p 오르면 6개월 뒤 집값 1.2%↓</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20260923515245?OutUrl=naver" target="_blank">→ 불붙은 예금금리 올리기 경쟁… 어디가 가장 높을까</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.bloter.net/news/articleView.html?idxno=674423" target="_blank">→ 美 5년물 국채금리, 2007년 이후 첫 5% 돌파</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=2026092310223858988a55064dd1_18" target="_blank">→ 한국캐피탈, 자산 유동화 증권·신종자본증권 발행 진행…조달 다변화 [캐피탈사 돋보기]</a>
+  </div>
+
+</div>
