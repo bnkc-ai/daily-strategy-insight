@@ -1,0 +1,133 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">부동산 PF 자금 편중·경색 장기화 및 HUG 보증 리스크 확대 → 캐피탈 기업금융 포트폴리오 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">PF 시장, 대형사·수도권 우량 사업장으로 자금 편중 심화</p></div>
+  <div class="event-card"><p class="event-text">중소·중견 건설사 본PF 잔액 <b>90% 이상 급감</b>, 브리지론 시장 위축 지속</p></div>
+  <div class="event-card"><p class="event-text">HUG PF보증 잔액 <b>2021년 대비 5.7배</b> 급팽창, 경보·주의 단계 16곳·<b>1.2조원</b> 달해</p></div>
+  <div class="event-card"><p class="event-text">신보 미회수 구상채권 <b>8조 9,310억원</b> 누적, 장기 부실채권 관리 공백 부각</p></div>
+  <div class="event-card"><p class="event-text">건설업 상시 고용보험 가입자 <b>37개월 연속 감소</b>, 업황 회복 신호 미약</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">반도체 호황에 기업 법인카드 이용액 <b>2026년 2분기 사상 최대(61.8조원)</b> 기록</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">반도체·AI 투자 호황으로 기업 실적 개선 흐름이 확인되면서, 우량 기업 대상 기업금융 수요 확대 가능성 존재.<br>PF 시장에서 <b>수도권 우량 사업장·대형 건설사</b> 중심의 선별적 PF 참여 시 상대적으로 안정적 여신 기회 확보 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">PF 시장 내 자금 순유출(<b>2024년 2분기~2026년 1분기 누적 61.3조원</b>)과 중소·중견 건설사 사업장 부실 위험이 캐피탈 PF 포트폴리오 건전성 관리 포인트로 부상.<br>HUG 보증 경보 단계 사업장 확대 및 신보 장기 미회수 구상채권 누적은 정책금융 연계 여신의 부실 전이 가능성 측면에서 모니터링 강화 필요.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF 건전성·브리지론 위축</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">중소 건설사 부실 확산·공급 감소 파급</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">한국신용평가 분석에 따르면 증권·캐피탈 <b>51개사</b>가 참여한 약 3,600개 PF 사업장(50조원 규모)에서 자금이 수도권·대형사 중심으로 재편되고 있으며, 중소 사업장 참여 비중 축소 흐름이 업계 전반에서 확인됨. 미분양 관리지역(천안 등)에서도 한국투자증권이 브리지론→본PF 전환을 주도하는 등 일부 금융사는 선별적 딜 참여를 통해 PF 시장 내 입지를 유지하는 전략을 구사 중.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">기존 PF 여신 중 <b>중소·중견 건설사·지방 사업장</b> 비중 점검 및 브리지론 만기·연장 현황 모니터링 강화 필요.<br>HUG 경보·주의 단계 사업장과 연계된 보증부 여신 존재 여부 확인 및 해당 사업장 출구 계획 파악 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">PF 시장 내 자금 편중 구조 고착화에 대응해 <b>수도권 우량 사업장·책임준공 확약 보유 딜</b> 중심의 선별적 참여 기준 재정립 검토 필요.<br>건설업 상시 고용 감소·수주 위축 지속 흐름을 감안, 건설 관련 기업여신 전반의 사업성 평가 기준 고도화(임대수익·장기 공실 위험 반영) 전략 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기존 PF 포트폴리오 내 사업장별 분양률·공정률·시공사 순위·지역 데이터를 결합해 <b>부실 선행 지표 스코어링 모델</b> 구축 검토(경보 단계 조기 감지 목적).<br>② 신보 구상채권 장기 미회수 사례를 참고해 자사 기업여신 중 <b>장기 연체·구상권 행사 채권</b>의 회수 가능성 재분류 및 충당금 적정성 점검 자동화 방안 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20095216?ref=naver" target="_blank">→ 대형사·수도권에만 PF 자금 흘러들자…중소·중견 건설사 주택 공급 30% 줄었다</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12162089" target="_blank">→ [단독]5배 넘게 늘어난 HUG PF보증…'경보·주의' 16곳, 1.2조 달해</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260922166600001?input=1195m" target="_blank">→ 신보, 보증사고로 9조원 회수 못 해…10년 넘은 채권도 1조원대</a></div>
+  <div class="source-card"><a href="https://www.viva100.com/article/20260927500540" target="_blank">→ 건설업 종사자 두 달째 늘었지만…업황 부담에 상시 채용은 '한파'</a></div>
+  <div class="source-card"><a href="https://dealsite.co.kr/articles/169451" target="_blank">→ 천안 '더샵 천안라크원', 미분양 관리지역서 '논스톱' 본PF</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12162185" target="_blank">→ "부장님이 웬일로 법카를 주네요"…반도체 호황에 기업 결제액 사상 최대</a></div>
+
+</div>
