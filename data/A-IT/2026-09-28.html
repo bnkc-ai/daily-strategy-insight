@@ -1,0 +1,137 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 AI 에이전트 확산·개인정보 유출 규제 강화·클라우드 연계 혁신금융 지정 가속 → IT·AX 대응 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">KB금융, 올해 AI 관련 혁신금융서비스 <b>21건</b> 지정·AI 에이전트 <b>300여 개</b> 도입 목표 추진</p></div>
+  <div class="event-card"><p class="event-text">금융권 내부 클라우드-생성형 AI 연계 규제 특례 확대, 경영관리·의사결정 지원 영역까지 AI 적용 범위 확장</p></div>
+  <div class="event-card"><p class="event-text">카카오페이증권, <b>연내</b> AI 에이전트 출시 예고·고객 편의 중심 설계 방향 제시</p></div>
+  <div class="event-card"><p class="event-text">개인정보보호위원회 출범 이후 <b>약 6년간 1억 4,000만 건</b> 개인정보 유출 확인, 업무 과실이 해킹과 거의 동일 비중</p></div>
+  <div class="event-card"><p class="event-text">한국은행 직원 <b>186명</b> 개인정보 해킹 유출, 올해 <b>8월까지</b> 해킹 시도 135건으로 전년 연간 대비 <b>4.5배</b> 급증</p></div>
+  <div class="event-card"><p class="event-text">금융위, 개인신용정보 동의제도 개편 추진·AI 활용 정보처리 근거 확대 및 소비자 권리 범위 재정립 검토 중</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">STO(토큰증권) 내년 제도화 예정, 기업금융·PF·우량채권 소액화 등 자금조달 다변화 수단으로 부상</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 AI 에이전트 도입이 경영관리·여신심사·고객상담 자동화로 연결되는 흐름으로, 업무 효율화 및 비용 절감 가능성 확대. <b>혁신금융 규제 특례</b>를 활용한 내부 클라우드-AI 연계 서비스 도입 검토 여건 조성.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">개인정보 유출 사고 빈도 증가 및 <b>과징금 규모 급증</b>(올해 1~7월 부과액 7,456억 원)으로 금융사 내부 관리체계 점검 필요성 부각. 업무 과실 기인 유출 비중이 해킹과 동등 수준으로, 내부 통제 취약 지점 관리 포인트 확대.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">개인정보 내부 관리체계 점검</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 에이전트 도입 로드맵 수립·혁신금융 특례 활용 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">KB금융그룹은 올해 AI 관련 혁신금융서비스 <b>21건</b> 지정을 통해 내부 시스템과 외부 클라우드 생성형 AI 연계를 확대하고, <b>59개 업무 영역에 300여 개 AI 에이전트</b> 도입을 목표로 AX 전환을 가속화 중. 카카오페이증권은 <b>연내</b> 고객 편의 중심 AI 에이전트 출시를 예고하며 리테일 금융 고객 접점 확대 전략을 구체화.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">개인정보 유출 원인 중 <b>업무 과실 비중</b>이 해킹과 동등 수준임을 감안, 내부 임직원 정보처리 절차 및 수탁업체 보안관리 실태 점검 필요. 금융위 개인신용정보 동의제도 개편 동향 모니터링 강화 및 AI 활용 정보처리 근거 확대 시 내부 대응 절차 사전 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">금융권 AI 에이전트 확산 흐름에 맞춰 여신심사·고객상담·경영관리 영역 대상 <b>AI 에이전트 도입 로드맵</b> 수립 검토 요. 혁신금융 규제 특례를 활용한 클라우드-AI 연계 서비스 도입 가능성 및 내년 <b>STO 제도화</b>에 따른 자금조달 다변화 수단 활용 여부 전략 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 내부 개인정보 처리 수탁업체 보안 점검 체계 자동화 도구(RPA·모니터링 시스템) 도입 가능성 검토. ② 여신심사·콜센터 상담 영역 대상 AI 에이전트 파일럿 적용 시 혁신금융 특례 신청 요건 충족 여부 사전 분석.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.edaily.co.kr/News/Read?newsId=01817126645584384&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article" target="_blank">→ KB금융, 올해 AI 관련 혁신금융 21건 지정…이재근호 AX 가속</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20260923136300002?input=1195m" target="_blank">→ 한은 직원 개인정보 무더기 유출…5년여간 해킹 시도 2천번</a></div>
+  <div class="source-card"><a href="https://www.dailian.co.kr/news/view/1694727/?sc=Naver" target="_blank">→ 국내 개인정보 6년간 1억4000만건 유출…해킹만큼 많았던 '업무 과실'</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/policy/politics/assembly/2026/09/28/A5HITXGSBBHRJLSK7WV4QLQQ6A/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ [인터뷰] 송기헌 과방위원장 "티빙 개인정보 유출 과방위 차원서 청문회"</a></div>
+  <div class="source-card"><a href="https://it.chosun.com/news/articleView.html?idxno=2023092170392" target="_blank">→ 절차 간소화될 듯… 내 금융정보 통제권 어디까지 [동의, 하십니까 ④]</a></div>
+  <div class="source-card"><a href="https://www.munhwa.com/article/11619655?ref=naver" target="_blank">→ '말만하면 다 해준다'…AI 에이전트, 어디까지 왔나</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/stock/2026/09/28/2026092314483697545" target="_blank">→ "연내 AI 에이전트로 주식투자…미래 선물하는 투자문화를"</a></div>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20095231?ref=naver" target="_blank">→ "수천억 PF·우량채권도 쪼개서 판다"…기업금융 새 자금줄 부상</a></div>
+
+</div>
