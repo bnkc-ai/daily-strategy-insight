@@ -1,0 +1,137 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">중소기업 연체·부실 확대 및 기준금리 인상 사이클 재개로 기업여신 건전성 관리 포인트 증가 → PF 리파이낸싱 보증 등 정책 지원 흐름도 병행 점검 필요</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text"><b>2026년 2분기</b> 중소기업 은행 연체잔액 <b>9조4천억원</b>으로 2007년 이후 최대치 경신</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text"><b>2026년 7·8월</b> 한국은행 기준금리 연속 인상 → 중소기업 추가 부실 우려 확대 흐름</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">지방은행 기업여신 부실채권비율 <b>1.34%</b>로 시중은행(<b>0.48%</b>) 대비 약 2.8배 수준</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">주금공, 부동산 PF사업장 안정적 준공 지원 위한 <b>리파이낸싱 특례 보증(RF형)</b> 출시 예정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">데이터센터 PF·GPU 파이낸싱 등 <b>AI 인프라 금융</b> 신시장 형성 가속화</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">저축은행 개인사업자대출 <b>NPL 비율 15.69%</b>(2026년 6월 기준), 자영업자 부실 부담 지속</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">주금공 <b>PF 리파이낸싱 보증(RF형)</b> 출시로 부동산 PF 사업장 정상화 지원 환경 조성 → 캐피탈사 관점에서 PF 참여 구조 및 보증 활용 여건 점검 참고 필요.<br>데이터센터·GPU 파이낸싱 등 <b>AI 인프라 PF</b> 신시장 형성 초기 단계로, 기업금융 포트폴리오 다각화 검토 가능 시점.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>기준금리 인상 사이클</b> 재개로 중소기업·자영업자 이자 부담 증가 → 기업여신 연체율 추가 상승 부담 요인 존재.<br>지방 제조업·도소매업·부동산업 중심 <b>부실채권 확대 흐름</b>이 캐피탈사 기업금융 여신 포트폴리오 건전성 점검 필요성 시사.</div>
+  </div>
+  <div class="section-title" style="margin-top:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">연체율·부실채권 모니터링</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 인프라 PF 진입 전략 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">기업금융 포트폴리오 재편</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">JB우리캐피탈은 2026년 상반기 순이익 <b>1,768억원</b>으로 전년 동기 대비 34.2% 증가하며, 모회사 JB금융 내 은행 계열사 실적 감소 속에서도 캐피탈 부문이 그룹 이익을 견인하는 구조를 보임 → 기업금융·여신 포트폴리오 운용 전략 측면에서 참고 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>기준금리 인상</b> 지속 시 기업 차주 상환 여력 저하 → 기업금융 여신 업종별(제조·도소매·부동산) 연체 동향 모니터링 강화 검토 필요.<br>주금공 <b>RF형 보증</b> 출시 시점에 맞춰 기존 PF 참여 사업장 리파이낸싱 활용 가능성 점검 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">데이터센터·<b>AI 인프라 PF</b> 시장 형성 초기 단계 → 금융구조 및 리스크 특성 파악 후 참여 적정성 전략 검토 필요.<br>중소기업 부실 누적 구조가 단기 해소 어려운 환경 → 신규 기업여신 심사 기준 및 업종별 한도 관리 전략 재점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업금융 여신 포트폴리오 내 제조업·도소매업·부동산업 비중별 <b>연체율 시뮬레이션</b> 모델 구축 → 금리 추가 인상 시나리오별 충당금 적정성 사전 점검.<br>② 데이터센터 PF 등 <b>AI 인프라 금융구조</b> 관련 내부 검토 태스크 구성 → 참여 가능 구조(선순위 대출·보증 연계 등) 및 리스크 기준 사전 정립.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며,<br>현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.hani.co.kr/arti/economy/finance/1279883.html" target="_blank">→ [단독] 중소기업, 은행에 제때 못 갚은 돈 9.4조…4년 만에 4배</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/stock/finance/2026/09/28/JN6NY67YUVEABFQ4VC2HXOL3XY/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ 기업대출 금리 年 5% 눈앞… 시장 금리 상승에 연체율 비상</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/finance/general-finance/6303265" target="_blank">→ "주택 공급 확대 총력"…주금공, PF대출 갈아타기로 준공 보증</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12157985" target="_blank">→ 반도체 펄펄 끓는데…그곳은 여전히 춥다</a></div>
+  <div class="source-card"><a href="https://www.news1.kr/finance/general-stock/6303343" target="_blank">→ 한투증권, 30일 데이터센터 PF·GPU 파이낸싱 설명회</a></div>
+  <div class="source-card"><a href="https://www.dailian.co.kr/news/view/1695142/?sc=Naver" target="_blank">→ 벼랑 끝 자영업자…저축은행 대출 3년새 반토막, 연체율은 4배</a></div>
+  <div class="source-card"><a href="https://www.busan.com/view/busan/view.php?code=2026092818054421993" target="_blank">→ [단독] 삼정기업·삼정이앤씨 회생 길 열렸다</a></div>
+
+</div>
