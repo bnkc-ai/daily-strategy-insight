@@ -1,0 +1,142 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">기업 신용평가 허위 사기·부실기업 퇴출 혼선·PF 시장 양극화 흐름 속 기업여신 심사 및 건전성 관리 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">기업은행, <b>허위 기술신용평가(TCB)</b> 연루 기업 249곳에 7년간 <b>1,572억원</b> 대출 → 부실 발생 및 내부통제 취약성 지적</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">부실기업 상장폐지 절차, 법원 가처분으로 <b>전면 중단</b> → 퇴출 기준 설계 결함·정책 신뢰 훼손 논란 확산</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">신한은행, 복정역세권 복합개발 <b>본PF 2조2,800억원</b> 금융주선 완료 → 대형 사업장 중심 PF 시장 재편 흐름</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">상호금융권, 2026년 상반기 예금 <b>28조원</b> 이탈 속 부동산 대출 연체율 상승 → 부동산PF 규제 강화 예고</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">고금리·내수 부진 장기화로 기업회생 제도 실효성 제고 논의 본격화</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">대형 PF 시장에서 사업성 우수 사업장 중심의 <b>선별적 참여 기회</b> 존재.<br>기업회생·구조조정 제도 개선 논의 확대로 <b>NPL 매입·구조화금융</b> 검토 여지 확대.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">허위 기술신용평가 활용 사기 대출 사례가 금융권 전반에서 확인되며 <b>기업신용 심사 체계</b> 점검 필요성 부각.<br>상호금융권 부동산 대출 <b>연체율 상승</b>(2026년 6월 말 상호금융조합 5.39%, 새마을금고 6.34%)과 PF 규제 강화로 <b>기업여신 건전성 부담 요인</b> 확대 흐름.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">TCB 심사 체계·PF 건전성</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">기업회생 제도 변화·PF 시장 양극화 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">신한은행이 복정역세권 복합개발사업에서 <b>총 2조2,800억원</b> 규모 본PF 금융주선을 완료하며 대형 부동산PF 시장 내 주선 역량을 확대하고 있어, 캐피탈사의 PF 참여 포지셔닝 전략 재점검 참고 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">허위 TCB 활용 사기 대출 사례 확산 흐름 → 기업여신 심사 시 <b>기술신용평가서 진위 검증 프로세스</b> 점검 필요.<br>부실기업 상장폐지 절차 중단에 따른 <b>코스닥 중소기업 여신 거래처 신용 모니터링</b> 강화 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">금융당국의 <b>부동산PF 대출 비중 규제</b>(전체 50%, PF 20% 이내) 확산 여부에 따른 캐피탈사 PF 포트폴리오 구성 전략 재점검.<br>기업회생 제도 개선(사전 구조조정 지원 프로그램 등) 논의 결과에 따른 <b>부실채권 회수·구조화 전략</b> 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업여신 심사 단계에서 <b>TCB 평가서 이상 패턴 탐지 모델</b>(동일 평가사·유사 업종 집중 여부 등) 적용 가능성 검토.<br>② 보유 기업여신 포트폴리오 내 <b>부동산·건설업 익스포저 비중 및 연체 선행지표</b> 자동 모니터링 체계 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.segye.com/newsView/20261008513735?OutUrl=naver" target="_blank">→ 기업銀, 7년간 허위 기술평가서에 1572억 대출</a></div>
+  <div class="source-card"><a href="https://www.viva100.com/article/20261008500643" target="_blank">→ 신한은행, 복정역세권 PF 금융주선 마무리…2조2800억 규모</a></div>
+  <div class="source-card"><a href="https://www.sidae.com/article/2026100815154050952" target="_blank">→ 곳간 28조 비었는데 가계대출 11조 쌓인 상호금융</a></div>
+  <div class="source-card"><a href="https://www.chosun.com/economy/stock-finance/2026/10/09/NMIYIQZHDRGLVGRL5BE66MADNY/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" target="_blank">→ 설익은 '부실 기업 상장폐지', 법원이 제동… 애꿎은 개미 돈만 묶였다</a></div>
+  <div class="source-card" style="margin-bottom:16px;"><a href="https://www.mk.co.kr/article/12171734" target="_blank">→ "위기의 기업 살릴 해법 찾자"…KPC·생법회, 기업회생제도 세미나 연다</a></div>
+
+</div>
