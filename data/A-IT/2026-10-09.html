@@ -1,0 +1,147 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">AI 자동화 해킹 도구의 금융권 연쇄 침해 확산 → 외부 노출 API·개인정보 보호 체계 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">AI 침투 도구 '아르텍스'로 국내 <b>7개 금융사</b> 연쇄 해킹 사고 발생(2026년 9월 말~10월 초)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">대출모집인 조회·영업지원 등 <b>외곽 API</b> 집중 공략, 대출 관련 고객정보 유출 확인</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">동일 AI 침투 도구 탑재 서버 <b>전 세계 수백 대</b> 운영 중, 추가 공격 가능성 상존</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융 SI 발주 구조상 개발 단계 <b>보안 과업 미명시</b> 문제 업계 전반 지적</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">쿠팡 개인정보 유출 관련 <b>6,249억 원</b> 과징금 불복 행정소송 제기(2026년 10월)</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 보안 강화 기조 확산으로 <b>자체 보안 내재화</b> 선제 추진 시 대외 신뢰도 제고 가능.<br>AI 기반 이상 탐지·API 모니터링 체계 구축 시 고객 정보보호 경쟁력 차별화 여지.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>대출 관련 고객정보</b> 유출 시 맞춤형 보이스피싱 등 2차 피해 확산 부담 요인.<br>외주·계약직 중심 보안 인력 구조 및 <b>API 권한 검증 누락</b> 리스크, 금융당국 점검 강화 흐름.</div>
+  </div>
+
+  <div class="section-title">⏱ 영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">즉시~3개월</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">3~12개월</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대캐피탈이 이번 금융권 연쇄 해킹 사태에서 침해 사고가 확인된 <b>7개 금융사</b> 중 하나로 포함, 캐피탈사도 AI 자동화 공격의 직접 표적이 된 사실 확인.<br>동일 공격자가 IP를 바꿔가며 은행·저축은행·캐피탈사를 순차 공략한 정황으로, 업권 전반의 외곽 시스템 취약점 관리 수준이 공통 점검 대상으로 부상.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">외부 노출 <b>API 및 섀도 IT 자산 전수 식별</b> 점검 필요(대출모집인·영업지원 시스템 우선).<br>고객 대출 관련 정보 유출 대비 <b>보이스피싱 2차 피해 대응 안내</b> 체계 점검 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">금융 SI 발주 시 <b>보안 과업 명시·검수 기준 강화</b> 방향 내부 정책 반영 검토.<br>보안 관제 인력 내재화 및 <b>자체 AI 점검 역량</b> 확보 로드맵 수립 고려.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 외부 노출 API 목록 자동 탐지 도구 도입 검토 → 미등록 API 식별 후 권한 검증 로직 적용 우선순위 산정.<br>② 대출 조회 관련 고객 접점 시스템 대상 <b>이상 호출 패턴 탐지 모델</b> 적용 가능성 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.ddaily.co.kr/page/view/2026100812492466831" target="_blank">→ 운영 점검만으론 '사후약방문'…금융 SI 보안, 발주서·대가부터 바꿔야</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261008116200017?input=1195m" target="_blank">→ 금융권 해킹에 쓰인 AI 도구, 전 세계 서버 수백대서 운영</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/it-science/ict/2026/10/08/2IBMNV5RZVDDDEXOCFAJ2KQLQE/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ 금융권 해킹에 사용된 AI 도구, 전 세계 수백대 서버서 운영…2차 피해 우려</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261008_0003818533" target="_blank">→ AI 해커, 금융사 '약한 고리'부터 찾았다…'섀도 IT' 정조준</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261008020053017?input=1195m" target="_blank">→ 금융권 해커, 중국 광둥성 26세 추정…당사자 "번호 도용" 주장(종합2보)</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12171772" target="_blank">→ "韓 금융권 해킹범, 중국 거주 26세 추정"</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261008191000004?input=1195m" target="_blank">→ 쿠팡, 개인정보유출 등 6천억대 과징금에 불복소송…집행정지도</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261008_0003819654" target="_blank">→ 쿠팡, '개인정보 유출' 6200억대 과징금 불복…행정소송 제기</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026100821347" target="_blank">→ '개인정보 유출' 쿠팡, 6200억대 과징금 불복해 소송 제기</a></div>
+  <div class="source-card"><a href="https://www.busan.com/view/busan/view.php?code=2026100818410962097" target="_blank">→ 쿠팡, 개인정보유출 등 6246억원대 과징금 불복해 소송…집행정지도 신청</a></div>
+
+</div>
