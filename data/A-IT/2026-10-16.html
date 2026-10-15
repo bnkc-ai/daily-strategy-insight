@@ -1,0 +1,144 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">AI 기반 금융권 해킹 급증·망분리 규제 완화 잠정 중단 → 금융IT 보안 체계 및 AX 추진 환경 전반 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">2026년 1~9월 금융권 해킹 시도 <b>4,298만 건</b> 돌파, AI 침투도구 'ARTEX' 활용 공격 정교화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, AI 해킹 사태 이후 <b>2차 망분리 규제 완화 대상 선정 연기</b> 결정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국·PG업계, 부정결제 피해 <b>'선구제' 방안</b> 연내 검토 착수</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융권 클라우드·생성형 AI 도입 수요 확대, 보안 규제 준수 요건 동시 강화 흐름</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">기업용 AX 시장에서 RAG·AI 에이전트 기반 업무포털·지식관리 솔루션 협력 확산</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">망분리 규제 완화 논의가 지속되는 환경에서, 클라우드·AI 인프라 도입 준비를 선제적으로 검토할 여건 존재.<br>RAG·AI 에이전트 기반 업무 자동화 솔루션 도입 시 내부 지식관리·여신심사 효율화 연계 가능성 참고 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content"><b>AI 침투도구</b>를 활용한 금융권 해킹이 중소서민금융 업권까지 확산, 캐피탈사도 공격 대상 범위에 포함될 수 있는 환경.<br>부정결제 <b>선구제 의무화</b> 논의 진전 시 결제·간편금융 연계 서비스 관련 비용 부담 요인으로 작용 가능.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">망분리 규제 재개 시 AX 전략 연계</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융권 <b>AI 해킹 탐지 룰셋</b>(ARTEX 대응 기준) 내부 보안관제 시스템 적용 여부 점검 필요.<br>크리덴셜 스터핑·계정 탈취 방어 체계 및 고객 개인정보 보호 현황 모니터링 강화 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content"><b>망분리 규제 완화 재개 시점</b> 모니터링, 클라우드 전환 및 생성형 AI 도입 로드맵과의 연계 전략 재점검.<br>온라인 부정결제 선구제 제도화 논의 진행 상황 주시, 디지털 여신·간편결제 연계 서비스 리스크 관리 포인트 사전 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① AI 기반 이상거래탐지(FDS) 고도화 검토: ARTEX 유형 자동화 공격 패턴을 반영한 탐지 모델 업데이트 가능성 점검.<br>② RAG 기반 내부 지식관리 PoC 검토: 여신심사·컴플라이언스 문서 검색 자동화 적용 가능성 파악 및 보안 요건 동시 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.seoul.co.kr/news/economy/finance/2026/10/16/20261016031002?wlog_tag3=naver" target="_blank">→ [단독] 금융권 '보안 방패' 균열… 올해만 해킹 시도 4200만건 넘었다</a></div>
+  <div class="source-card"><a href="https://www.khan.co.kr/article/202610160600101" target="_blank">→ [단독] "금융권 공격 'AI 해커'는 10대…동남아 거점 중국계 조직이 사주" 증언</a></div>
+  <div class="source-card"><a href="https://www.donga.com/news/It/article/all/20261015/134848823/2" target="_blank">→ 20분에 3만2000번 요청…금융권 노린 AI 해킹 도구 'ARTEX' 뜯어보니</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12177102" target="_blank">→ [단독] 해킹 당해 결제된 돈, 책임 따지기 전 환불…당국 '선구제' 검토</a></div>
+  <div class="source-card"><a href="https://news.mtn.co.kr/article/2026101516281523807" target="_blank">→ 멈춰 선 금융혁신…스테이블코인·망분리 '깜깜무소식'</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=675805" target="_blank">→ 포티넷코리아, 망분리·생성형AI 보안 해법 제시…SASE 서밋 개최</a></div>
+  <div class="source-card"><a href="https://zdnet.co.kr/view/?no=20261015140153" target="_blank">→ 투라인클라우드-날리지큐브, 기업 AX 시장 공략…AI 지식관리 협력</a></div>
+
+</div>
