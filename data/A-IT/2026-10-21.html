@@ -1,0 +1,145 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 연쇄 해킹 사태·클라우드 장애 현실화 속 AI 투자 심리 냉각 흐름 → 보안 체계 및 IT 인프라 리스크 관리 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융권 연쇄 해킹으로 캐피탈사 포함 <b>총 16개 금융사</b> 피해, 개인정보 <b>약 10만 건</b> 유출 확인</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">구글 클라우드 런던 리전 <b>약 8시간</b> 장애로 영국 주요 은행·디지털금융 서비스 연쇄 중단</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">JB금융그룹, AI 기업 업스테이지에 <b>400억 원</b> 투자·지분 2% 확보, 금융특화 AI 에이전트 공동 개발 착수</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">한국 AI 인프라 기업 엘리스, 코스닥 상장 첫날 <b>32%</b> 폭락 → 글로벌 AI 투자심리 냉각 신호로 해석</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">IBK기업은행, 금융권 최초 법인 수신업무에 <b>기업 공공 마이데이터</b> 전면 도입</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 AI 전환(AX) 투자 흐름 속 <b>금융특화 AI 에이전트</b> 도입 선점 가능성 존재. JB금융·IBK 등 선행 사례가 여신심사·업무자동화 효율화 방향 제시. 기업 공공 마이데이터 확산은 비대면 여신 프로세스 간소화 기회로 참고 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">금융권 연쇄 해킹 피해 기관에 <b>캐피탈사</b> 포함 확인, 당국 전수점검 진행 중. 하이퍼스케일러 클라우드 단일 장애가 금융 서비스 전반 중단으로 이어지는 집중 의존 리스크 부각. AI 인프라 기업 IPO 참패·CCC등급 채권 스프레드 확대 등 AI 투자 심리 냉각 흐름도 관리 포인트.</div>
+  </div>
+  <div class="section-title" style="margin-top:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 점검·클라우드 장애 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 에이전트 도입·마이데이터 활용 전략</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">JB우리캐피탈이 JB금융그룹 계열사로서 업스테이지 시리즈 C-2 투자(<b>400억 원</b>)에 참여, 금융특화 AI 에이전트 공동 개발 및 여신 심사 자동화 적용을 추진하는 구체적 AX 전략을 공개. 동종 캐피탈사 중 AI 기술기업 지분투자를 통한 내재화 전략을 선행한 사례로 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융당국이 금융사 <b>555곳 전수 보안점검</b> 착수, 캐피탈사도 점검 대상 포함 확인. 보안패치 적용 현황·접근통제 체계 긴급 점검 검토 요. 클라우드 서비스 단일 의존 구조 여부 및 장애 시 업무 연속성 계획(BCP) 작동 여부 확인 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">JB우리캐피탈 등 경쟁사의 <b>AI 에이전트</b> 여신심사·업무자동화 적용 속도 모니터링 강화. 기업 공공 마이데이터의 법인 여신 프로세스 적용 가능성 및 비대면 심사 간소화 효과 검토 요. AI 투자심리 냉각에 따른 관련 기업 신용 리스크 변화도 여신 포트폴리오 관점에서 관리 포인트.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 사내 클라우드 의존 서비스 목록화 후 단일 CSP 장애 시 대체 경로 존재 여부 점검 (멀티클라우드·이중화 구성 검토). ② JB우리캐피탈의 AI 에이전트 여신심사 적용 사례를 벤치마크로 삼아, 반복 업무(서류 검토·심사 보조) 대상 AI 자동화 우선순위 도출 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며,<br>현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261020_0003833978" target="_blank">→ 경찰, 금융권 해킹사건 '중대범죄' 판단…중수청 통보 예정</a></div>
+  <div class="source-card"><a href="https://www.segye.com/newsView/20261020521235?OutUrl=naver" target="_blank">→ 경찰, 금융권 AI 해킹 중대범죄로 판단 …중수청에 통보</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261020172251085?input=1195m" target="_blank">→ 구글 클라우드 장애로 영국 은행·공공의료 사이트 차질(종합)</a></div>
+  <div class="source-card"><a href="https://www.dt.co.kr/article/12090250?ref=naver" target="_blank">→ 구글클라우드 장애에 英 금융·공공서비스 먹통…8시간 만에 복구</a></div>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20103875?ref=naver" target="_blank">→ JB금융, 업스테이지에 400억 투자…지분 2% 확보</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/finance/2026/10/21/2026102015140595075" target="_blank">→ JB금융, 업스테이지에 400억 투자…핀다와 'AI은행' 삼각동맹 구축</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261021003200072?input=1195m" target="_blank">→ '韓엘리스 폭락' 외신 집중조명…"참담한 데뷔, AI투자 우려 증폭"</a></div>
+  <div class="source-card"><a href="https://www.imaeil.com/page/view/2026102015353998949" target="_blank">→ IBK기업은행, '기업 공공 마이데이터' 법인 수신업무까지 도입</a></div>
+  <div class="source-card"><a href="http://www.hansbiz.co.kr/news/articleView.html?idxno=874576" target="_blank">→ 베스핀글로벌, '2026 산업별 AX 고객 사례집' 발간</a></div>
+
+</div>
