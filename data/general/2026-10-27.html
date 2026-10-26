@@ -1,0 +1,148 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">조달금리 상승·중금리대출 규제 완화 기조 속 캐피탈 여신·조달 전략 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">카드·캐피탈사 조달금리, 2025년 9월 대비 <b>1.79%p</b> 상승 흐름 지속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 카드·캐피탈사 중금리대출 증가분 가계대출 총량에서 <b>100% 제외</b> 시행(2026년 8월~)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">BNK금융 비은행 부문 누적 순이익 증가, <b>BNK캐피탈</b> 기여분 <b>78억원</b> 확인</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">일부 시중은행, 가산금리 규제 우회 목적 우대금리 축소 관행 부각 → 당국 모니터링 강화 흐름</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">대구·경북 건설경기 침체 장기화, 건축허가면적 전년 동월 대비 <b>42.9~58.1%</b> 감소 수준</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">중금리대출 증가분의 가계대출 총량 <b>100% 제외</b> 정책으로 캐피탈사 중금리 여신 확대 여건 조성. 카드론 금리 하락 속 중금리 수요 이동 시 캐피탈 개인신용대출 경쟁력 제고 검토 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">수신 기능 없는 캐피탈사 특성상 <b>조달금리 상승</b> 국면에서 스프레드 압박 부담 요인 존재. 지역 건설경기 침체 장기화로 관련 여신 포트폴리오 건전성 관리 포인트 확대 흐름.</div>
+  </div>
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달비용·중금리대출 전략</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">건설경기 연계 여신 건전성</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">카드·캐피탈사 대상 중금리대출 총량 제외 정책 시행(2026년 8월~) 이후, 업권 전반에서 중금리대출 취급 확대 경쟁 가속 흐름 — 2026년 3분기 8개 카드사 중금리대출 취급액이 전년 동기 대비 <b>14.0%</b> 증가한 점은 캐피탈사 동일 시장 내 경쟁 강도 점검 시 참고 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>조달금리 상승</b> 국면에서 회사채·ABS 등 조달 수단별 비용 구조 점검 필요. 중금리대출 총량 제외 혜택 활용을 위한 취급 한도·심사 기준 재검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">대구·경북 지역 건설경기 침체 장기화에 따른 관련 여신 포트폴리오 건전성 모니터링 강화 검토 요. 금융당국의 금리 산정 투명성 강화 기조 지속 시 여신금리 체계 전반 선제 점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 조달금리 변동과 중금리대출 스프레드 간 상관관계 데이터 분석 → 최적 금리 밴드 산출 모델 검토. ② 지역별 건설경기 지표(착공·허가면적 등)와 관련 여신 연체율 연계 모니터링 대시보드 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.dailian.co.kr/news/view/1706371/?sc=Naver" target="_blank">→ 9월 카드론 금리 13.55%로 하락…조달금리 상승과 대조</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202610261411243219" target="_blank">→ BNK금융, 3분기 누적 순익 6223억원...전년비 19% ↓</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008815711&plink=ORI&cooper=NAVER" target="_blank">→ '가산금리' 내리랬더니 '우대금리' 뚝 '꼼수'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yeongnam.com/web/view.php?key=20261026024496982" target="_blank">→ 대구경북 산재사망 크게 줄었다…건설경기 침체여파 '씁쓸한 뒷맛'</a>
+  </div>
+
+</div>
