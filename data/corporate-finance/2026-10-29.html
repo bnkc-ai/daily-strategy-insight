@@ -1,0 +1,143 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">부동산 PF 기초 ABS 시장의 급격한 위축과 금융당국의 부실채권 관리 체계 전면 개편이 맞물리며, 기업금융 포트폴리오 전반의 건전성 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text"><b>2026년 3분기</b> 부동산 PF 기초 ABS 발행액, 전년 동기 대비 <b>98.3% 급감</b> (200억원)</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 금융공공기관 <b>연체 15년 이상 장기 부실채권 4조9천억원</b> 일괄 소각 추진</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">포용금융 종합평가체계 도입으로 <b>내년부터 제2금융권</b>까지 평가 대상 확대 예정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">AI 관련 글로벌 기업 자금조달 비용 상승 및 <b>사모신용시장 2027~2029년 대규모 만기</b> 집중 경고</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">한신평, SK하이닉스 신용등급 전망 <b>'긍정적'</b>으로 상향 (AA+ 유지)</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">부동산 PF 기초 ABS 시장 위축 속에서도 <b>여신전문금융회사의 ABS 발행액이 전년 동기 대비 24.1% 증가</b>하는 등 캐피탈 업권의 유동화 조달 채널 활용 여지 존재. 금융공공기관 부실채권 소각·채무조정 체계 정비로 NPL 시장 재편 과정에서 선별적 채권 인수 기회 점검 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">부동산 PF 기초 ABS 발행의 급격한 위축은 PF 관련 여신 포트폴리오의 유동화 조달 환경 악화 신호로 참고 필요. 포용금융 평가체계가 <b>내년부터 제2금융권으로 확대</b>될 경우 캐피탈사에도 중저신용자 자금공급·채무조정 실적 관련 새로운 관리 부담 요인으로 작용 가능.</div>
+  </div>
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF ABS 조달 환경 모니터링</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">포용금융 평가 제2금융권 확대 대비</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사(캐피탈사) 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>2026년 3분기</b> 부동산 PF 기초 ABS 발행 급감에 따른 PF 관련 여신 유동화 조달 여건 변화 점검 필요. 할부금융채권 기초 ABS 발행도 전년 동기 대비 <b>92.3% 감소</b>한 점은 캐피탈 조달 다변화 측면에서 참고 포인트.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">금융당국의 포용금융 종합평가체계가 <b>내년부터 제2금융권으로 확대</b>될 예정인 만큼, 중저신용자 자금공급·채무조정 관련 내부 기준 및 실적 관리 체계 선제 검토 요. 금융공공기관 부실채권 소각·채무조정 정책 변화가 NPL 시장 수급에 미치는 영향 모니터링 강화 검토.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기업금융 포트폴리오 내 PF 관련 여신 및 ABS 유동화 잔액 현황을 자동 모니터링하는 대시보드 구축 검토 — 시장 발행 환경 변화와 내부 조달 여건 연계 분석 가능. ② 포용금융 평가 제2금융권 확대 시 적용 가능한 평가 지표(채무조정 실적·중저신용자 자금공급 비율 등)를 사전 시뮬레이션하여 대응 갭 분석 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://biz.chosun.com/stock/stock_general/2026/10/29/K5QRC3C6ORAKPBCXB7TUFGGXIM/?utm_source=naver&utm_medium=original&utm_campaign=biz" target="_blank">→ 3분기 등록 ABS 발행 5.7% 감소…부동산 PF 기초 발행 98% 급감</a></div>
+  <div class="source-card"><a href="https://www.newspim.com/news/view/20261028001094" target="_blank">→ 3분기 ABS 발행 5.7% 감소…부동산PF 급감</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261028_0003844906" target="_blank">→ 금융위, 17개 은행 '포용금융' 매년 평가…"잘하면 과징금 10% 감경"</a></div>
+  <div class="source-card"><a href="https://www.nocutnews.co.kr/news/6598422?utm_source=naver&utm_medium=article&utm_campaign=20261028030035" target="_blank">→ 은행 포용금융 S~C 등급 매긴다…잘하면 출연금 감면키로</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261028122000002?input=1195m" target="_blank">→ 포용금융 우수은행 서금원 출연금 최대 20% 경감…종합평가 도입</a></div>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202610281435311175" target="_blank">→ "채무조정 기준 명확하게"...금융위, 부실채권 관리체계 전면 개편</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261028175700008?input=1195m" target="_blank">→ 한신평, SK하이닉스·SK스퀘어 신용등급 전망 '긍정적' 상향</a></div>
+
+</div>
