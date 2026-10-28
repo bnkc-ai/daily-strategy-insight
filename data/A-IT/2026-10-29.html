@@ -1,0 +1,149 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 전방위 해킹 사태 확산 및 AI 기반 공격 고도화 → 보안 거버넌스·AX 전략 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융보안 측면에서, 2026년 10월 북한 IP 대역 <b>440만 건</b> 이상 스캔성 접근 탐지·당국 공문 발송</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융IT규제 측면에서, 금융회사 <b>555곳 점검 중 130곳(약 23%)</b> 보안관리 미흡 확인·과기정통부 172개 시설 긴급 점검 착수</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">현대캐피탈 포함 여신전문금융업권이 2026년 9~10월 연쇄 해킹 피해 기관 목록에 포함·업권 전반 경계 수위 상승</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융권AX 측면에서, AI 에이전트가 공격 수단으로 활용되는 동시에 방어 도구로도 주목받는 이중 구도 형성</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">BNK금융그룹 차원에서 삼성SDS가 생성형 AI 플랫폼 구축 사업 우선협상대상자로 선정·여신·그룹웨어 등 단계적 AI 적용 추진 중</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">클라우드 측면에서, MS 애저 매출 <b>전년 동기 대비 48% 증가</b>·AI 인프라 수요 급증으로 금융 클라우드 활용 환경 변화 가속</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 AX 전환 수요 확대로 <b>AI 기반 여신심사·업무자동화</b> 도입 검토 환경 조성. BNK금융그룹 생성형 AI 플랫폼 구축 추진이 계열사 공동 활용 기반 마련의 참고 사례로 활용 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">AI 기반 해킹 공격이 <b>여신전문금융업권</b>까지 확산된 흐름 확인. 외부 연계 서버·비대면 업무 시스템이 주요 침투 경로로 지목되어 캐피탈사 외부 접점 시스템 관리 포인트 부각.</div>
+  </div>
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 점검·대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AX 전략 수립·클라우드 거버넌스</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대캐피탈이 2026년 9~10월 금융권 연쇄 해킹 피해 기관에 포함된 것으로 확인되어, 여신전문금융업권 내 보안 사고 실제 발생 사례로 주시 필요. BNK금융그룹은 삼성SDS를 생성형 AI 플랫폼 구축 우선협상대상자로 선정하여 여신·그룹웨어 등 업무 전반에 AI 단계적 적용 및 거버넌스 포털 구축을 추진 중.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">외부 연계 서버·비대면 채널 등 <b>인터넷 접점 자산</b> 현황 파악 및 취약점 점검 필요. 금융당국의 전업권 보안 점검 기조에 맞춰 보안패치·접근권한 통제 이행 수준 확인 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">BNK금융그룹 생성형 AI 플랫폼 구축 진행 상황을 참고하여 <b>캐피탈사 AX 로드맵</b> 연계 방향 검토 필요. 망분리 규제 환경 내 AI 보안 도구 도입 시 통제 체계 설계 방안 사전 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 외부 접점 시스템(비대면 여신 연계 서버 등) 대상 <b>AI 기반 이상징후 탐지</b> 모델 적용 가능성 검토. ② BNK금융그룹 AI 플랫폼 거버넌스 포털 구축 범위에 캐피탈사 여신 업무 포함 여부 확인 및 참여 방안 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="http://www.newstomato.com/ReadNews.aspx?no=1318329&inflow=N" target="_blank">→ (현장+)'AX 기반 디지털금융 전환' 서울 핀테크 위크</a></div>
+  <div class="source-card"><a href="https://it.chosun.com/news/articleView.html?idxno=2023092172976" target="_blank">→ "AI 공급부터 구축·운영까지"…삼성SDS·LG CNS, 기업 AX 시장 격돌</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12188401" target="_blank">→ 정부, 민간기반시설 172곳 긴급 점검...이찬진 "IT 보안 강화를"</a></div>
+  <div class="source-card"><a href="https://www.donga.com/news/Economy/article/all/20261029/134928955/2" target="_blank">→ [단독]금융권 대규모 해킹 시도 IP주소 등록지는 '평양'</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261028118100002?input=1195m" target="_blank">→ 금융권 해킹 시도서 북한 IP 다수 확인…당국 "각별 유의"</a></div>
+  <div class="source-card"><a href="https://www.tjb.co.kr/news05/bodo/view/id/105416" target="_blank">→ 21일 새벽부터 금융권 겨냥, 당국 "IP만으로 국적 특정 어려워"</a></div>
+  <div class="source-card"><a href="https://www.segye.com/newsView/20261028517076?OutUrl=naver" target="_blank">→ 금융권 해킹 도미노… 北 IP 440만건 포착</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261028148500017?input=1195m" target="_blank">→ 해킹 또 비상…증권·가상자산까지 드러난 보안 허점</a></div>
+  <div class="source-card"><a href="https://www.kukinews.com/article/view/kuk202610280199" target="_blank">→ 핵심 거래망 밖이 뚫렸다…금융권 잇단 정보 유출에 보안 비상</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12188755" target="_blank">→ 北 IP서 해킹 시도…코인탈취 노렸나 靑, 전방위 해킹 사고에 긴급점검회의</a></div>
+
+</div>
