@@ -1,0 +1,166 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 연쇄 해킹·개인정보 유출 확산 및 망분리 규제 재편 흐름 속, <b>금융보안 거버넌스</b> 전반에 대한 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">가상자산 거래소(빗썸·프라뱅) 및 항공사(진에어) 등 금융·유관 업권 해킹·개인정보 유출 연쇄 발생</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융위, 연쇄 해킹 여파로 연기됐던 <b>망분리 규제 완화</b> 2차 선정 절차를 11월 중 재개 방침 확인</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융위 부위원장, 보안 예산 비중 상향·ISMS 인증 기준 재검토·2금융권 보안 취약성 개선 검토 공식화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">삼성SDS, <b>금융권 AX</b> 수요 확대에 힘입어 클라우드 MSP 사업 전년 동기 대비 25% 성장 기록</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금융권 AI 에이전트 시대 대비, 당국이 AI 지위·책임·인프라·보안 강화 항목 점검 방향 제시</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">
+      망분리 규제 완화 재추진 흐름은 금융사의 외부 AI·보안 SaaS 도입 여건 개선으로 연결될 수 있어, <b>AI 기반 보안 고도화</b> 투자 검토 시점으로 활용 가능.<br>
+      삼성SDS 등 IT 벤더의 금융권 AX 플랫폼 공급 확대로, 캐피탈사 규모에 맞는 <b>클라우드·AX 도입</b> 협상 레버리지 확보 여건 형성.
+    </div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">
+      금융권 연쇄 해킹 사태로 당국의 <b>2금융권 보안 취약성</b> 점검 강화 기조가 확인되어, 캐피탈사 포함 비은행권 보안 감독 강도 확대 가능성 존재.<br>
+      망분리 완화 과정에서 외부 시스템 연결 확대 시 <b>공격 접점 증가</b> 우려가 병존하여, 규제 수용과 보안 체계 정비 간 균형 관리 필요.
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 점검·규제 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AX 도입 전략·망분리 완화 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">현대카드가 자체 개발 AI·데이터 플랫폼 '<b>유니버스(UNIVERSE)</b>'의 해외 라이선스 공급을 추진하며 데이터 기반 비즈니스 다변화 전략을 본격화하고 있어, 카드·캐피탈 업권 내 데이터 플랫폼 경쟁력 격차 확대 흐름 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">
+      금융당국의 <b>2금융권 보안 취약성</b> 점검 기조 강화에 따라, 자사 IT 보안 예산 비중·ISMS 인증 현황·API 접근통제 수준 등 선제 점검 필요.<br>
+      빗썸·진에어 사례처럼 <b>API 취약점·그룹웨어 시스템</b>이 침입 경로로 활용된 점을 참고하여, 내부 업무 시스템 외부 노출 구간 모니터링 강화 검토 요.
+    </div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">
+      <b>망분리 규제 완화</b> 2차 선정 재개 시, 보안 목적 AI 도입 대상 금융사 요건 충족 여부 및 참여 가능성 사전 검토 필요.<br>
+      금융권 AX 수요 확대 흐름 속 삼성SDS 등 주요 벤더의 <b>금융 특화 AI·클라우드 플랫폼</b> 도입 로드맵을 중기 IT 전략과 연계하여 검토 요.
+    </div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">
+      ① 자사 고객 정보 접근 API 및 내부 그룹웨어 시스템 대상 <b>외부 침입 시뮬레이션(모의해킹)</b> 실시 여부 점검 및 일정 수립 검토.<br>
+      ② 금융위 망분리 완화 선정 기준(보안 역량 검증 항목) 사전 분석 후, 자사 보안 체계 갭(Gap) 진단 보고서 작성 검토.
+    </div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.seoul.co.kr/news/economy/2026/10/29/20261029500278?wlog_tag3=naver" target="_blank">→ [단독]프라뱅 코인 1억 털리고 빗썸 고객정보 844명 유출… '보안 미흡' 알고도 뚫렸다</a></div>
+  <div class="source-card"><a href="https://www.seoul.co.kr/news/economy/finance/2026/10/30/20261030001008?wlog_tag3=naver" target="_blank">→ [단독] 코인 1억 털린 '프라뱅'… 빗썸, 고객 정보도 유출</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261029191700003?input=1195m" target="_blank">→ 진에어, 외부 해킹 공격에 회원 1천454명 정보 유출</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026102946367" target="_blank">→ 진에어, 해킹공격으로 회원 1454명 개인정보 유출</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261029_0003847253" target="_blank">→ 빗썸, 개인정보 700건 유출 확인…고객정보 수백건도(종합)</a></div>
+  <div class="source-card"><a href="https://www.sedaily.com/article/20107998?ref=naver" target="_blank">→ "망분리 규제 완화, 보완 뒤 재추진…은행 보안 예산 비중 상향도 검토" [서경 금융전략포럼]</a></div>
+  <div class="source-card"><a href="https://www.newspim.com/news/view/20261029001188" target="_blank">→ 금융권 해킹에 멈춘 '망분리 완화' 내달 재개 방침…전면 해제는 신중</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261029_0003846537" target="_blank">→ 이억원 "어떤 상황에서도 금융서비스 중단 없어야"…재난 대응 훈련</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261029167500003?input=1195m" target="_blank">→ LH, 잇단 금융권 해킹사태에 사이버보안 점검·대책회의</a></div>
+  <div class="source-card"><a href="https://www.epnc.co.kr/news/articleView.html?idxno=408979" target="_blank">→ 삼성SDS, AI 인프라·AX가 3분기 실적 견인…클라우드 18% ↑</a></div>
+  <div class="source-card"><a href="http://www.biztribune.co.kr/news/articleView.html?idxno=361553" target="_blank">→ 삼성SDS, 3Q 영업익 2410억·AX 매출 2배 성장…AI 데이터센터 확장</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261029070252527?input=1195m" target="_blank">→ 삼성SDS, 클라우드·물류 동반 성장…2027년 로봇 플랫폼 출시(종합2보)</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=677161" target="_blank">→ 현대카드, 외형·건전성 다 잡은 3Q…신성장 동력은 '데이터'</a></div>
+
+</div>
