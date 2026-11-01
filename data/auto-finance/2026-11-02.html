@@ -1,0 +1,155 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">완성차 업계의 <b>무이자 할부·구독 서비스 확대</b>와 KB캐피탈의 해외 자동차금융 다변화 전략이 맞물려, 국내외 오토금융 경쟁 지형 변화 → 상품 포지셔닝 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">현대차·기아, 2026년 11월 K-세일페스타 연계 <b>최대 60개월 무이자 할부</b> 및 신차·인증중고차 대규모 할인 프로모션 동시 전개</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">완성차사의 <b>잔존가치유예할부</b> 및 구독 서비스 확산으로 리스·장기렌트 대비 소비자 선택지 다양화 흐름 가속</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">자동차 구독 서비스, 5년 누적 시 일시불 대비 <b>최대 1,500만 원 이상</b> 비용 부담 확대 → 리스·장기렌트의 비용 경쟁력 재부각</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">KB캐피탈, 라오스·인도네시아 캡티브 기반 자동차금융에서 <b>EV·상용차·B2B 금융</b>으로 상품 다변화 및 해외 수익 기반 확대 중</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">중국 완성차의 저가 PHEV 공세로 국내 수입차 시장 내 중국산 비중이 <b>2026년 상반기 41.2%</b>로 독일산(30.1%) 첫 추월</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">완성차사 무이자 할부 프로모션 집중 시기, 캐피탈사 <b>오토론·할부금융</b> 취급 수요 단기 확대 가능성 존재. 자동차 구독 대비 리스·장기렌트의 총비용 경쟁력이 재확인되어, 운용리스·장기렌트 상품의 고객 유인 논거 강화 흐름.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">완성차사 직접 금융(무이자 할부·구독)이 캐피탈사 <b>신차금융 고객 접점</b>을 잠식하는 구조적 압박 요인 확대. 중국산 저가 차량 점유율 확대 시 국내 신차 판매 둔화 → 오토론·할부 취급 기반 약화 부담 요인.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">무이자 할부 프로모션 경쟁</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">구독·잔가유예할부 확산, 중국차 점유율 변화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">KB캐피탈은 라오스 법인(KKLS) 기준 2026년 상반기 신규취급액 <b>2,440억 원, 영업이익 31억 5,000만 원</b>을 기록하며 동남아 자동차금융 수익 기반을 안정화. 신차 중심에서 중고차·상용차·EV바이크·B2B 금융으로 상품을 다변화하고, 인도네시아에서는 고투그룹 합작사 일렉트룸과 MOU를 통해 EV 모빌리티 기업금융 영역까지 확장하는 전략적 움직임 확인.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">2026년 11월 완성차 무이자 할부 프로모션 기간 내 <b>오토론·할부금융 취급 조건 및 딜러 제휴 채널 경쟁력</b> 점검 필요. 구독 대비 리스·장기렌트 총비용 우위 데이터를 활용한 영업 현장 대응 논거 정비 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">완성차사 <b>잔존가치유예할부·구독 서비스</b> 확산에 따른 캐피탈사 신차금융 포지셔닝 재정립 전략 검토 요. 중국산 차량 국내 점유율 확대 추이에 따른 취급 차종별 <b>잔존가치 리스크</b> 모니터링 강화 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 차종별·연식별 중고차 잔존가치 데이터를 활용해 중국산 차량 편입 시 <b>리스·할부 상품 잔가 설정 기준 적정성</b> 자동 모니터링 모델 검토. ② 완성차 프로모션 시기와 당사 오토론 취급 실적 간 상관관계 분석을 통해 <b>딜러 채널 연계 마케팅 타이밍 최적화</b> 방안 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.edaily.co.kr/News/Read?newsId=02296006645641456&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article" target="_blank">→ 현대차·기아, 'K-세일페스타' 동참…신차·중고차 대규모 할인(종합)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.asiatoday.co.kr/kn/view.php?key=20261101010000170" target="_blank">→ 현대차·기아, 'K-세일페스타' 맞아 연말 할인 공세…내수 회복 총력</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newscj.com/news/articleView.html?idxno=3444916" target="_blank">→ 현대차·기아, K-세일페스타 참가… 신차·중고차 할인 확대</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202611011816280453" target="_blank">→ 현대차, 美하이브리드·신차·금융으로 '중국차 반란'에 맞선다</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.consumernews.co.kr/news/articleView.html?idxno=767150" target="_blank">→ [구독경제의 명암 ⑤끝] 자동차 구독, 5년 타면 차값보다 1500만 원 더 든다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=202610302216263365dd55077bc2_18" target="_blank">→ 빈중일 KB캐피탈 대표, 라오스·인니 캡티브 기반 자동차금융 선점 [캐피탈사 해외법인 전략 ④]</a>
+  </div>
+
+</div>
