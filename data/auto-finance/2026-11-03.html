@@ -1,0 +1,152 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">정부 전기차 경쟁력 강화방안 발표 예고·배터리 리스제 논의 본격화 → 오토금융 상품 구조 및 중고 전기차 금융 대응 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">정부, 2026년 11월 중 '전기차 산업 경쟁력 강화방안' 발표 예고</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">업계, <b>배터리 리스제</b> 도입 법적 근거 마련 정부에 공식 건의</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">중고 전기차 거래 비중, 2024년 1분기 1.44% → 2026년 3분기 <b>4.26%</b>로 약 3배 확대</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">완성차사, 인증중고차에 배터리 진단 정보 공개 및 금융서비스 확대 적용 추진</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">JB우리캐피탈, 인도네시아 현지 법인 통해 <b>EV 금융사업</b> 본격화 및 중앙아시아 오토금융 확대 추진</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content"><b>배터리 리스제</b> 법제화 논의 진전 시, 리스사·금융사가 배터리 소유 주체로 참여하는 신규 상품 구조 설계 검토 가능.<br>중고 전기차 거래 급증 흐름 속, 배터리 상태 기반 <b>잔존가치 산정 모델</b> 선제 구축 시 중고 EV 금융 경쟁력 확보 기회.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">완성차사의 인증중고차 금융서비스 직접 확대로 캐피탈사 중고차 금융 고객접점 축소 부담 요인 존재.<br>전기차 배터리 상태 정보 비대칭 환경에서 <b>잔존가치 리스크</b> 산정 기준 미비 시 운용리스·할부 취급 손실 가능성.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">배터리 리스제 입법 동향·강화방안 내용</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">중고 EV 금융 상품 구조 재설계</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">JB우리캐피탈이 인도네시아 현지 여신전문금융회사 인수 승인을 획득하고, AI 기반 핀테크 에이젠글로벌과 협업해 <b>EV 금융사업</b>을 본격화하는 동시에 키르기스스탄 금융회사 지분 100% 인수 계약을 통해 중앙아시아 오토금융 거점 확보에 나선 상황으로, 해외 자동차금융 경쟁 구도 변화 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">2026년 11월 중 발표 예정인 <b>전기차 산업 경쟁력 강화방안</b> 내 배터리 리스제 관련 조항 모니터링 강화 필요.<br>완성차사의 인증중고차 금융서비스 확대 범위 및 조건 점검을 통해 중고 EV 할부·리스 상품 경쟁력 비교 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content"><b>배터리 리스제</b> 법제화 진행 시, 금융사 배터리 소유 구조에 적합한 상품·리스크 관리 체계 사전 설계 검토 요.<br>중고 전기차 거래 비중 확대 추세에 맞춰 <b>배터리 잔존가치 평가 기준</b> 내재화 및 관련 데이터 확보 전략 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 완성차사 공개 배터리 진단 데이터(충·방전 이력, 셀 전압 편차 등)를 활용한 <b>중고 EV 잔존가치 자동 산정 모델</b> 파일럿 검토.<br>② 배터리 리스제 도입 시나리오별 상품 구조(배터리 소유·리스 분리형) 시뮬레이션 및 수익성 사전 분석 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261102126100002?input=1195m" target="_blank">→ 이형일 "'전기차 산업 경쟁력 강화방안' 이달 발표"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20261102518004?OutUrl=naver" target="_blank">→ 이형일 부총리, 정의선과 전기차 경쟁력 논의…"이달 경쟁력 강화방안 발표"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.ytn.co.kr/_ln/0102_202611021803455602" target="_blank">→ 이형일 "전기차 산업 경쟁력 강화방안 이번 달 발표"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.news2day.co.kr/article/20261102500288" target="_blank">→ JB금융, 비은행 기여도 40% 돌파…국내외 M&A로 성장축 확대</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.joongang.co.kr/article/25475208" target="_blank">→ "중고 전기차 직접 판다"…완성차, 신차급 혜택까지 퍼주는 속내</a>
+  </div>
+
+</div>
