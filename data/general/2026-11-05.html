@@ -1,0 +1,150 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금소법 불완전판매 제재 기준 확립·경기 침체 심화·카카오뱅크의 캐피탈 진출 가속 → 소비자보호 규제 환경 및 업계 경쟁 구도 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금소법 위반 첫 대규모 제재로 <b>3,712억원</b> 과징금 확정, 불완전판매 제재 기준 정립</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">2026년 3분기 아르바이트 구인공고 <b>전년 동기 대비 22.1% 급감</b>, 경기 침체 신호 가시화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">건설경기 침체 장기화로 연관 산업 전반 실적 부진 확대 흐름</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">카카오뱅크, 마스턴캐피탈 인수 통해 캐피탈 시장 진입 본격화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">미국 빅테크 회사채 가산금리 확대, 글로벌 <b>시장금리 상승</b> 기조 지속</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">민주당 상원 장악으로 Fed 금리 인하 압박 약화, 고금리 장기화 가능성 부상</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금소법 제재 기준 확립으로 소비자보호 내부통제 선제 정비 시 규제 리스크 선점 가능. 경기 침체 국면에서 서민·중저신용 고객 대상 소비자금융 수요 확대 가능성 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">글로벌 <b>시장금리 상승</b> 기조 지속 시 캐피탈 조달비용 확대 부담 요인. 경기 침체 심화로 소비자금융 자산건전성 관리 포인트 확대 우려.</div>
+  </div>
+
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">조달비용·소비자보호 규제 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">경기 침체 장기화에 따른 건전성 관리</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">카카오뱅크가 마스턴캐피탈 지분 100% 인수 계약을 체결하고 <b>2030년 ROE 15%</b> 달성 수단으로 캐피탈사를 명시, 비은행 여신 시장 진입을 본격화하는 전략 공개. 신용카드업·증권업 추가 진출도 중장기 검토 중으로, 캐피탈 시장 내 은행계 경쟁 압력 확대 흐름 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금소법 불완전판매 제재 기준 확립에 따라 소비자금융 상품 설명·판매 프로세스 내부통제 점검 필요. 글로벌 <b>시장금리 상승</b>에 따른 회사채·ABS 등 조달비용 변동 모니터링 강화 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">경기 침체 장기화 시 소비자금융 연체율 상승 가능성 대비, 여신 포트폴리오 건전성 관리 전략 재점검 필요. 카카오뱅크 등 은행계 캐피탈 진입 가속화에 따른 소비자금융 경쟁 구도 변화 대응 방향 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 소비자금융 상품별 설명의무 이행 현황을 AI 기반으로 점검, 금소법 위반 취약 구간 사전 식별 체계 구축 검토. ② 경기 침체 지표(고용·소비 동향)와 자사 소비자금융 연체율 간 상관관계 모델링을 통한 선제적 건전성 경보 체계 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026110463391" target="_blank">→ 홍콩ELS 과징금 3700억…은행 "소송 검토"</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/finance/2026/11/05/2026110419020471775" target="_blank">→ 13개 금융사에 3712억… 홍콩ELS 과징금 일단락</a></div>
+  <div class="source-card"><a href="http://www.inews24.com/view/2022713" target="_blank">→ 홍콩 ELS 사태 3년 만에 결론…불완전판매 제재 '새 기준' [종합]</a></div>
+  <div class="source-card"><a href="http://www.yonhapnewstv.co.kr/news/AKR20261104154947IVI" target="_blank">→ 금융위, 홍콩ELS에 3,700억원 제재…부과액 역대 최대</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/202611056808i" target="_blank">→ "여보, 나 좀 도와줘"…알바생 자른 식당 사장님의 '한숨' [사장님 고충백서]</a></div>
+  <div class="source-card"><a href="https://biz.chosun.com/it-science/ict/2026/11/04/W2XJATVC5VDYHDLDUL23WF67BI/" target="_blank">→ AI 투자 경쟁에 자금조달 비용↑… 메타·구글·오라클 채권 금리 줄줄이 상승</a></div>
+  <div class="source-card"><a href="https://biz.heraldcorp.com/article/10926230?ref=naver" target="_blank">→ 민주당 상원 장악에 트럼프 '연준 흔들기' 제동…금리 인하 압박도 약화</a></div>
+  <div class="source-card"><a href="https://biz.newdaily.co.kr/site/data/html/2026/11/04/2026110400370.html" target="_blank">→ LX하우시스, 3분기 영업익 전년比 62% 감소 … 건설경기 침체·원가 부담 영향</a></div>
+  <div class="source-card"><a href="https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611041419008100617" target="_blank">→ 카카오뱅크, 3분기 누적 순익 25%↑…기업금융·캐피탈로 사업 확대</a></div>
+  <div class="source-card"><a href="https://dealsite.co.kr/articles/172051" target="_blank">→ 카뱅 ROE 15% 열쇠 '캐피탈'…대주주 적격성 '변수'</a></div>
+
+</div>
