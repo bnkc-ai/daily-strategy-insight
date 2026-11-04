@@ -1,0 +1,142 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">대출규제 장기화·금소법 제재 기준 확립으로 소매금융 영업환경 변화 → 여신심사·소비자보호 체계 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융위, <b>주담대 6억원 한도 제한(6·27 대출규제)</b> 현행 유지 방침 공식화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">수도권 입주물량 감소로 집값 상승세 지속 전망, 규제 완화 기대 약화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">불법 브로커 일당, 햇살론·사잇돌 등 정책서민금융 악용해 <b>약 50억원</b> 불법 수수료 편취</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">홍콩 ELS 불완전판매 관련 <b>금소법 위반 첫 대규모 과징금(3,712억원)</b> 확정</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금소법 체계 하 자율배상·재발방지 노력이 제재 감경 요소로 공식 반영</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">대출규제 장기화로 은행권 주담대 수요 일부가 캐피탈 개인신용대출·소비자금융 채널로 이동 가능성 존재. 정책서민금융 접근성 강화 요구가 높아지는 환경에서 <b>중저신용자 대상 여신상품</b> 차별화 여지 확대.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">금소법 대규모 과징금 확정으로 <b>불완전판매·설명의무 위반</b>에 대한 제재 기준이 업권 전반으로 확산될 부담 요인. 불법 브로커 활동 확산은 캐피탈사 대출 채널의 신뢰도 및 차주 정보 진위 검증 관리 포인트로 부상.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">대출규제 유지·금소법 제재 기준 적용</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">소비자보호 내부통제 체계 정비</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">금일 수집 기사 검토 결과, 현재 부서와 키워드에 실질적으로 관련된 경쟁사(캐피탈사) 동향은 별도로 확인되지 않았습니다.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content"><b>대출모집인·온라인 채널</b>을 통한 차주 유입 시 불법 브로커 개입 여부 확인 프로세스 점검 필요. 금소법 제재 기준 확립에 따라 소비자금융 상품 설명의무·판매 프로세스 내부 점검 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content"><b>6·27 대출규제</b> 장기화 기조 하 개인신용대출 수요 흡수 전략 및 중저신용자 여신심사 기준 재점검 검토 요. 자율배상·재발방지 체계가 금소법 제재 감경 요소로 공식화된 만큼, 소비자보호 내부통제 고도화 방향 전략 재점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 대출 신청 채널별 브로커 개입 패턴 탐지 모델 검토(신청 경로·수수료 흐름 이상 감지). ② 금소법 설명의무 이행 현황 자동 점검 체계 도입 가능성 검토(녹취·서류 분석 기반).</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261104_0003855010" target="_blank">→ 금융위 "집값 상승세, 당분간 지속 우려…대출규제 유지 불가피"</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026110464081" target="_blank">→ 서민 대출 받아준다며 50억 뜯어간 일당</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026110463391" target="_blank">→ 홍콩ELS 과징금 3700억…은행 "소송 검토"</a></div>
+  <div class="source-card"><a href="https://www.mt.co.kr/finance/2026/11/05/2026110419020471775" target="_blank">→ 13개 금융사에 3712억… 홍콩ELS 과징금 일단락</a></div>
+  <div class="source-card"><a href="http://www.inews24.com/view/2022713" target="_blank">→ 홍콩 ELS 사태 3년 만에 결론…불완전판매 제재 '새 기준' [종합]</a></div>
+
+</div>
