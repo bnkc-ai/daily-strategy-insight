@@ -1,0 +1,144 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">여전사 렌털 규제 완화 논의 본격화 및 하나금융의 수입차 금융 그룹 통합 전략 확대 → 자동차금융 시장 경쟁 구도 변화 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융위, 여전사 렌털 취급 한도를 <b>'리스+할부금융자산'</b> 이내로 완화하는 감독규정 변경 의견 수렴 중</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">롯데렌탈·SK렌터카가 연합회를 이탈, 한국연합회 차량 비중 <b>약 46%</b>로 급상승하며 규제 완화 반발 세력 재편</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">롯데렌탈, 2026년 3분기 중고차 장기렌터카 비중 <b>21.2%</b>로 상승세 지속 및 차량 생애가치(LTV) 극대화 전략 강화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">하나금융, 하나캐피탈 전속 파트너십 기반으로 하나은행·하나카드까지 결합한 수입차 금융 <b>그룹 원팀 체계</b> 구축</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">중고차 플랫폼 케이카(KG모빌리티플랫폼), 2026년 3분기 흑자 전환 후 그룹 내 금융·결제 계열사 연계 서비스 개선 추진 예고</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">여전사 렌털 취급 한도 완화 시 <b>장기렌터카 영업 확대</b> 여지 발생 → 할부금융자산 연계 렌털 포트폴리오 확장 검토 가능. 수입차 금융 시장에서 완성차사 전속 파트너십·그룹 계열사 결합 모델이 고객 접점 확대 수단으로 부상 → 유사 제휴 구조 참고 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">대형 렌터카 업체의 조직적 반발로 <b>규제 완화 일정 불확실성</b> 지속 → 렌털 자산 확대 계획 수립 시 규정 확정 시점 모니터링 필요. 하나금융의 그룹 통합 자동차금융 체계가 수입차 시장 내 경쟁 강도를 높이는 부담 요인으로 작용 가능.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">렌털 규제 의견 수렴 마감·감독규정 확정 여부</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">장기렌터카 포트폴리오 재편, 수입차 금융 제휴 경쟁 심화</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">하나캐피탈이 스텔란티스코리아와의 기존 전속 금융 파트너십을 하나은행·하나카드로 확대, 자동차 할부·리스에 외환·결제 서비스를 결합한 <b>그룹 원팀 수입차 금융 체계</b>를 구축하며 고객 접점 다각화에 나섬. 롯데렌탈은 우량 중고차를 즉시 매각하지 않고 <b>중고차 장기렌터카로 전환</b>하는 차량 생애가치 극대화 전략을 통해 2026년 3분기 오토장기 영업이익 518억원, 영업이익률 12.0%를 달성하며 렌털 본업 수익성을 강화.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융위 <b>렌털 감독규정 변경 의견 수렴 마감</b> 시점(2026년 12월 초 예정) 전후 규정 확정 여부 주시 필요. 확정 시 렌털 취급 한도 산정 기준 변경에 따른 자사 렌털 자산 한도 재산정 및 영업 여력 점검 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">규제 완화 확정 이후 <b>장기렌터카 포트폴리오 확대</b> 전략 및 중소상공인·벤처기업 대상 렌털 상품 설계 검토 필요. 하나금융 사례처럼 완성차·수입차 브랜드와의 <b>전속 금융 파트너십</b> 확보 가능성 및 그룹 계열사 연계 구조 참고 전략 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 렌털 규제 완화 시나리오별 자사 렌털 취급 가능 한도 시뮬레이션 및 수익성 분석 모델 구축 검토. ② 중고차 장기렌터카 전환 수요 증가 추세를 반영한 <b>차량 생애가치(LTV) 기반 수익성 분석</b> 프레임 도입 가능성 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.mt.co.kr/finance/2026/11/06/2026110412100881345" target="_blank">→ 끝나지 않는 렌탈 규제 논란… 캐피탈vs대형 렌터카 갈등 번져</a></div>
+  <div class="source-card"><a href="https://biz.heraldcorp.com/article/10927439?ref=naver" target="_blank">→ 롯데렌탈, 3분기 영업익 929억원·4%↑…"우량 중고차 매각 대신 장기렌터카 전환"</a></div>
+  <div class="source-card"><a href="https://www.viva100.com/article/20261105501053" target="_blank">→ 롯데렌탈, 3분기 영업이익 929억원⋯ 중고 장기렌터카 비중 21.2%</a></div>
+  <div class="source-card"><a href="https://www.cnbizm.com/news/articleView.html?idxno=320513" target="_blank">→ 하나금융, 스텔란티스와 수입차 금융 협력 확대</a></div>
+  <div class="source-card"><a href="http://www.newskr.kr/news/articleView.html?idxno=107739" target="_blank">→ 하나금융, 스텔란티스코리아와 자동차금융 협력 박차</a></div>
+  <div class="source-card"><a href="https://www.thepublic.kr/news/articleView.html?idxno=325235" target="_blank">→ 하나금융, 자동차 금융 사업 협력 확대… 스텔란티스코리아와 '맞손'</a></div>
+  <div class="source-card"><a href="https://www.viva100.com/article/20261105500880" target="_blank">→ KG모빌리티플랫폼, 3분기 영업이익 75억원⋯ 인증중고차·해외진출 등 추진</a></div>
+
+</div>
