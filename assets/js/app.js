@@ -7,11 +7,6 @@ function categoryRank(cat) {
   return i === -1 ? 999 : i;
 }
 
-const CATEGORY_LABEL = { 'global': '글로벌' };
-function categoryLabel(item) {
-  return CATEGORY_LABEL[item.category] || item.categoryName;
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   setCurrentDate();
   if (document.getElementById('snapshot-grid')) {
@@ -104,7 +99,7 @@ function createSnapshotCard(item) {
   card.onclick = () => location.href = `insight.html?file=${item.path}`;
   card.innerHTML = `
     <div class="snapshot-card-header">
-      <span class="badge badge-${item.category}">${categoryLabel(item)}</span>
+      <span class="badge badge-${item.category}">${item.categoryName}</span>
     </div>
     <div class="snapshot-title">${cleanTitle(item.title)}</div>
     ${item.summary ? `<div class="snapshot-summary">${item.summary}</div>` : ''}
@@ -217,7 +212,7 @@ function createArchiveItem(item) {
   div.innerHTML = `
     <div class="archive-item-accent"></div>
     <div class="archive-badge-wrap">
-      <span class="badge badge-${item.category}">${categoryLabel(item)}</span>
+      <span class="badge badge-${item.category}">${item.categoryName}</span>
     </div>
     <div class="archive-content">
       <div class="archive-title">${cleanTitle(item.title)}</div>
@@ -267,7 +262,7 @@ function applyFilters() {
 
   const filtered = allInsights.filter(item => {
     const matchCat = cat === 'all' || item.category === cat;
-    const text = `${item.title} ${item.summary || ''} ${item.categoryName} ${categoryLabel(item)}`.toLowerCase();
+    const text = `${item.title} ${item.summary || ''} ${item.categoryName}`.toLowerCase();
     return matchCat && (!query || text.includes(query));
   });
 
