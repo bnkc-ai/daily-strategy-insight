@@ -1,0 +1,148 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.competitor-content+.competitor-content{margin-top:8px;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">중고차·오토리스 중심 오토금융 포트폴리오 재편 흐름 가속 → 경쟁사 장기렌터카 상품 차별화·신규 오토론 연계 영업 확대 동향 점검 포인트</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">오토금융 업계 전반에서 저수익 신차 자산 축소, 고수익 중고차·오토리스 자산 확대 전략 가속화 흐름</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">롯데렌터카, 공공기관 전용 장기렌터카 상품(위약금 면제 구조) 출시로 법인 장기렌터카 시장 수주 경쟁 심화</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">신한금융의 롯데손보 편입 과정에서 <b>오토론 연계 영업</b> 확대 전략이 명시적으로 언급되며 오토금융 채널 경쟁 확대 예고</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">독일 완성차 3사(BMW·벤츠·폴크스바겐)의 수익성 악화 및 전기차 전환 비용 부담 심화로 글로벌 완성차 공급 구조 변동 가능성 대두</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">중고차·오토리스 중심 포트폴리오 재편이 업계 표준 전략으로 자리잡는 흐름 속, <b>대면 영업 채널 신설·전문 인력 확대</b> 등 선제 투자 효과 가시화 기대. 공공기관 장기렌터카 시장에서 위약금 면제형 맞춤 상품 구조가 수주 경쟁력을 좌우하는 핵심 변수로 부상, 유사 구조 상품 검토 여지 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">신한금융-롯데손보 결합으로 <b>오토론 연계 영업</b>이 대형 금융지주 채널(슈퍼SOL·방카슈랑스·전국 창구)을 통해 확대될 경우, 독립 캐피탈사 대비 채널 열위 부담 요인으로 작용 가능. 독일 완성차 공급 불안정 심화 시 수입차 중고차 잔존가치 변동성 확대 우려.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">오토론 채널 경쟁·공공기관 렌터카 수주 시즌</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">신한-롯데손보 오토론 연계 영업 본격화·수입 중고차 잔존가치 변동</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">롯데렌터카, 공공기관 전용 장기렌터카 '비즈카' 상품에 <b>위약금 면제 구조</b>를 상품 단계에서 내재화해 2026년 1~7월 공공기관 수주 실적이 전년 연간 실적 대비 약 14% 초과 달성, 연간 기준 전년 대비 약 48% 증가 전망 제시.</div>
+    <div class="competitor-content">신한금융, 롯데손보 편입 확정 후 보유 고객 334만명 기반을 활용한 <b>오토론 연계 영업</b> 확대를 중단기 전략으로 명시, 대형 금융지주 계열 오토금융 채널 경쟁 강화 예고.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">연말연초 공공기관 장기렌터카 수주 집중 시즌 도래 → 위약금 면제·계약 유연성 등 공공 맞춤형 상품 구조 경쟁력 점검 필요. 신한-롯데손보 오토론 연계 채널 가동 전 기존 오토론 고객 접점 유지 전략 모니터링 강화 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">독일 완성차 수익성 악화 및 전기차 전환 비용 구조 변화에 따른 <b>수입 중고차 잔존가치</b> 변동성 확대 가능성 → 중고차 자산 포트폴리오 내 차종별 잔존가치 리스크 분산 구조 검토 요. 대형 금융지주 계열 오토론 채널 확대에 대응한 차별화 영업 전략 재점검 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 중고차 차종별(수입·국산, 전기차·내연기관) 잔존가치 변동 패턴을 AI 모델로 분석해 리스·렌터카 자산의 잔존가치 리스크 조기 경보 체계 구축 검토. ② 공공기관 장기렌터카 수주 이력 데이터를 활용한 계약 갱신 주기·반납 패턴 분석으로 맞춤형 상품 설계 및 영업 타이밍 최적화 방안 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.fntimes.com/html/view.php?ud=2026110820440828208a55064dd1_18" target="_blank">→ 손대진 BNK캐피탈 대표, 중고차 중심 오토금융 리밸런싱에 수익성 제고 [금융사 2026 3분기 실적]</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.etnews.com/20261105000295" target="_blank">→ "신차 3년 계약 이후 1년만에 위약금 없이 반납"…롯데렌터카 '비즈카' 공공기관 전용 상품</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.bloter.net/news/articleView.html?idxno=678018" target="_blank">→ 롯데손보, 신한 품서 신용 디스카운트 해소…해외부실 2000억도 방어권</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.chosun.com/economy/auto/2026/11/09/QQQ7BFG6MJHBJION6CTUWAIHWQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news" target="_blank">→ 독일車가 어쩌다가… BMW "올해 이익률 -0.5~0.5%"</a>
+  </div>
+
+</div>
