@@ -1,0 +1,109 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #F5F4F0;
+    font-family: -apple-system, 'Malgun Gothic', sans-serif;
+    padding: 16px;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C2C2A;
+    margin-bottom: 8px;
+  }
+  .note-card-empty {
+    background: #F1EFE8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+  }
+  .note-content-empty {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #888780;
+  }
+  .result-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2C2C2A;
+    margin-bottom: 12px;
+  }
+  .issue-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #E8E6DE;
+  }
+  .issue-card:last-of-type {
+    margin-bottom: 16px;
+  }
+  .issue-tags {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-region { background: #EEEDFE; color: #3C3489; }
+  .tag-배제 { background: #FCEBEB; color: #A32D2D; }
+  .tag-점수 { background: #F1EFE8; color: #888780; }
+  .issue-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2C2C2A;
+  }
+  .issue-text b { color: #A32D2D; }
+  .divider {
+    border: none;
+    border-top: 1px solid #E8E6DE;
+    margin: 16px 0;
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="result-title">브리핑 결과</div>
+
+  <div class="note-card-empty">
+    <div class="note-content-empty">
+      금일 수집 기사 중 글로벌 담당 부서가 참고할 만한 지역 이슈가 확인되지 않았습니다.
+    </div>
+  </div>
+
+  <div class="section-title">검토 상세</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">라오스</span>
+      <span class="tag tag-배제">절대 배제</span>
+      <span class="tag tag-점수">0점</span>
+    </div>
+    <div class="issue-text">
+      인천공항 봉사단의 학교 시설 개선 활동으로, <b>광고성·홍보 기사</b>에 해당하여 배제되었습니다.
+    </div>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-배제">절대 배제</span>
+      <span class="tag tag-점수">0점 (중복 3건)</span>
+    </div>
+    <div class="issue-text">
+      아이스하키 경기 결과 기사 3건으로, <b>스포츠 경기 결과 절대 배제 대상</b>에 해당하여 배제되었습니다.
+    </div>
+  </div>
+
+</div>
