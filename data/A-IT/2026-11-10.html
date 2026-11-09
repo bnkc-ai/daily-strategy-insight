@@ -1,0 +1,137 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 해킹·개인정보 유출 사고 연쇄 발생 및 AI 에이전트 책임 공백 논의 확산 → 보안 거버넌스·AI 도입 전략 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">금융권 해킹·정보 유출 사고 급증, 4대 은행 보안 예산 대폭 확대 흐름</p></div>
+  <div class="event-card"><p class="event-text">AI 에이전트 활용 공격 실제 발생, BNK그룹 차원 통합보안관제 구축 착수</p></div>
+  <div class="event-card"><p class="event-text">앤트로픽 '클로드' 국내 기업 계정 <b>100여 개</b> 정보 유출 신고 접수</p></div>
+  <div class="event-card"><p class="event-text">망분리 전면 해제 TF 가동 예고 속 보안 적정성 검증 논란 지속</p></div>
+  <div class="event-card"><p class="event-text">금융 AI 에이전트 책임 공백 문제 제기, <b>금융분야 AI 가이드라인</b> 실효성 논쟁</p></div>
+  <div class="event-card"><p class="event-text">소상공인 대출 연체액 <b>3분기 연속 증가</b>, 비은행업권 연체 비중 확대</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">AI 데이터센터 PF 심사 기준 강화, 임차 수요 <b>50% 이상</b> 확보 요구 확산</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 전반의 AI 기반 보안·심사 자동화 투자 확대 흐름 속, <b>AI 기반 여신심사 자동화</b> 및 비금융 대안정보 활용 신용평가 도입으로 씬파일러 고객 발굴 기반 마련 참고 필요. 망분리 규제 완화 TF 가동에 따라 클라우드·AI 인프라 도입 여건 개선 가능성 주시 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">AI 에이전트를 활용한 외부 웹서버 공격 등 신종 사이버 위협이 금융권 전반으로 확산되는 흐름으로, 제3자 소프트웨어 취약점 경유 정보 유출 경로 점검 필요. 소상공인·개인사업자 대출 연체액이 비은행업권 중심으로 확대되는 환경에서 캐피탈사 여신 건전성 관리 포인트 모니터링 강화 검토 요.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 대응·연체 모니터링</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 거버넌스·망분리 완화 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">BNK금융그룹은 <b>2026년 11월 9일</b> '정보보호 대응체계 특별점검회의'를 개최하고, AI 기반 보안 취약점 점검 체계 도입 및 <b>그룹 통합 보안관제체계(G-SOC)</b> 단계적 구축을 결정했으며, CISO 협의회 신설과 외부 전문가 정보보호위원회 설치를 추진 중. 하나은행은 생성형 AI 기반 기업 신용평가 심사의견 생성 시스템을 전 영업점에 도입해 건당 처리시간을 약 <b>30분→10초</b>로 단축, 연간 약 2만7,000시간 절감 효과를 달성한 것으로 확인됨.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">① 금융권 연쇄 해킹 사고 확산 환경에서 외부 업무시스템·제3자 소프트웨어 경유 취약점 점검 체계 강화 검토 요. ② 비은행업권 소상공인 대출 연체 비중 확대(<b>2026년 3분기 기준 전년 동기 대비 21.5% 증가</b>) 흐름에서 개인사업자 여신 포트폴리오 건전성 모니터링 강화 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">① <b>망분리 전면 해제 TF</b> 결과 및 업권별 완화 기준 확정 시, 클라우드·AI 인프라 도입 로드맵 재점검 필요. ② 금융분야 AI 가이드라인상 AI 에이전트 책임 공백 논의가 제도화 방향으로 진행될 경우, 여신심사 AI 도입 시 사람의 사전승인 절차 설계 및 책무구조도 연계 방안 선제 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 공과금·소비패턴 등 비금융 대안정보를 활용한 개인사업자 신용평가 모형 도입 가능성 검토(농협은행 '올원브릿지모형' 사례 참고). ② AI 에이전트 기반 외부 공격 탐지 로그를 활용해 BNK캐피탈 자체 웹서비스 노출 표면 전수점검 및 이상징후 탐지 자동화 방안 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며,<br>현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261109_0003860726" target="_blank">→ BNK금융, AI기반 보안점검 도입…통합보안관제 구축</a></div>
+  <div class="source-card"><a href="https://www.newsis.com/view/NISX20261109_0003860714" target="_blank">→ 해킹 사고 잇따르자 4대 은행 보안예산 확대…신한 전년比 183%↑</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261109152000017?input=1195m" target="_blank">→ 앤트로픽 '클로드' 개인정보 유출 신고…국내 기업 계정 100여개</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026110960257" target="_blank">→ '클로드' 기업용 계정 정보 유출…앤트로픽, 개인정보위에 신고</a></div>
+  <div class="source-card"><a href="https://www.viva100.com/article/20261108500318" target="_blank">→ [기자수첩] 망분리 풀기 전에 적정성부터 검증해야</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=678116" target="_blank">→ [허정수칼럼] 준비 없이 맞는 금융 AI에이전트 시대</a></div>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202611091337002737" target="_blank">→ 농협은행, 금융이력 부족해도 대출 문턱 낮춘다</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261109142400002?input=1195m" target="_blank">→ 소상공인 대출 연체 3분기째 증가…매출·이익도 감소</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026110957881" target="_blank">→ 한국 찾은 '큰손' 계약 불발 이유가…AI 프로젝트 '초비상'</a></div>
+
+</div>
