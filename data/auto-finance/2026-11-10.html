@@ -1,0 +1,148 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">경쟁 캐피탈사의 중고차금융 성장세 및 완성차사의 잔가보장 금융 전략 확대 → 자동차금융 상품 경쟁력 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">JB우리캐피탈, 중고차금융 1위 유지하며 해당 기사 기준 전년 동기 대비 순이익 <b>14.9% 성장</b></div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">메리츠캐피탈, 마세라티와 MOU 체결해 <b>초고잔가·저금리</b> 브랜드 전용 금융 프로그램 출시</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">현대차, 현대캐피탈과 연계한 <b>잔존가치 보장형 할부</b> 상품으로 테슬라·BYD 공세 대응 전략 추진</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">경기도, 리스·렌터카 <b>보증금 반환채권 압류</b> 방식의 체납 징수 기법 공식화</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">완성차 브랜드와의 전용 금융 프로그램 제휴 시장이 확대되는 흐름으로, <b>잔가보장형 리스·할부</b> 상품 설계 및 브랜드 파트너십 확대 검토 여지 존재. 중고차금융 시장에서 경쟁사 성장이 지속되는 만큼, 차별화된 <b>중고차 금융 상품 라인업</b> 강화가 신규 수익원으로 부상 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">JB우리캐피탈의 중고차금융 수익 기여도가 그룹 내 최대 계열사 수준으로 성장하며 <b>업계 내 중고차금융 경쟁 심화</b> 흐름 확인. 리스·렌터카 보증금 반환채권에 대한 <b>공공기관 압류 기법 확산</b>으로 법인 고객 리스 계약 관리 리스크 점검 필요.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">경쟁사 금융 프로그램 출시 대응, 리스 보증금 채권 관리</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">잔가보장형 상품 설계, 브랜드 제휴 전략 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card" style="margin-bottom:16px;">
+    <div class="competitor-content">① <b>JB우리캐피탈</b>: 국내 중고차금융 1위를 유지하며 해당 기사 기준 전년 동기 대비 순이익 14.9% 증가, JB금융그룹 내 최대 이익 계열사로 부상 — 캐피탈사 간 중고차금융 수익 경쟁 심화 흐름 주시 필요.</div>
+    <div style="margin-top:10px;"></div>
+    <div class="competitor-content">② <b>메리츠캐피탈</b>: 마세라티 코리아와 MOU 체결, 초고잔가·저금리 조건의 브랜드 전용 금융 프로그램 출시 — 수입차 브랜드 연계 잔가보장형 상품 시장에서의 경쟁 강도 확대 흐름 확인.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">리스·렌터카 계약 법인 고객 중 <b>세외수입 체납 이력</b> 보유 고객에 대한 보증금 반환채권 압류 가능성 점검 필요. 메리츠캐피탈의 브랜드 전용 금융 프로그램 출시에 따른 <b>수입차 금융 고객 이탈</b> 여부 모니터링 강화 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">완성차사의 <b>잔가보장형 할부·리스 연계 전략</b>이 확산되는 흐름에서, 자체 잔존가치 설정 역량 및 브랜드 파트너십 구조 재점검 필요. 중고차금융 시장 내 경쟁사 성장세를 감안한 <b>상품 차별화 및 고객 접점 확대</b> 전략 검토 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 리스·렌터카 계약 법인 고객의 공공 체납 이력 데이터를 활용한 <b>계약 전 신용 리스크 스크리닝 모델</b> 적용 가능성 검토. ② 경쟁사 잔가보장형 상품의 잔존가치 설정 패턴을 분석해 <b>자사 잔가 경쟁력 수준 비교 모니터링</b> 체계 구축 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.hankyung.com/article/2026110958491" target="_blank">→ 지방금융 1위 바뀌나…JB, BNK 턱밑 추격</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.enewstoday.co.kr/news/articleView.html?idxno=2489714" target="_blank">→ 마세라티, 전용 금융 프로그램 MOU 체결</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003283313&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news" target="_blank">→ 경기도, 리스·렌터카 보증금 추적해 체납액 1억8천만원 징수</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.ytn.co.kr/_ln/0134_202611091611282195" target="_blank">→ 계기판이 옵션? 현대차 위기설의 실체 [한방이슈]</a>
+  </div>
+
+</div>
