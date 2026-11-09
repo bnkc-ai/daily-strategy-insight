@@ -1,0 +1,180 @@
+<style>
+  body {
+    background: #F5F4F0;
+    font-family: -apple-system, 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C2C2A;
+    margin-bottom: 8px;
+  }
+  /* 오늘의 지역 요약 */
+  .brief-card {
+    background: #E6F1FB;
+    border-left: 4px solid #185FA5;
+    border-radius: 0;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .brief-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #185FA5;
+    margin-bottom: 6px;
+  }
+  .brief-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #0C447C;
+    margin: 0;
+  }
+  /* 주요 이슈 */
+  .issue-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #E8E6DE;
+  }
+  .issue-tags {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-region {
+    background: #EEEDFE;
+    color: #3C3489;
+  }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2C2C2A;
+    margin: 0;
+  }
+  .issue-text b {
+    color: #A32D2D;
+  }
+  /* 참고 시 유의점 */
+  .note-card {
+    background: #FEF3C7;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid #B45309;
+  }
+  .note-content {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #633806;
+    margin: 0;
+  }
+  .note-content b {
+    color: #A32D2D;
+  }
+  /* 출처 기사 */
+  .source-note {
+    font-size: 11px;
+    color: #888780;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .source-card {
+    background: #F1EFE8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+  }
+  .source-card a {
+    color: #185FA5;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <p class="brief-body">미얀마에서 현지 법인 매출·이익 동반 감소 흐름 확인. 카자흐스탄에서는 한국 기업의 차세대 제품군 현지 출시 및 유통망 확대 움직임 포착. 캄보디아는 제73주년 독립기념일 기념식 개최.</p>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <p class="issue-text">2026년 3분기 미얀마 현지 법인 매출 전년 동기 대비 <b>49.7%</b> 감소, 영업이익 <b>89.6%</b> 감소 기록. 원액 수급 불확실성이 주요 요인으로 언급.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <p class="issue-text">한국 기업이 <b>2026년 10월</b> 카자흐스탄 알마티에 궐련형 전자담배 신제품 출시. 현지 플래그십스토어 운영 및 단계적 유통망 확대 추진 중.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">카자흐스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <p class="issue-text">알마티주 신공장은 연간 <b>45억 개비</b> 규모 생산능력 보유. 궐련에서 차세대 제품군으로 현지 포트폴리오 다변화 흐름.</p>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <p class="issue-text"><b>2026년 11월 9일</b> 프놈펜에서 제73주년 독립기념일 기념식 개최. 1953년 프랑스 식민 통치로부터 독립한 날을 기념.</p>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <p class="note-content">미얀마 현지 법인의 원액 수급 불확실성이 실적 악화 요인으로 명시된 바, 미얀마 내 공급망 및 원자재 조달 환경 변화 모니터링 대상.</p>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="http://www.joseilbo.com/news/news_read.php?uid=579237&class=17&grp=" target="_blank">→ 롯데칠성, 3Q 영업익 전년比 37.9%↓…'원가 부담·해외 부진'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.donga.com/news/Economy/article/all/20261109/134993371/1" target="_blank">→ KT&G, 카자흐스탄서 전자담배 'FLEX' 출시…NGP 해외사업 확대</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISI20261109_0002286903" target="_blank">→ '독립기념일' 국기 흔드는 캄보디아 학생들</a>
+  </div>
+
+</div>
