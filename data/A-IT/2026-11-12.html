@@ -1,0 +1,164 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융보안원 해킹으로 금융권 사이버 보안 취약점 부각 → 망분리 규제 전환 및 AI 에이전트 여신 자동화 흐름 속 IT 대응 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융보안원 해킹으로 <b>48개 금융사</b> 자료 유출, 금융당국 긴급 현장점검 착수</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">해커가 권한 승인 시스템 취약점 악용, 금감원 수준 허위 계정 생성 후 자료 탈취</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">개인정보 <b>300여 건</b> 및 시스템 이용자 정보 <b>350여 건</b> 유출, 2차 피해 우려 상존</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 이달 중 <b>망분리 규제 전면해제 TF</b> 가동 및 2027년 1분기 방안 마련 예정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">한국은행, 전환 대상 PC <b>60% 이상</b> 원PC 전환 완료, 연내 전행 확대 목표</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">PFCT, 여신 전략·대출 의사결정·리스크 관리 수행하는 <b>금융 특화 AI 에이전트</b> 상용화 착수</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금융권 보안 투자 세제 혜택 부재 지적, 통합투자세액공제 확대 논의 부상</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">망분리 규제 전면해제 논의가 본격화되면서 AI·클라우드 기반 업무환경 전환 가속 가능성 확대. <b>AI 에이전트</b> 기반 여신 자동화 솔루션이 캐피탈사 여신 업무 효율화 수단으로 부상 중이며, 도입 검토 시점으로 참고 필요.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">금융보안원 해킹 사례에서 확인된 <b>권한 승인 시스템 취약점</b>은 금융권 전반의 접근통제 체계 점검 필요성을 시사. 망분리 완화 전환 시 제로트러스트 기반 보안체계 미비 시 보안 공백 확대 우려.</div>
+  </div>
+
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 점검·대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">망분리 전환 및 AI 에이전트 도입 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">카카오뱅크는 개인사업자 부동산담보대출 갈아타기 서비스 출시와 함께 금융권 최초 <b>상환 자동화 시스템</b>을 도입, 대환 프로세스 자동화를 통한 고객 편의 강화 및 여신 경쟁력 제고 전략을 구체화하는 움직임 확인. PFCT는 저축은행·캐피탈사를 대상으로 AI 에이전트 기반 여신 자동화 솔루션 적용 범위 확대를 공식화, 캐피탈사 여신 시스템 고도화 경쟁 가속 흐름 주시 필요.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융보안원 해킹 사례를 계기로 자사 <b>정보보호 상시평가 시스템</b> 및 권한 승인 체계 점검 검토 요. 유출된 금융사 자료 악용 피싱 가능성 대비, 임직원 및 고객 대상 사칭 공격 모니터링 강화 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">금융당국의 <b>망분리 규제 전면해제 TF</b> 결과(2027년 1분기 예정)에 따른 IT 인프라 전환 비용·일정 사전 검토 필요. AI 에이전트 기반 여신 자동화 솔루션의 캐피탈사 적용 사례 확산에 대비한 도입 타당성 검토 전략 재점검 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 자사 내부 시스템 접근통제 로그를 AI 기반으로 이상행위 탐지하는 모니터링 체계 도입 가능성 검토. ② PFCT 에어팩 등 <b>AI 여신 에이전트</b> 솔루션의 캐피탈사 적용 범위·효과를 벤치마킹하여 여신 심사 자동화 파일럿 추진 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261111_0003863804" target="_blank">→ 금융보안원 뚫은 해커, 금감원 수준의 '접근 권한' 탈취해 자료 탈취(종합)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.etoday.co.kr/news/view/2646899" target="_blank">→ 보안 강화 외쳐온 금융보안원도 해킹⋯2차 피해도 우려</a>
+  </div>
+  <div class="source-card">
+    <a href="https://magazine.hankyung.com/business/article/202611110675b" target="_blank">→ 금융보안원까지 뚫렸다…48개사 자료 유출</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/economy/2026/11/12/2026111108541644280" target="_blank">→ 해킹엔 '채찍'만…금융권 보안 투자에 '당근'이 없다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newspim.com/news/view/20261111001310" target="_blank">→ [단독] 한국은행, '망 분리 개선' 연내 마무리한다…이미 60% 전환 완료</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12205455" target="_blank">→ "금융 AI가 대출전략 짜고 리스크까지 관리"…PFCT, '에이전트 빌더' 직접 개발</a>
+  </div>
+  <div class="source-card">
+    <a href="https://daily.hankooki.com/news/articleView.html?idxno=1424201" target="_blank">→ [금융단신] 우리금융지주·한국수출입은행·카카오뱅크·토스뱅크</a>
+  </div>
+
+</div>
