@@ -1,0 +1,165 @@
+<style>
+  body {
+    background: #F5F4F0;
+    font-family: -apple-system, 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C2C2A;
+    margin-bottom: 8px;
+  }
+  /* 오늘의 지역 요약 */
+  .brief-card {
+    background: #E6F1FB;
+    border-left: 4px solid #185FA5;
+    border-radius: 0;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .brief-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #185FA5;
+    margin-bottom: 6px;
+  }
+  .brief-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #0C447C;
+    margin: 0;
+  }
+  /* 주요 이슈 */
+  .issue-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #E8E6DE;
+  }
+  .issue-tags {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-region {
+    background: #EEEDFE;
+    color: #3C3489;
+  }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2C2C2A;
+    margin: 0;
+  }
+  .issue-text b {
+    color: #A32D2D;
+  }
+  /* 참고 시 유의점 */
+  .note-card {
+    background: #FEF3C7;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid #B45309;
+  }
+  .note-content {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #633806;
+    margin: 0;
+  }
+  .note-content b {
+    color: #A32D2D;
+  }
+  /* 출처 기사 */
+  .source-note {
+    font-size: 11px;
+    color: #888780;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .source-card {
+    background: #F1EFE8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+  }
+  .source-card a {
+    color: #185FA5;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <p class="brief-body">캄보디아에서 해외 크루즈 운영사 오디세이호가 승객을 현지에 남긴 채 운항을 중단하고 이탈한 사건이 발생하였으며, 해당 선박은 이후 싱가포르 법원에 의해 압류된 것으로 확인됨.</p>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <p class="issue-text">해외 크루즈 운영사 오디세이호가 <b>2025년 이후</b> 연료비 급등을 이유로 운항을 중단하고, 승객을 캄보디아에 남긴 채 이탈한 사건 발생</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">싱가포르</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <p class="issue-text">오디세이호 운영사가 현지 공급업체에 <b>약 50만 달러(약 7억 원)</b> 상당 채무 미상환 상태에서 싱가포르 법원에 의해 선박 압류 조치 시행</p>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <p class="issue-text">오디세이호 승객의 피해 보상 여부 및 운영사 법적 책임 귀속 문제는 현재 미확정 상태로, 향후 진행 경과 주시 필요</p>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <p class="note-content">오디세이호 사건은 캄보디아 현지에서 외국 크루즈 운영사의 계약 불이행 및 승객 유기가 발생한 사례로, 해당 지역 내 외국 사업자 관련 분쟁 처리 절차 및 현지 당국 대응 방식에 대한 모니터링 대상으로 분류됨. 압류 주체 및 청구인 명의는 공식 미공개 상태이므로 추가 확인 필요.</p>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+  <div class="source-card">
+    <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008842459&plink=ORI&cooper=NAVER" target="_blank">→ [머그 인사이트] "다 내리세요!!" 캄보디아에 승객 두고 떠난 오디세이호에 벌어진 일</a>
+  </div>
+
+</div>
