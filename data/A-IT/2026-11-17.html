@@ -1,0 +1,143 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융보안원 해킹·정부 메일 침해 등 보안 사고 연속 발생 → 금융권 AI 에이전트 도입 가속과 보안 규제 강화 흐름 동시 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">금융보안 전담기관인 금융보안원이 <b>2026년 11월 9일</b> 해킹 공격을 받아 <b>약 48개사 130여 개 파일</b> 유출 추정, 금융위가 전면 쇄신 지시</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">정부 행정업무용 이메일 시스템도 동시기 해킹 피해, <b>300여 계정</b> 비정상 접속·공직자 개인정보 유출 및 기밀 유출 가능성 제기</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">IBK기업은행, 금융권 보안 환경을 고려한 내부 인프라 기반 <b>AI 코딩 에이전트 '제니코드'</b> 자체 구축 및 현업 중심 AX 체계 전면 가동</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">망분리 규제 전면 해제 결정에도 <b>국가 사이버보안 기본지침(국산 인프라 의무화)</b>이 걸림돌로 작용, 금융권 보안 혁신 지연 우려</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">4대 시중은행 자동화기기(ATM), <b>2024년 말 대비 2026년 9월 말 기준 1,268대(7.1%) 감소</b>하며 비대면 전환 가속화 흐름 지속</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융권 AX 가속화 흐름 속에서 내부 인프라 기반 <b>AI 에이전트</b> 도입 모델이 업계 표준으로 부상 중. 현업 주도형 AI 업무 자동화 체계 선제 구축 시 운영 효율화 및 인력 생산성 제고 기회 존재. 망분리 규제 해제 방향성은 중장기적으로 클라우드·AI 인프라 활용 폭 확대 가능성을 시사.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">금융보안원 해킹 사고를 계기로 <b>금융권 전반 보안 전수점검</b> 요구가 확대되는 흐름. 중소형 금융사 대상 보안 점검 강화 기조가 예고되어 있어 캐피탈사 IT 보안 체계 점검 필요성 증대. 국산 인프라 의무화 지침으로 인해 AI·클라우드 전환 속도에 제약 요인 발생 가능.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 점검·대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AX 체계 구축·망분리 후속 대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">IBK기업은행은 금융권 보안 환경을 고려해 외부 상용 도구 대신 내부 인프라 기반 <b>AI 코딩 에이전트 '제니코드'</b>를 자체 구축하고, 아이디어 발굴(AX-BRM)→개발·검증(AI 바이브 랩스)→확산으로 이어지는 현업 중심 AX 생태계를 체계화하는 전략적 움직임 확인.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융보안원 해킹 사고 이후 금융위가 예고한 <b>중소형 금융사 보안 전수점검</b> 대상 포함 가능성 점검 필요. 내부 정보보호 체계(CISO 역할·이사회 보고 체계·보안관제 수준) 현황 점검 및 보완 검토 요. 정부 행정망 해킹 사례에서 확인된 통합인증 취약점 관련, 내부 시스템 접근 인증 체계 재점검 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">망분리 규제 해제 이후 <b>국산 인프라 의무화 지침</b> 적용 범위 및 캐피탈사 해당 여부 모니터링 강화 필요. 기업은행 사례를 참고해 현업 주도형 <b>AI 업무 자동화 체계</b>(에이전트 기반) 도입 로드맵 검토 요. 비대면 전환 가속에 따른 대면 채널 운영 효율화 방향도 병행 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 내부 시스템 접근 로그·인증 이상 탐지 현황을 AI 기반으로 모니터링하는 <b>보안 이상징후 탐지 자동화</b> 도입 검토. ② 현업 부서별 반복 업무(여신심사 보조·보고서 작성 등) 대상으로 <b>소규모 AI 에이전트 파일럿</b> 적용 가능성 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261116047251002?input=1195m" target="_blank">→ 금융위, '침해' 금융보안원에 쇄신 요구…인력·조직 강화 예상(종합)</a></div>
+  <div class="source-card"><a href="https://www.ytn.co.kr/_ln/0115_202611161821273165" target="_blank">→ 정부 행정 메일 300여 개 해킹...기밀 유출 가능성도</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=678715" target="_blank">→ 직접 아이디어 발굴서 코딩까지…기업은행, 현업 AX 체계 '차별화'</a></div>
+  <div class="source-card"><a href="https://view.asiae.co.kr/article/2026111614313878465" target="_blank">→ 기업은행, AI 코딩 에이전트 '제니코드' 자체 개발…현업 중심 AX 가속화</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261116110200002?input=1195m" target="_blank">→ 기업은행, 자체 AI 에이전트 구축…프로그램 개발 등에 활용</a></div>
+  <div class="source-card"><a href="https://news.dealsitetv.com/articles/178665" target="_blank">→ 금융권망분리·케이뱅크·대동로보틱스</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261116164300002?input=1195m" target="_blank">→ "돈 뽑을 데가 없네"…은행 자동화기기 올해만 400대 사라져</a></div>
+
+</div>
