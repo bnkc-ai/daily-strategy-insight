@@ -1,0 +1,139 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-opportunity .insight-title{font-size:11px;font-weight:600;color:#0F6E56;margin-bottom:4px;}
+.insight-risk .insight-title{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:4px;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 AX 가속·망분리 규제 전면 해제 추진·IT자산 관리 의무화 등 금융 IT 환경 전반의 구조적 변화 → 캐피탈사 관점 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card"><p class="event-text">금융권 AX 전략 본격화: 우리금융·KB금융 등 그룹사 단위 AI 전환 가속, 업무 전반에 AI 에이전트 도입 확산</p></div>
+  <div class="event-card"><p class="event-text">AI 에이전트 기반 금융거래 자동화 PoC 완료: 자금관리·환전·송금 등 자율 실행 가능성 검증 단계 진입</p></div>
+  <div class="event-card"><p class="event-text">망분리 규제 전면 해제 TF 가동: 금융위, 이달 중 태스크포스 운영 개시, AI 보안 시장 재편 예고</p></div>
+  <div class="event-card"><p class="event-text">전자금융감독규정 개정 추진: 전 IT자산 식별·관리 의무화, <b>대형 금융사 취약점 점검 연 2회</b>로 강화</p></div>
+  <div class="event-card"><p class="event-text">노란우산 개인정보 유출 <b>36만 2천 명</b> 확인: 가입자 약 19% 피해, 금융권 정보보호 관리 수준 재점검 계기</p></div>
+  <div class="event-card" style="margin-bottom:16px;"><p class="event-text">금융권 클라우드·코파일럿 도입 확산: 망분리 요건 충족 전제로 MS 365 코파일럿 활용률 <b>85% 이상</b> 달성 사례 등장</p></div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">망분리 규제 해제 추진으로 클라우드·AI 도입 제약 완화 → 캐피탈사 IT 인프라 고도화 기회 확대 흐름.<br>AI 에이전트 기반 자금관리·여신심사 자동화 기술의 실용화 가능성 확인 → 업무 효율화 적용 검토 여지 존재.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">전자금융감독규정 개정으로 <b>IT자산 전수 식별·관리 의무화</b> 및 취약점 점검 주기 단축 → 컴플라이언스 대응 부담 요인.<br>망분리 해제 전환기에 AI 보안 공백 발생 가능성 → 외부 사이버 위협 및 개인정보 유출 리스크 관리 포인트 부각.</div>
+  </div>
+
+  <div class="section-title" style="margin-top:4px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">전자금융감독규정 행정지도 즉시 시행</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">망분리 TF 결과 반영, <b>2027년 1분기</b> 정식 시행 목표</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <p class="competitor-content">우리금융캐피탈이 우리금융그룹 'AI Day' 행사에서 <b>'AI가 바꾸는 금융의 일하는 방식'</b>을 주제로 발표, 그룹 AX 마스터플랜 내 캐피탈사 역할 구체화 움직임 확인.</p>
+    <p class="competitor-content" style="margin-top:8px;">KB금융은 AX 총괄 미래전략부문 수장 교체 수순에 진입했으나, 구글 클라우드 협업 등 기존 AI 기반 업무혁신 실행 기조는 유지 방침 확인.</p>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">전자금융감독규정 행정지도 즉시 적용 대상 여부 점검 필요 → <b>IT자산 목록화 및 책임자 지정</b> 현황 확인 선제 대비.<br>노란우산 개인정보 유출 사고 대비, 자사 고객 개인정보 보호 체계 및 침해사고 대응 절차 점검 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">망분리 규제 해제 TF 논의 결과 모니터링 → 클라우드·AI 도입 로드맵 재점검 및 보안 아키텍처 전환 방향 검토 요.<br>금융권 AI 에이전트 기반 여신심사·자금관리 자동화 사례 축적 추이 주시 → 캐피탈사 적용 가능 업무 범위 사전 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 자사 IT자산 현황 전수 점검 및 중요도 분류 체계 수립 → 전자금융감독규정 개정 대응 준비 수준 자가 진단 실시 검토.<br>② 망분리 해제 이후 도입 가능한 AI 보안 솔루션(국내·외산 비교) 및 클라우드 전환 시나리오 사전 검토 → 전환 비용·컴플라이언스 리스크 병행 분석 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</p>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202611181350077352" target="_blank">→ 우리금융, 계열사 AI 혁신 성과 한자리에...'AX 박차'</a></div>
+  <div class="source-card"><a href="https://www.hankyung.com/article/2026111854401" target="_blank">→ 웹케시, 기존 DB 연동…은행 AX 해결사</a></div>
+  <div class="source-card"><a href="https://www.bloter.net/news/articleView.html?idxno=679014" target="_blank">→ KB금융 '생산적 금융' 김성현·AX 이창권 부문장 사의…거버넌스 재편</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12212420" target="_blank">→ 금융사 전 IT자산 식별·관리 의무화…금융당국 전자금융감독규정 개정</a></div>
+  <div class="source-card"><a href="https://www.nocutnews.co.kr/news/6608825" target="_blank">→ 노란우산 개인정보 유출 36만 2천명…가입자 약 19% 털렸다</a></div>
+  <div class="source-card"><a href="https://view.asiae.co.kr/article/2026111814573307495" target="_blank">→ 노란우산 개인정보 유출 36만2000명…가입자 5명 중 1명꼴</a></div>
+  <div class="source-card"><a href="https://www.edaily.co.kr/News/Read?newsId=03811366645647032&mediaCodeNo=257" target="_blank">→ 메가존클라우드, MS '올해의 파트너상' 한국 부문 수상</a></div>
+  <div class="source-card"><a href="https://view.asiae.co.kr/article/2026111815325673816" target="_blank">→ BC카드, 스타트업 피클과 AI 에이전트 서비스개발 업무협약</a></div>
+  <div class="source-card"><a href="https://www.etoday.co.kr/news/view/2649958" target="_blank">→ 현대카드, JP모간과 AI 금융거래 검증⋯환전·송금까지 자동화</a></div>
+  <div class="source-card"><a href="https://www.fnnews.com/news/202611181412311530" target="_blank">→ 현대카드, JP모간과 AI 에이전트 금융거래 검증</a></div>
+  <div class="source-card"><a href="https://www.sidae.com/article/2026111714214050843" target="_blank">→ 망분리 빗장 푸는 금융권…안방 보안, 외산에 내줄라</a></div>
+
+</div>
