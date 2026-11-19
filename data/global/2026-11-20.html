@@ -1,0 +1,197 @@
+<style>
+  body {
+    background: #F5F4F0;
+    font-family: -apple-system, 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C2C2A;
+    margin-bottom: 8px;
+  }
+  /* 오늘의 지역 요약 */
+  .brief-card {
+    background: #E6F1FB;
+    border-left: 4px solid #185FA5;
+    border-radius: 0;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .brief-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #185FA5;
+    margin-bottom: 6px;
+  }
+  .brief-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #0C447C;
+    margin: 0;
+  }
+  /* 주요 이슈 */
+  .issue-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #E8E6DE;
+  }
+  .issue-tags {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-region {
+    background: #EEEDFE;
+    color: #3C3489;
+  }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2C2C2A;
+    margin: 0;
+  }
+  .issue-text b {
+    color: #A32D2D;
+  }
+  /* 참고 시 유의점 */
+  .note-card {
+    background: #FEF3C7;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid #B45309;
+  }
+  .note-content {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #633806;
+    margin: 0;
+  }
+  .note-content b {
+    color: #A32D2D;
+  }
+  /* 출처 기사 */
+  .source-note {
+    font-size: 11px;
+    color: #888780;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .source-card {
+    background: #F1EFE8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+  }
+  .source-card a {
+    color: #185FA5;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="section-title">🌏 오늘의 지역 요약</div>
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <p class="brief-body">미얀마에서 ICJ가 로힝야족 집단학살에 대한 국가 책임을 사상 최초로 판결, 국제사회 파급 주시 대상. 캄보디아에서 일성건설의 농촌 인프라 공사 수주 계약 체결. 키르기스스탄에서 수력발전·핵심광물 분야 한국 투자 유치 의향 공식 표명.</p>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <p class="issue-text">유엔 국제사법재판소(ICJ)가 <b>2025년 11월 19일</b> 미얀마 군부의 <b>2017년</b> 라카인주 군사작전을 집단학살(제노사이드)로 판결, 국가에 집단학살 책임을 물은 사상 첫 사례로 기록.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <p class="issue-text">ICJ 판결에 따라 미얀마 정부는 로힝야족 난민의 안전한 귀환 허용·재산 반환·배상 조치 이행 명령을 받았으며, 현재 약 <b>120만 명</b>의 로힝야 난민이 방글라데시 콕스바자르 일대 난민촌에 체류 중.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <p class="issue-text">건설사 일성건설이 캄보디아 농촌개발부와 <b>463억 원</b> 규모 농촌 연결성 개선 공사(교량 41개소·접속도로 포함, 총연장 약 13,294m) 계약 체결, 공사기간 착공일로부터 <b>974일</b>.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <p class="issue-text">멜리스 마마달리예프 주한 키르기스스탄 대사가 <b>2026년 11월 19일</b> 서울 포럼에서 수력발전 건설·현대화, 핵심광물 가공, 교통·물류 인프라 분야 한국 기업 투자 유치 의향 공식 표명.</p>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <p class="issue-text">가톨릭관동대학교 국제성모병원이 키르기스스탄 국립종양·혈액질환센터 소속 의료진 <b>2명</b>을 초청, 최소침습 수술·암 치료 분야 임상 연수 프로그램 수료식 진행 및 양 기관 간 협력 확대 흐름.</p>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <p class="note-content">미얀마 ICJ 판결은 법적 구속력은 있으나 강제 집행 수단이 없으며, 미얀마가 이행하지 않을 경우 유엔 안전보장이사회 보고에 그치는 구조. 미얀마 관련 국제 제재 논의 동향 지속 모니터링 대상.</p>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261119178900098?input=1195m" target="_blank">→ 국제사법재판소 "미얀마, 로힝야족 상대로 '집단학살' 저질러"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/world/2026/11/19/2026111921145892345" target="_blank">→ "미얀마, 로힝야족 집단학살"…유엔 최고법원 첫 국가 책임 판결</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.topstarnews.net/news/articleView.html?idxno=16280718" target="_blank">→ 일성건설, 463억원 규모 캄보디아 농촌 연결성 개선 공사 수주</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.finomy.com/news/articleView.html?idxno=267290" target="_blank">→ [공시]일성건설, 캄보디아 교량·도로 공사 수주···매출 10.24%</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.ajunews.com/view/20261119164230911" target="_blank">→ 키르기스스탄 대사 "수력발전 건설·현대화에 한국 투자 기대"</a>
+  </div>
+  <div class="source-card">
+    <a href="http://www.thefirstmedia.net/news/articleView.html?idxno=214232" target="_blank">→ 국제성모병원, 키르기스스탄 의료진 초청 연수 수료식 진행…"암 치료 기술 교류 기반 마련"</a>
+  </div>
+
+</div>
