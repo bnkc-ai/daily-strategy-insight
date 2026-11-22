@@ -1,0 +1,196 @@
+<style>
+  body {
+    background: #F5F4F0;
+    font-family: -apple-system, 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C2C2A;
+    margin-bottom: 8px;
+  }
+  /* 오늘의 지역 요약 */
+  .brief-card {
+    background: #E6F1FB;
+    border-left: 4px solid #185FA5;
+    border-radius: 0;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .brief-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #185FA5;
+    margin-bottom: 6px;
+  }
+  .brief-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #0C447C;
+    margin: 0;
+  }
+  /* 주요 이슈 */
+  .issue-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #E8E6DE;
+  }
+  .issue-tags {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-region {
+    background: #EEEDFE;
+    color: #3C3489;
+  }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2C2C2A;
+    margin: 0;
+  }
+  .issue-text b {
+    color: #A32D2D;
+  }
+  /* 참고 시 유의점 */
+  .note-card {
+    background: #FEF3C7;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid #B45309;
+  }
+  .note-content {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #633806;
+    margin: 0;
+  }
+  .note-content b {
+    color: #A32D2D;
+  }
+  /* 출처 기사 */
+  .source-note {
+    font-size: 11px;
+    color: #888780;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .source-card {
+    background: #F1EFE8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+  }
+  .source-card a {
+    color: #185FA5;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="brief-card">
+    <div class="brief-label">TODAY BRIEF</div>
+    <p class="brief-body">캄보디아 범죄조직 프린스그룹이 엔비디아 AI 반도체 대중국 우회 밀수망에 연루된 정황이 파이낸셜타임스 보도로 확인됨. 미얀마에서는 ICJ가 로힝야족 집단학살 책임 판결을 내렸으며 미얀마 정부가 공식 반발하는 상황 주시 필요.</p>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <p class="issue-text">캄보디아 기반 범죄조직 프린스그룹의 2인자 후샤오웨이가 엔비디아 AI 반도체의 동남아 경유 대중국 우회 밀수망에 가담한 정황이 파이낸셜타임스 보도(<b>2026년 11월 21일</b>)로 확인됨.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-경제">경제</span>
+    </div>
+    <p class="issue-text">싱가포르 소재 클라우드 기업 메가스피드의 말레이시아 자회사가 <b>2024년 12월~2025년 12월</b> 1년간 신고액 기준 <b>46억 달러</b> 규모의 엔비디아 칩을 수입, 상당량이 캄보디아 경유 중국 암시장으로 유통된 것으로 전해짐.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-규제">규제</span>
+    </div>
+    <p class="issue-text">중국 온라인 게임 기업 센추리화퉁이 엔비디아 칩 조달 구조 설계에 개입하고, 온라인 게임 플랫폼이 자금세탁 통로로 활용된 정황이 확인됨; 프린스그룹은 불법 네트워크 존재를 부인.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <p class="issue-text">국제사법재판소(ICJ)가 <b>2026년 11월 19일</b> 미얀마의 로힝야족 집단학살 책임을 인정하는 판결을 선고; ICJ <b>80년</b> 역사상 특정 국가에 집단학살 책임을 인정한 첫 사례로 기록됨.</p>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">미얀마</span>
+      <span class="tag tag-외교">외교</span>
+    </div>
+    <p class="issue-text">미얀마 정부 대변인 카잉 카잉 소가 ICJ 판결에 "불공정하다"며 공식 반발; 판결 주도 민 아웅 흘라잉 대통령은 국제형사재판소(ICC)에도 별도 제소된 상태로 국제적 압박 가중 흐름.</p>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <p class="note-content">캄보디아 관련 이슈의 경우, 프린스그룹이 한국인 납치·감금 범죄단지 운영 배후로 지목된 조직임이 복수 기사에서 언급됨. 동남아 지역 내 AI 반도체 우회 유통 경로로 말레이시아·싱가포르·캄보디아가 복합적으로 활용된 구조가 확인된 바, 해당 지역 물류·클라우드 관련 동향 모니터링 대상으로 참고 요.</p>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261122050900085?input=1195m" target="_blank">→ 엔비디아 칩 中밀수망에 앨리스 황·캄보디아 범죄조직 얽혀 (연합뉴스)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mk.co.kr/article/12215741" target="_blank">→ 앨리스 황 AI칩 밀반입에 캄보디아 범죄조직 연루 (매일경제)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.hankyung.com/article/2026112224531" target="_blank">→ "불륜녀 문제 아냐"…젠슨 황 스캔들 '진짜 배후' 폭로 터졌다 (한국경제)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261122_0003878263" target="_blank">→ 앨리스 황 관련 AI 칩 中 공급 기업 네트워크에 '캄보디아 범죄기업'도 포함 (뉴시스)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008857980&plink=ORI&cooper=NAVER" target="_blank">→ 엔비디아 칩 중국 우회 밀수망…"젠슨 황 연인·캄보디아 범죄조직 얽혀" (SBS)</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newscj.com/news/articleView.html?idxno=3451074" target="_blank">→ 미얀마, ICJ '로힝야 집단학살' 판결에 "불공정" 반발 (천지일보)</a>
+  </div>
+
+</div>
