@@ -1,0 +1,136 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">부동산 PF 자기자본비율 규제 본격화·건설사 PF 보증 부담 지속 → 기업금융 여신 포트폴리오 점검 포인트 확대</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">PF 자기자본비율 규제, 비주거 사업장 대상 <b>2027년부터 단계 시행</b>(5%→2030년 20%) 확정</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">10대 건설사 PF 보증·책임준공 노출 합계 <b>102조원</b> 초과, 자기자본 대비 배수 상위권 여전</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">효성중공업, 잠원동 복합개발 PF 채무 <b>3,463억원</b> 인수 후 건물 처분금지 가처분으로 회수 지연</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">데이터센터 PF 시장 활성화: 인천 원창동 <b>5,300억원</b> 규모 PF 대출약정 체결 사례 등장</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">외식 프랜차이즈 놀부, 기업회생 신청 <b>3개월 만에 기각</b>→채권자 압류·경매 절차 개시 가능</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">데이터센터·방산 등 비전통 섹터 PF 수요 확대로 <b>신규 기업금융 여신 기회</b> 부상.<br>PF 자기자본비율 규제 강화로 자본력 있는 대형 시행사 중심 재편 → 우량 거래처 집중 공략 여건 조성.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">건설사 PF 보증·책임준공 노출 <b>102조원</b> 수준 지속 → 시공사 연쇄 부실 시 대주단 손실 확대 부담 요인.<br>회생 기각 사례(놀부) 등 기업부실 현실화 흐름 → 프랜차이즈·외식업 등 취약업종 여신 관리 포인트.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">PF 책임준공 만기 집중 구간 모니터링 (즉시~3개월)</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">PF 자기자본비율 규제 세부 기준 확정 후 여신심사 기준 재정비 (3~12개월)</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">우리은행, 한화에어로스페이스 협력기업 대상 <b>3,020억원</b> 규모 방산 공급망 금융지원 협약 체결(KB국민은행·하나은행 공동 참여) → 방산 밸류체인 중소기업 자금조달 지원 영역으로 기업금융 확장 움직임 확인.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">① 건설사 PF 보증 만기 집중 구간(현대엔지니어링 본PF <b>1조2,043억원</b> 3개월 내 만기 등) 대주단 동향 및 차환 리스크 모니터링 강화 필요.<br>② 놀부 등 회생 기각 사례 확산 시 프랜차이즈·외식업 여신 포트폴리오 내 연체·부실 징후 점검 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">① <b>PF 자기자본비율 규제</b> 세부 기준(보완자본 인정 범위 등) 확정 시점에 맞춰 신규 PF 여신심사 기준 재정비 검토.<br>② 데이터센터·방산 공급망 등 성장 섹터 기업금융 진출 가능성 및 참여 구조(대주단·보증 방식) 사전 검토 필요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 기존 기업금융 여신 포트폴리오 내 PF 보증·책임준공 연계 익스포저를 업종·시공사별로 분류, 만기 집중 구간 자동 알림 모델 구축 검토.<br>② 프랜차이즈·외식업 등 취약업종 차주의 재무지표(영업손실 추이·연체율)를 머신러닝 기반으로 조기경보 신호 탐지하는 모니터링 체계 도입 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12216080" target="_blank">→ "PF 자기자본 규제, 세부 기준 먼저 확립 해야...주택 공급 위축은 우려"</a></div>
+  <div class="source-card"><a href="https://www.mk.co.kr/article/12216318" target="_blank">→ "PF규제로 디벨로퍼 지형 흔들…주택공급 위축 우려"</a></div>
+  <div class="source-card"><a href="https://www.wikileaks-kr.org/news/articleView.html?idxno=195118" target="_blank">→ [10대 건설사 3Q 성적표]① PF 보증·책임준공 102조 넘어…정비사업서 4.8조↑</a></div>
+  <div class="source-card"><a href="https://www.newspim.com/news/view/20261123001011" target="_blank">→ 효성중공업, 신사L타워 책임준공 후폭풍…3천억 PF 채권 회수 막히나</a></div>
+  <div class="source-card"><a href="https://dealsite.co.kr/articles/173233" target="_blank">→ 현대엔지니어링, KT클라우드와 협업…인천 데이터센터 PF 조달</a></div>
+  <div class="source-card"><a href="https://www.yna.co.kr/view/AKR20261123159251004?input=1195m" target="_blank">→ 법원, 놀부 회생신청 기각…가맹점주·협력업체에 악영향 우려(종합)</a></div>
+  <div class="source-card"><a href="https://daily.hankooki.com/news/articleView.html?idxno=1428077" target="_blank">→ 우리은행, K-방산 협력기업에 3020억원 금융지원…수출 경쟁력 강화</a></div>
+
+</div>
