@@ -1,0 +1,182 @@
+<style>
+  body {
+    background: #F5F4F0;
+    font-family: -apple-system, 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2C2C2A;
+    margin-bottom: 8px;
+  }
+  /* 오늘의 지역 요약 */
+  .brief-card {
+    background: #E6F1FB;
+    border-left: 4px solid #185FA5;
+    border-radius: 0;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .brief-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #185FA5;
+    margin-bottom: 6px;
+  }
+  .brief-body {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #0C447C;
+    margin: 0;
+  }
+  /* 주요 이슈 */
+  .issue-card {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #E8E6DE;
+  }
+  .issue-tags {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-region {
+    background: #EEEDFE;
+    color: #3C3489;
+  }
+  .tag-정치 { background: #F3E8FF; color: #6D28D9; }
+  .tag-경제 { background: #DCFCE7; color: #047857; }
+  .tag-산업 { background: #DCFCE7; color: #047857; }
+  .tag-사회 { background: #FAEEDA; color: #854F0B; }
+  .tag-재해 { background: #FCEBEB; color: #A32D2D; }
+  .tag-국제관계 { background: #E6F1FB; color: #185FA5; }
+  .tag-외교 { background: #E6F1FB; color: #185FA5; }
+  .tag-규제 { background: #FEF3C7; color: #B45309; }
+  .tag-정책 { background: #FEF3C7; color: #B45309; }
+  .issue-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #2C2C2A;
+    margin: 0;
+  }
+  .issue-text b {
+    color: #A32D2D;
+  }
+  /* 참고 시 유의점 */
+  .note-card {
+    background: #FEF3C7;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    border-left: 3px solid #B45309;
+  }
+  .note-content {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #633806;
+    margin: 0;
+  }
+  .note-content b {
+    color: #A32D2D;
+  }
+  /* 출처 기사 */
+  .source-note {
+    font-size: 11px;
+    color: #888780;
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .source-card {
+    background: #F1EFE8;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+  }
+  .source-card a {
+    color: #185FA5;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="brief-card">
+    <div class="brief-label">🌏 오늘의 지역 요약 · TODAY BRIEF</div>
+    <p class="brief-body">캄보디아에서 중국군·캄보디아군 합동군사훈련 역대 최대 규모로 개시, 키르기스스탄에서 국내 도로안전 조명 전문기업 (주)씨엘테크의 현지 제품인증 획득 및 B2G 영업망 확대 추진 등 동남아·중앙아시아 지역 주요 동향 확인.</p>
+  </div>
+
+  <div class="section-title">📌 주요 이슈</div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-국제관계">국제관계</span>
+    </div>
+    <p class="issue-text">중국군 <b>1,314명</b>·캄보디아군 <b>1,626명</b> 등 총 2,940명 규모의 '금룡-2026' 합동군사훈련이 <b>2026년 11월 25일</b> 캄보디아 남부 레암 해군기지에서 개막, 전년 대비 전체 병력 35%·중국군 56% 증가로 역대 최대 규모 기록.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-산업">산업</span>
+    </div>
+    <p class="issue-text">국내 도로안전 조명 전문기업 (주)씨엘테크가 비슈케크 외곽 고속도로 구간 매립형 LED 도로표지병 시범 시공 완료 후 키르기스스탄 현지 공식 제품인증 획득, 오쉬·이식쿨 호수 일대 B2G 영업망 확대 추진 중.</p>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-tags">
+      <span class="tag tag-region">키르기스스탄</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <p class="issue-text">원주 한라대학교가 키르기스스탄 잘랄아바드주립대와 공동으로 '잘랄아바드 세종학당'을 <b>2026년 11월 26일</b> 개소, 한국어 교육 및 양 대학 간 학생·학술 교류 확대 운영 개시.</p>
+  </div>
+
+  <div class="issue-card" style="margin-bottom:16px;">
+    <div class="issue-tags">
+      <span class="tag tag-region">캄보디아</span>
+      <span class="tag tag-사회">사회</span>
+    </div>
+    <p class="issue-text">KB국민카드가 캄보디아·태국·인도네시아 <b>3개국</b> 아동 대상 나눔 물품 전달식 진행, 캄보디아에는 금융교육 팝업북 및 신발 지원 실시.</p>
+  </div>
+
+  <div class="section-title">⚠️ 참고 시 유의점</div>
+  <div class="note-card">
+    <p class="note-content">캄보디아 레암 해군기지에서 중국·캄보디아 합동군사훈련이 <b>2026년 12월 9일</b>까지 진행 예정이며, 실탄 훈련 포함 육해공 합동 훈련 일정이 확인됨. 해당 기간 중 캄보디아 남부 레암 일대 군사 활동 관련 동향 주시 필요.</p>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <p class="source-note">아래 출처 기사는 본문 내용을 기준으로 검토했으며,<br>글로벌 담당 부서가 참고할 만한 내용만 선별·반영했습니다.</p>
+
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261126160700704?input=1195m" target="_blank">→ [영상] 상륙함에 주력전차 싣고…中·캄보디아 '역대급 합동군사훈련'</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kyeonggi.com/article/20261126580292" target="_blank">→ 'K-도로 안전 조명' 중앙아시아 밝힌다…(주)씨엘테크, 키르기스스탄 공식 인증 쾌거</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.kwnews.co.kr/article/20261126501220" target="_blank">→ 원주 한라대, 키르기스스탄에 '잘랄아바드 세종학당' 개소</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.tf.co.kr/read/economy/2393789.htm" target="_blank">→ KB국민카드, 태국·캄보디아·인니에 나눔 물품 전달</a>
+  </div>
+
+</div>
