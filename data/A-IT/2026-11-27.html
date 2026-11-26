@@ -1,0 +1,159 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;border-radius:0;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">금융권 연쇄 해킹·개인정보 유출 확산 및 망분리 특례 제동 → 보안 거버넌스·AI 통제 체계 점검 포인트 부각</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">저축은행·한전·올리브영 등 금융·비금융권 연쇄 해킹, 개인정보 대규모 유출 확산</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">신한·하나은행·미래에셋증권, 해킹 사고로 망분리 규제 완화 특례 일시 중단 조치</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 망분리 규제 전면 해제 TF 출범 예고 및 <b>2027년 1분기</b> 기준 마련 추진</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">NH농협, 비금융 데이터·AI 기반 대안신용평가 모형 성과 발표 및 계열사 공동 활용 추진</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">KB금융, AI 에이전트 금융업무 적용 사례 공유 및 그룹 전반 확산 협력 강조</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">IBM, 금융기관 대상 양자컴퓨팅·소버린 AI 통제 체계 구축 필요성 제시</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">금융위, <b>2027년 1분기</b> '포용 온렌딩 대출' 출시 및 여전사 자본·건전성 규제 완화 예고</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">망분리 규제 완화 기조 지속으로 <b>외부 AI·클라우드 기반 보안 고도화</b> 추진 여건 형성.<br>비금융 데이터·AI 결합 대안신용평가 모형이 중저신용자 여신 확대의 실질적 수단으로 부상, 캐피탈사 포용금융 상품 설계 참고 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">금융권 전반 해킹 사고 확산으로 <b>외부 접점·모바일 플랫폼 보안 취약점</b> 점검 필요성 확대.<br>망분리 특례 활용 중단 사례 등장으로 보안 미흡 시 <b>CEO 책무구조도 제재</b> 리스크 부담 요인 증가.</div>
+  </div>
+
+  <div class="section-title">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">보안 점검·대응</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">AI 통제 체계·대안신용평가 도입 검토</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">NH농협캐피탈, NH크레딧 온 얼라이언스 참여를 통해 비금융 데이터·생성형 AI 기반 대안신용평가 모형 공동 연구 성과를 발표하고, 은행·카드·캐피탈 계열사 간 신용등급 연계 금융사다리 체계 구축 계획을 공개함.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">금융권 연쇄 해킹 확산 흐름에서 <b>모바일·대외 연계 플랫폼 외부 접점 전수 점검</b> 및 심야·주말 이상행위탐지(FDS) 작동 여부 확인 검토 요.<br><b>책무구조도 제도</b> 적용 환경에서 보안 사고 발생 시 임원 책임 범위 확대 가능성, 내부통제 실효성 점검 필요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">금융당국의 <b>망분리 규제 전면 해제 기준</b> 마련 일정에 맞춰 AI 기반 보안 서비스 도입 로드맵 사전 검토 필요.<br>비금융 데이터 활용 대안신용평가 모형의 업권 확산 흐름에서 캐피탈사 중저신용 여신 심사 고도화 방향 전략 재점검 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 자사 모바일·대외 연계 시스템 로그 기반 <b>비정상 접근 패턴 탐지 모델</b> 적용 가능성 검토(심야·주말 구간 집중 분석).<br>② 비금융 대안정보(통신·유통·플랫폼 데이터) 활용 중저신용 고객 신용평가 보완 모형 파일럿 설계 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.bloter.net/news/articleView.html?idxno=679782" target="_blank">→ 자산 3위 한투도 뚫렸다…저축은행 '우회로·심야' 보안 공백에 비상</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.bizwatch.co.kr/article/finance/2026/11/26/0031" target="_blank">→ [단독] '해킹 여파' 신한·하나은행·미래에셋증권 '보안 망분리' 제동</a>
+  </div>
+  <div class="source-card">
+    <a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008865939&plink=ORI&cooper=NAVER" target="_blank">→ [단독] 한전 유출 개인정보 텔레그램서 거래…"건당 500원"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.khan.co.kr/article/202611262124001" target="_blank">→ CJ올리브영, 업무시스템 해킹으로 790명 개인정보 유출</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.newsis.com/view/NISX20261126_0003885012" target="_blank">→ NH농협은행, 대안신용평가 연구 성과…"포용금융 새 모델 제시"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.fnnews.com/news/202611261459294898" target="_blank">→ IBM "금융권, 양자컴퓨팅 활용·AI 통제 체계 준비해야"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261126144500002?input=1195m" target="_blank">→ [게시판] KB금융, AI 기술 혁신 사례 공유…'KB테크포럼' 개최</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/finance/2026/11/27/2026112619402414917" target="_blank">→ 은행 재원으로 저축銀서 대출… 1·2금융권 '금리 격차' 줄인다</a>
+  </div>
+
+</div>
