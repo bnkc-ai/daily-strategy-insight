@@ -1,0 +1,158 @@
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#F5F4F0;font-family:-apple-system,'Malgun Gothic',sans-serif;}
+.wrap{max-width:100%;margin:0;padding:0;}
+.section-title{font-size:13px;font-weight:600;color:#2C2C2A;margin-bottom:8px;}
+
+.summary-card{background:#FCEBEB;border-left:4px solid #A32D2D;padding:14px 16px;margin-bottom:16px;}
+.summary-label{font-size:11px;font-weight:600;color:#A32D2D;margin-bottom:6px;}
+.summary-body{font-size:15px;line-height:1.6;color:#501313;}
+
+.event-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;border-left:3px solid #888780;margin-bottom:8px;}
+.event-text{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.event-text b{color:#A32D2D;}
+
+.insight-opportunity{background:#E1F5EE;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-risk{background:#FCEBEB;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.insight-title{font-size:11px;font-weight:600;margin-bottom:4px;}
+.insight-opportunity .insight-title{color:#0F6E56;}
+.insight-risk .insight-title{color:#A32D2D;}
+.insight-content{font-size:13px;line-height:1.6;color:#2C2C2A;}
+.insight-risk .insight-content b{color:#A32D2D;}
+
+.timeline{position:relative;padding-left:20px;margin-bottom:16px;}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:#D3D1C7;}
+.tl-item{position:relative;margin-bottom:12px;}
+.tl-item:last-child{margin-bottom:0;}
+.tl-dot{position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;}
+.tl-dot.short{background:#A32D2D;}
+.tl-dot.mid{background:#BA7517;}
+.tl-dot.long{background:#185FA5;}
+.tl-label{font-size:11px;font-weight:600;margin-bottom:3px;}
+.tl-label.short{color:#A32D2D;}
+.tl-label.mid{color:#BA7517;}
+.tl-label.long{color:#185FA5;}
+.tl-content{font-size:12px !important;line-height:1.5;border-radius:8px !important;padding:8px 10px !important;}
+.tl-content.short{background:#FCEBEB !important;color:#501313 !important;}
+.tl-content.mid{background:#FAEEDA !important;color:#633806 !important;}
+.tl-content.long{background:#E6F1FB !important;color:#0C447C !important;}
+
+.competitor-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:16px;}
+.competitor-content{font-size:13px;color:#444441;line-height:1.6;}
+.competitor-content b{color:#A32D2D;}
+
+.impact-row{border-radius:10px;overflow:hidden;margin-bottom:8px;display:flex;flex-direction:column;}
+.impact-label{width:100%;padding:8px 12px;text-align:left;font-size:11px;font-weight:600;}
+.impact-label.short-label{background:#FAEEDA;color:#854F0B;}
+.impact-label.mid-label{background:#E6F1FB;color:#0C447C;}
+.impact-label.ai-label{background:#EEEDFE;color:#3C3489;}
+.impact-content{padding:10px 12px;font-size:13px;line-height:1.6;color:#2C2C2A;background:#F1EFE8;flex:1;}
+.impact-content b{color:#A32D2D;}
+
+@media(min-width:600px){
+  .impact-row{flex-direction:row;}
+  .impact-label{width:90px;min-width:90px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 4px;word-break:keep-all;}
+}
+
+.source-note{font-size:11px;color:#888780;margin-bottom:8px;line-height:1.5;}
+.source-card{background:#F1EFE8;border-radius:10px;padding:10px 14px;margin-bottom:8px;}
+.source-card a{color:#185FA5;text-decoration:none;font-size:12px;line-height:1.5;}
+</style>
+
+<div class="wrap">
+
+  <div class="summary-card">
+    <div class="summary-label">🔥 핵심 한줄 요약</div>
+    <div class="summary-body">고금리 장기화로 개인신용·가계대출 부실 지표 상승 흐름 속, 대환대출·포용금융 제도 변화가 캐피탈 소매여신 전략 전반의 점검 포인트로 부상</div>
+  </div>
+
+  <div class="section-title">📌 무슨 일이 일어나고 있나</div>
+  <div class="event-card">
+    <div class="event-text">2026년 9월 말 기준 은행권 개인사업자·가계 신용대출 <b>부실채권비율 12년 만에 최고</b> 기록</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">은행 신규 가계대출 평균 금리 <b>연 5.02%</b> 돌파, 주담대 금리도 14년 7개월 만에 최고 수준</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">금융당국, 소상공인 보증부 대출 위험가중치 <b>20%→0%</b> 인하 등 포용금융 건전성 규제 완화 발표</div>
+  </div>
+  <div class="event-card">
+    <div class="event-text">NH농협금융, AI·대안신용평가 기반 캐피탈→은행 <b>대환대출 자동 선정 시스템</b> 구축 추진</div>
+  </div>
+  <div class="event-card" style="margin-bottom:16px;">
+    <div class="event-text">LTV·DTI 등 일률적 대출규제의 중·저소득층 시장 진입 배제 효과에 대한 제도 개혁 논의 확산</div>
+  </div>
+
+  <div class="section-title">💥 핵심 인사이트</div>
+  <div class="insight-opportunity">
+    <div class="insight-title">기회 요인</div>
+    <div class="insight-content">금융당국의 포용금융 규제 완화 흐름(충당금 부담 완화, 건전성 분류 기준 완화)이 중·저신용자 여신 공급 확대 여건으로 작용 가능.<br>대안신용평가 모형 도입 시 기존 금융정보 기반 심사에서 발굴하기 어려웠던 잠재 우량 고객층 접근 기회 확대 가능.</div>
+  </div>
+  <div class="insight-risk">
+    <div class="insight-title">위협/리스크 요인</div>
+    <div class="insight-content">고금리 장기화로 개인사업자·신용대출 부문 <b>부실채권비율 상승 흐름</b>이 캐피탈 소매여신 건전성 관리 포인트로 부각.<br>농협금융 계열의 캐피탈→은행 대환대출 자동 연계 구조 확산 시, 캐피탈사 중·저신용 우량 고객의 이탈 가속 부담 요인 존재.</div>
+  </div>
+
+  <div class="section-title" style="margin-bottom:8px;">영향 시점</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot short"></div>
+      <div class="tl-label short">단기</div>
+      <div class="tl-content short">건전성 지표 모니터링</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot mid"></div>
+      <div class="tl-label mid">중기</div>
+      <div class="tl-content mid">대환대출 경쟁 구조 변화, 대안신용평가 도입 전략</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot long"></div>
+      <div class="tl-label long">장기</div>
+      <div class="tl-content long">해당 없음</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏢 경쟁사 동향</div>
+  <div class="competitor-card">
+    <div class="competitor-content">NH농협캐피탈은 농협은행·농협카드와 공동 대안신용평가 모형을 구축하고, 캐피탈 이용 고객 중 <b>6개월 성실상환</b> 후 신용도 개선 시 은행 대환대출로 자동 연결하는 시스템을 2027년 7월 상품 출시 목표로 추진 중.</div>
+  </div>
+
+  <div class="section-title">🎯 영향도 분석</div>
+  <div class="impact-row">
+    <div class="impact-label short-label">단기 기회/리스크</div>
+    <div class="impact-content">2026년 9월 말 기준 개인신용대출·개인사업자 부실채권비율 상승 흐름 대비, 소매여신 포트폴리오 내 취약 차주 비중 및 연체 선행 지표 점검 필요.<br>금융당국의 <b>충당금 적립 부담 완화·건전성 분류 기준 조정</b> 내용이 캐피탈사 여신전문금융회사 규정에 미치는 적용 범위 확인 검토 요.</div>
+  </div>
+  <div class="impact-row">
+    <div class="impact-label mid-label">중기 고려사항</div>
+    <div class="impact-content">농협금융형 <b>계열사 연계 대환대출 구조</b>가 업권 전반으로 확산될 경우, 캐피탈 소매여신 고객 이탈 시나리오 및 대응 상품 설계 전략 검토 필요.<br>대안신용평가 기반 중·저신용자 여신 심사 고도화 방향 및 BNK금융그룹 계열사 간 연계 가능성 전략 재점검 요.</div>
+  </div>
+  <div class="impact-row" style="margin-bottom:16px;">
+    <div class="impact-label ai-label">AI 분석 제안</div>
+    <div class="impact-content">① 소매여신 포트폴리오 내 개인신용대출·개인사업자 대출 구간별 연체 선행 신호 탐지 모델 적용 가능성 검토.<br>② 비금융 대안정보(납부 이력·소비 패턴 등) 활용 신용평가 모형 도입 시 중·저신용 고객 승인율 변화 시뮬레이션 선행 분석 검토.</div>
+  </div>
+
+  <div class="section-title">🔗 출처 기사</div>
+  <div class="source-note">아래 출처 기사는 제목이 아닌 본문 내용을 기준으로 검토했으며, 현재 부서와 키워드에 실질적으로 관련된 내용만 선별·반영했습니다.</div>
+  <div class="source-card">
+    <a href="https://www.segye.com/newsView/20261126516701?OutUrl=naver" target="_blank">→ 개인사업자·가계 신용대출 부실채권비율 12년來 최고 [경제 레이더]</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.seoul.co.kr/news/economy/2026/11/26/20261126500339?wlog_tag3=naver" target="_blank">→ 가계대출 금리 5% 돌파…"이자부담 허리 휠 듯"</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.sedaily.com/article/20119569?ref=naver" target="_blank">→ 소상공인 보증대출 위험가중치 0%…건전성 규제 대폭 완화</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.yna.co.kr/view/AKR20261126177900002?input=1195m" target="_blank">→ 대출 늘고 금리 오르며…은행 3분기까지 이자이익 48조원 넘어</a>
+  </div>
+  <div class="source-card">
+    <a href="https://biz.heraldcorp.com/article/10950824?ref=naver" target="_blank">→ "성실히 상환하면 은행 대환 기회"…농협금융, 중·저신용자 '금융 사다리' 만든다</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.mt.co.kr/finance/2026/11/27/2026112610562467511" target="_blank">→ 농협은행, 카드·캐피탈 성실상환 고객 6개월 뒤 은행 대출로</a>
+  </div>
+  <div class="source-card">
+    <a href="https://www.etoday.co.kr/news/view/2653355" target="_blank">→ NH농협은행, 카드·캐피탈 성실상환 고객 은행 대출로 잇는다</a>
+  </div>
+
+</div>
